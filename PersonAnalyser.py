@@ -20,7 +20,7 @@ def run(people):
             assert isinstance(person, Person)
 
             # Compare with all the other years
-            for other_year, other_year_list in dic:
+            for other_year, other_year_list in dic.items():
 
                 # Skip if the year is the same
                 if other_year == this_year:
