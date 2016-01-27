@@ -33,8 +33,9 @@ def get_people_from_directory(dir, job_server, jobs):
             jobs.append(job)
 
 
+# TODO Modify this to point to the local files on your machine
 # Fetch the current data
-get_people_from_directory("/home/rasmus/Documents/gelsted/", job_server, jobs)
+get_people_from_directory("/home/rasmus/Documents/smallscc/", job_server, jobs)
 
 # Create lists of data
 invalidPeople = []
@@ -42,8 +43,12 @@ males = []
 females = []
 
 # Wait for all the jobs to finish
+x = 1
 for job in jobs:
     v = job()
+    print("Done with job " + str(x))
+    x += 1
+    assert isinstance(v, list)
     for person in v:
         if person.valid:
             if person.kon:

@@ -2,6 +2,7 @@ from Person import Person
 import codecs
 import re
 from os import sep
+from time import time
 
 
 def kipnr(p, value):
@@ -31,7 +32,12 @@ def amt(p, value):
 
 def lbnr(p, value):
     assert isinstance(p, Person)
-    p.lbnr = int(value)
+    value = value[:value.rfind(",")]
+    try:
+        p.lbnr = int(value)
+    except ValueError:
+        p.lbnr = 0
+        p.valid = False
 
 
 def kildehenvisning(p, value):
@@ -120,6 +126,7 @@ switcher = {
 
 
 def get_people(path):
+    t_start = time()
     people = []
 
     with codecs.open(path, "r", "iso-8859-1") as f:
@@ -131,7 +138,7 @@ def get_people(path):
         d = {}
         first = True
         for line in f:
-            fields = line.split(";")
+            fields = line.split("|")
             if first:
                 for i in range(len(fields)):
                     field = fields[i]
@@ -141,11 +148,17 @@ def get_people(path):
                 p = Person(year)
                 for i in range(len(fields)):
                     field = fields[i]
-                    r = d[i]
-                    method = switcher.get(r, None)
-                    if callable(method):
-                        method(p, field)
+                    try:
+                        r = d[i]
+                        method = switcher.get(r, None)
+                        if callable(method):
+                            method(p, field)
+                    except KeyError:
+                        print(fields)
+                        p.valid = False
                 people.append(p)
+    t_end = time()
+    print(t_end - t_start)
     return people
 
 
