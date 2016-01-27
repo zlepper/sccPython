@@ -10,3 +10,7 @@ Statens Arkiver python solver
 Open terminal as admin  
 Navigate to extracted directory of the pp download  
 Execute command ``python3 setup.py install``  
+
+### Installing jellyfish
+Open terminal as admin  
+Execute command ``pip3 install jellyfish``
