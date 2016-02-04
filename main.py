@@ -4,6 +4,7 @@ from os import walk
 from os.path import join
 import PersonAnalyser
 from time import time
+from output import Outputter
 
 people = []
 jobs = []
@@ -28,6 +29,7 @@ def get_people_from_directory(dir, job_server, jobs):
 
         for filename in filenames:
             file = join(dirpath, filename)
+            print(file)
             parser = CsvParser(file)
             job = job_server.submit(get_people_from_file, (parser,))
             jobs.append(job)
@@ -77,5 +79,11 @@ for job in jobs:
 t2 = time()
 
 job_server.print_stats()
+
+print(t2 - t1)
+
+t1 = time()
+Outputter.output(people, "/home/rasmus/Documents/smallscc.out/")
+t2 = time()
 
 print(t2 - t1)

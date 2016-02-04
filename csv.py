@@ -103,7 +103,9 @@ civil_dic = {
 
 
 def civiltilstand(p, value):
+    assert isinstance(p, Person)
     p.civilstand = civil_dic.get(value, 0)
+    p.civilstand_source = value
 
 
 switcher = {
