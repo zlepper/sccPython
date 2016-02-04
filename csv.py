@@ -8,26 +8,31 @@ from time import time
 def kipnr(p, value):
     assert isinstance(p, Person)
     p.KIPnr = value
+    p.valid = not not value
 
 
 def kilde(p, value):
     assert isinstance(p, Person)
     p.kilde = value
+    p.valid = not not value
 
 
 def sogn(p, value):
     assert isinstance(p, Person)
     p.sogn = value
+    p.valid = not not value
 
 
 def herred(p, value):
     assert isinstance(p, Person)
     p.herred = value
+    p.valid = not not value
 
 
 def amt(p, value):
     assert isinstance(p, Person)
     p.amt = value
+    p.valid = not not value
 
 
 def lbnr(p, value):
@@ -43,32 +48,34 @@ def lbnr(p, value):
 def kildehenvisning(p, value):
     assert isinstance(p, Person)
     p.kildehenvisning = value
+    p.valid = not not value
 
 
 def stednavn(p, value):
     assert isinstance(p, Person)
     p.stednavn = value
-
+    p.valid = not not value
 
 def husstands_familienr(p, value):
     assert isinstance(p, Person)
     p.husstands_familienr = value
-
+    p.valid = not not value
 
 def matr_nr_adresse(p, value):
     assert isinstance(p, Person)
     p.matr_nr_adresse = value
+    p.valid = not not value
 
 
 def navn(p, value):
     assert isinstance(p, Person)
     p.navn = value
-
+    p.valid = not not value
 
 def kon(p, value):
     assert isinstance(p, Person)
     p.kon = value == "M"
-
+    p.valid = not not value
 
 def alder_tal(p, value):
     if value:

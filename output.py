@@ -6,8 +6,10 @@ class Outputter:
     def output(people, path):
         assert isinstance(path, str)
         assert isinstance(people, list)
-        with open(path) as file:
+        print(path)
+        with open(path, 'w+') as file:
             file.write(Person.Person.topline())
+            print(len(people))
             for person in people:
                 assert isinstance(person, Person.Person)
                 s = person.to_csv()

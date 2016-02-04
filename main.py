@@ -8,7 +8,7 @@ from output import Outputter
 
 people = []
 jobs = []
-job_server = pp.Server()
+job_server = pp.Server(restart=True)
 
 
 def get_people_from_file(parser):
@@ -37,7 +37,7 @@ def get_people_from_directory(dir, job_server, jobs):
 
 # TODO Modify this to point to the local files on your machine
 # Fetch the current data
-get_people_from_directory("/home/rasmus/Documents/smallscc/", job_server, jobs)
+get_people_from_directory("F:\smaller", job_server, jobs)
 
 # Create lists of data
 invalidPeople = []
@@ -67,6 +67,15 @@ print("Invalid people count: %d" % (len(invalidPeople)))
 print("Male people count: %d" % (len(males)))
 print("Female people count: %d" % (len(females)))
 
+id = 1
+
+people.extend(males)
+people.extend(females)
+for p in people:
+    p.id = id
+    id += 1
+
+
 t1 = time()
 jobs = []
 j = job_server.submit(PersonAnalyser.run, (males,))
@@ -83,7 +92,7 @@ job_server.print_stats()
 print(t2 - t1)
 
 t1 = time()
-Outputter.output(people, "/home/rasmus/Documents/smallscc.out/")
+Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
 print(t2 - t1)

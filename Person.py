@@ -33,17 +33,17 @@ class Person:
         s = ""
         s += str(self.id) + "|"
         s += str(self.year) + "|"
-        s += self.KIPnr + "|"
-        s += self.kilde + "|"
-        s += self.sogn + "|"
-        s += self.herred + "|"
-        s += self.amt + "|"
+        s += str(self.KIPnr) + "|"
+        s += str(self.kilde) + "|"
+        s += str(self.sogn) + "|"
+        s += str(self.herred) + "|"
+        s += str(self.amt) + "|"
         s += str(self.lbnr) + "|"
-        s += self.kildehenvisning + "|"
-        s += self.stednavn + "|"
+        s += str(self.kildehenvisning) + "|"
+        s += str(self.stednavn) + "|"
         s += str(self.husstands_familienr) + "|"
-        s += self.matr_nr_adresse + "|"
-        s += self.navn + "|"
+        s += str(self.matr_nr_adresse) + "|"
+        s += str(self.navn) + "|"
         if self.kon:
             s += "M"
         else:
@@ -51,10 +51,10 @@ class Person:
         s += "|"
         s += str(self.alder_tal) + "|"
         s += str(self.fodeaar) + "|"
-        s += self.civilstand_source + "|"
-        s += str(self.valid) + "|"
+        s += str(self.civilstand_source) + "|"
+        s += str(self.valid) + "\n"
         return s
 
     @staticmethod
     def topline():
-        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|civilstand|valid"
+        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|civilstand|valid\n"
