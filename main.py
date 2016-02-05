@@ -83,8 +83,10 @@ jobs.append(j)
 j = job_server.submit(PersonAnalyser.run, (females,))
 jobs.append(j)
 
+people = []
+
 for job in jobs:
-    job()
+    people.extend(job())
 t2 = time()
 
 job_server.print_stats()

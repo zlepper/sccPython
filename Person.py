@@ -29,7 +29,7 @@ class Person:
     def __repr__(self):
         return self.__str__()
 
-    def to_csv(self):
+    def to_csv(self, algo=False):
         s = ""
         s += str(self.id) + "|"
         s += str(self.year) + "|"
@@ -53,8 +53,29 @@ class Person:
         s += str(self.fodeaar) + "|"
         s += str(self.civilstand_source) + "|"
         s += str(self.valid) + "\n"
+        print(algo)
+        if not algo:
+            p = self.get_closests()
+            if p:
+                s = "\t\t"
+                s += p.to_csv(True)
         return s
 
     @staticmethod
     def topline():
         return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|civilstand|valid\n"
+
+    def get_closests(self):
+        highest = None
+        for key, value in self.matches.items():
+            print(key)
+            if highest is None:
+                highest = key
+                continue
+            if key > highest:
+                highest = key
+        if highest:
+            matches = self.matches[highest]
+            return matches[0]
+        else:
+            return None

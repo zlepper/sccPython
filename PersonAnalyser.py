@@ -1,5 +1,6 @@
 from Person import Person
 from jellyfish import jaro_distance
+from jellyfish import damerau_levenshtein_distance
 import pp
 
 
@@ -49,6 +50,9 @@ def run(people):
                 # Sammenlign navne
                 for possible_match in possible_matches:
                     assert isinstance(possible_match, Person)
-                    proximity = jaro_distance(person.navn, possible_match.navn)
+                    proximity = damerau_levenshtein_distance(person.navn, possible_match.navn)
                     if proximity > 0.93:
-                        person.matches.get(proximity, []).append(possible_match)
+                        m = person.matches.get(proximity, []).append(possible_match)
+                        person.matches[proximity] = m
+    return people
+
