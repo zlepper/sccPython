@@ -18,6 +18,7 @@ class Person:
         self.fodeaar = int()
         self.civilstand = int()
         self.civilstand_source = str()
+        self.fodested = str()
         self.valid = True
         self.matches = dict()
         self.id = -1
@@ -29,7 +30,7 @@ class Person:
     def __repr__(self):
         return self.__str__()
 
-    def to_csv(self, algo=False):
+    def to_csv(self):
         s = ""
         s += str(self.id) + "|"
         s += str(self.year) + "|"
@@ -51,31 +52,24 @@ class Person:
         s += "|"
         s += str(self.alder_tal) + "|"
         s += str(self.fodeaar) + "|"
+        s += str(self.fodested) + "|"
         s += str(self.civilstand_source) + "|"
         s += str(self.valid) + "\n"
-        print(algo)
-        if not algo:
-            p = self.get_closests()
-            if p:
-                s = "\t\t"
-                s += p.to_csv(True)
         return s
 
     @staticmethod
     def topline():
-        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|civilstand|valid\n"
+        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|valid\n"
 
     def get_closests(self):
         highest = None
+        closest = None
         for key, value in self.matches.items():
-            print(key)
-            if highest is None:
+            if highest == None:
                 highest = key
+                closest = value
                 continue
             if key > highest:
                 highest = key
-        if highest:
-            matches = self.matches[highest]
-            return matches[0]
-        else:
-            return None
+                closest = value
+        return closest

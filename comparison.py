@@ -1,4 +1,4 @@
-from collections import defaultdict
+import collections
 
 _no_bytes_err = 'expected str, got bytes'
 
@@ -12,7 +12,7 @@ def damerau_levenshtein_distance(s1, s2):
     infinite = len1 + len2
 
     # character array
-    da = defaultdict(int)
+    da = collections.defaultdict(int)
 
     # distance matrix
     score = [[0] * (len2 + 2) for x in range(len1 + 2)]

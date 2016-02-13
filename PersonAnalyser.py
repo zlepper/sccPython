@@ -1,4 +1,4 @@
-from Person import Person
+import Person
 from comparison import damerau_levenshtein_distance
 
 
@@ -10,27 +10,30 @@ def run(people):
     for person in people:
         year_list = dic.get(person.year, [])
         year_list.append(person)
+        dic[person.year] = year_list
 
-    for this_year, this_year_list in dic.items():
+    for this_year in dic:
         assert isinstance(this_year, int)
+        this_year_list = dic[this_year]
         assert isinstance(this_year_list, list)
+        print(this_year)
 
         # Iterate over all the person in this year
         for person in this_year_list:
-            assert isinstance(person, Person)
 
             # Compare with all the other years
-            for other_year, other_year_list in dic.items():
+            for other_year in dic:
 
                 # Skip if the year is the same
                 if other_year == this_year:
                     continue
 
+                other_year_list = dic[other_year]
+
                 # Sorter civiltilstand
                 possible_matches = []
 
                 for other_person in other_year_list:
-                    assert isinstance(other_person, Person)
                     if other_year > this_year and other_person.civilstand >= person.civilstand:
                         possible_matches.append(other_person)
                     elif other_year < this_year and other_person.civilstand <= person.civilstand:
@@ -39,7 +42,6 @@ def run(people):
                 # Tag kun dem hvis alder er brugbar
                 temp = []
                 for possible_match in possible_matches:
-                    assert isinstance(possible_match, Person)
                     if abs(person.fodeaar - possible_match.fodeaar) < 5:
                         temp.append(possible_match)
 
@@ -47,10 +49,12 @@ def run(people):
 
                 # Sammenlign navne
                 for possible_match in possible_matches:
-                    assert isinstance(possible_match, Person)
+                    assert isinstance(possible_match, Person.Person)
                     proximity = damerau_levenshtein_distance(person.navn, possible_match.navn)
-                    if proximity > 0.93:
-                        m = person.matches.get(proximity, []).append(possible_match)
+                    if proximity > 0.50:
+                        print(proximity)
+                        m = person.matches.get(proximity, [])
+                        m.append(possible_match.id)
                         person.matches[proximity] = m
     return people
 
