@@ -1,0 +1,50 @@
+Indtastningsnr|kilde|amt|herred|sogn|lbnr|kildehenvisning|stednavn|husstnr|matr_nr_adresse|navn|køn|stilling_i_husstanden|alder|civilstand|nr_ægteskab|erhverv|kommentarer|fødeår
+C6318|FT-1870|Aalborg|Aars|Havbro|25|142|Jelstrup Mark|3|3,Huus|Søren Pedersen|M|Huusfader||Gift||Huusmand,Lever af sin Jordlod||
+C6318|FT-1870|Aalborg|Aars|Havbro|26|143|Jelstrup Mark|3|3,Huus|Else Katrine Nielsen|K|Huusmoder|38,000|Gift||Hustru||1832
+C6318|FT-1870|Aalborg|Aars|Havbro|27|143|Jelstrup Mark|3|3,Huus|Nielssine Pedersen|K|Datter||Ugift||deres Børn||
+C6318|FT-1870|Aalborg|Aars|Havbro|28|143|Jelstrup Mark|3|3,Huus|Bodil Marie Pedersen|K|Datter||Ugift||deres Børn||
+C6318|FT-1870|Aalborg|Aars|Havbro|29|143|Jelstrup Mark|3|3,Huus|Maren Kjerstine Pedersen|K|Datter||Ugift||deres Børn||
+C6318|FT-1870|Aalborg|Aars|Havbro|30|143|Jelstrup Mark|3|3,Huus|Petra Pedersen|K|Datter||Ugift||deres Børn||
+C6318|FT-1870|Aalborg|Aars|Havbro|31|143|Jelstrup Mark|3|3,Huus|Kjersten Pedersen|K|Datter||Ugift||deres Børn||
+C6318|FT-1870|Aalborg|Aars|Havbro|32|143|Jelstrup Mark|3|3,Huus|Niels Peter Pedersen|M|Søn||Ugift||deres Børn||
+C6318|FT-1870|Aalborg|Aars|Havbro|33|143|Jelstrup Mark|3|3,Huus|Karen Nielsdatter|K|Huusfaders Moder||Enke||??|Fødested overstreget, Anmærkning: Tandrup Bye Strandby Sogn Aalborg Amt.|
+C6318|FT-1870|Aalborg|Aars|Havbro|34|143|Jelstrup Mark|4|4,Huus|Mogens Christian Sørensen|M|Huusfader||Gift||Huusmand,Lever af sin Jord||
+C7691|FT-1870|Aarhus|Ning|Astrup|25|Mikrokort|Astrup|7|Gaard|Ane Marie Jonasdatter|K|husmoder||Gift||Hustru||
+C7691|FT-1870|Aarhus|Ning|Astrup|26|Mikrokort|Astrup|7|Gaard|Søren Hansen|M|Søn||Ugift||Karl||
+C7691|FT-1870|Aarhus|Ning|Astrup|27|Mikrokort|Astrup|7|Gaard|Mikkel Hansen|M|Søn||Ugift||Karl||
+C7691|FT-1870|Aarhus|Ning|Astrup|28|Mikrokort|Astrup|7|Gaard|Johanne Hansen|K|Datter||Ugift||Pige||
+C7691|FT-1870|Aarhus|Ning|Astrup|29|Mikrokort|Astrup|7|Gaard|Jakob Hansen|M|Søn||Ugift||Højskoleelev||
+C7691|FT-1870|Aarhus|Ning|Astrup|30|Mikrokort|Astrup|7|Gaard|Hans Sørensen|M|Plejebarn||Ugift||||
+C7691|FT-1870|Aarhus|Ning|Astrup|31|Mikrokort|Astrup|7|Gaard|Johanne Marie Nielsen|K|Tyende||Ugift||Pige||
+C7691|FT-1870|Aarhus|Ning|Astrup|32|Mikrokort|Astrup|8|Gaard|Søren Mikkelsen|M|Husfader||Gift||Landmand||
+C7691|FT-1870|Aarhus|Ning|Astrup|33|Mikrokort|Astrup|8|Gaard|Jensine Rasmussen|K|husmoder||Gift||Hustru||
+C7691|FT-1870|Aarhus|Ning|Astrup|34|Mikrokort|Astrup|8|Gaard|Rasmus Peter Mikkelsen|M|Søn||Ugift||||
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|24|1|Aakirkeby 1 Kv.|6|Forhuus|Ansteer? Andrias Sonne|M|Barn|,500|Ugift||||1869
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|25|1|Aakirkeby 1 Kv.|6|Forhuus|Evardt Anthon Sonne|M|Barn|,500|Ugift||||1869
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|26|2|Aakirkeby 1 Kv.|6|Forhuus|Anthon Siffred Pedersen|M|Tjenestetyende|17,000|Ugift||||1853
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|27|2|Aakirkeby 1 Kv.|6|Forhuus|Christine Caroline Anina Hansen|K|Tjenestetyende|19,000|Ugift||||1851
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|28|2|Aakirkeby 1 Kv.|6|Forhuus|Magine Christine Westh|K|Tjenestetyende|46,000|Enke||||1824
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|29|2|Aakirkeby 1 Kv.|7|Forhuus|Jens Clausen Sonne|M|Huusfader|71,000|Gift||Avlsbruger||1799
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|30|2|Aakirkeby 1 Kv.|7|Forhuus|Caroline Sonne|K|Huusmoder|50,000|Gift||||1820
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|32|2|Aakirkeby 1 Kv.|7|Forhuus|Thora Christine Wilhelmine Westh|K|Logerende|20,000|Ugift||||1850
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|33|2|Aakirkeby 1 Kv.|8|Forhuus|Martha Christine Munch|K|Huusmoder|46,000|Gift||Avlsbruger||1824
+C3948|FT-1870|Bornholm|Sønder|Aakirkeby Købstad|34|2|Aakirkeby 1 Kv.|8|Forhuus|Hans Jørgen Munch|M|Barn|13,000|Ugift||||1857
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|25|122|Ferslev|5|Gaard|Karen Marie Olsen|K|Husmoder|48,000|Gift||||1822
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|26|122|Ferslev|5|Gaard|Ole Børe ?? Nielsen|M|Søn|17,000|Ugift|||[??  Mellemnavnet må formodes at være "Børge"]|1853
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|27|122|Ferslev|5|Gaard|Ane Marie Nielsen|K|Datter|16,000|Ugift||||1854
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|28|122|Ferslev|5|Gaard|Hanne Chrestine Sofie Nielsen|K|Datter|12,000|Ugift||||1858
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|29|122|Ferslev|5|Gaard|Dothe Marie Larsen|K|Tjenestetÿende|18,000|Ugift||Tjenestetÿende||1852
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|30|122|Ferslev|6|Hus|Lars Hansen|M|Husfader|32,000|Gift||Jordbruger||1838
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|31|122|Ferslev|6|Hus|Karen Marie Nielsen|K|Husmoder|30,000|Gift||||1840
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|32|122|Ferslev|6|Hus|Dothe Marie Hansen|K|Datter|5,000|Ugift||||1865
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|33|122|Ferslev|6|Hus|Anne Marie Hansen|K|Datter|3,000|Ugift||||1867
+C6296|FT-1870|Frederiksborg|Horns|Ferslev|34|122|Ferslev|7|Hus|Ole Mølder|M|Husfader|64,000|Gift||Dagleier||1806
+D6185|FT-1870|Hjørring|Øster Han|Øland|37|Side 357|Oxholm|1.2|Hovedgaard|Hans Peder Hansen|M|Barn|1,000|Ugift||||1869
+D6185|FT-1870|Hjørring|Øster Han|Øland|38|Side 357|Oxholm|1.2|Hovedgaard|Jensine Pedersen|K|Slægtning|11,000|Ugift||||1859
+D6185|FT-1870|Hjørring|Øster Han|Øland|39|Side 357|Oxholm|1.2|Hovedgaard|Lars Jensen Larsen|M|Tjenende|16,000|Ugift||Smededreng||1854
+D6185|FT-1870|Hjørring|Øster Han|Øland|40|Side 357|Oxholm Mark|2|Hus|Lars Gerthsen|M|Husfader|35,000|Gift||Arbejdsmand||1835
+D6185|FT-1870|Hjørring|Øster Han|Øland|41|Side 357|Oxholm Mark|2|Hus|Ane Christine Christensen|K|Husmoder|38,000|Gift||Ovenstaendes kone||1832
+D6185|FT-1870|Hjørring|Øster Han|Øland|42|Side 357|Oxholm Mark|2|Hus|Mariane Gerthsen|K|Barn|11,000|Ugift||||1859
+D6185|FT-1870|Hjørring|Øster Han|Øland|43|Side 357|Oxholm Mark|2|Hus|Lars Chr. Gerthsen|M|Barn|8,000|Ugift||||1862
+D6185|FT-1870|Hjørring|Øster Han|Øland|44|Side 357|Oxholm Mark|2|Hus|Christoffer Gerthsen|M|Barn|7,000|Ugift||||1863
+D6185|FT-1870|Hjørring|Øster Han|Øland|45|Side 357|Oxholm Mark|2|Hus|Christiane Else Marie|K|Barn|3,000|Ugift||||1867

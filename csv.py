@@ -8,26 +8,31 @@ from time import time
 def kipnr(p, value):
     assert isinstance(p, Person)
     p.KIPnr = value
+    p.valid = not not value
 
 
 def kilde(p, value):
     assert isinstance(p, Person)
     p.kilde = value
+    p.valid = not not value
 
 
 def sogn(p, value):
     assert isinstance(p, Person)
     p.sogn = value
+    p.valid = not not value
 
 
 def herred(p, value):
     assert isinstance(p, Person)
     p.herred = value
+    p.valid = not not value
 
 
 def amt(p, value):
     assert isinstance(p, Person)
     p.amt = value
+    p.valid = not not value
 
 
 def lbnr(p, value):
@@ -43,32 +48,34 @@ def lbnr(p, value):
 def kildehenvisning(p, value):
     assert isinstance(p, Person)
     p.kildehenvisning = value
+    p.valid = not not value
 
 
 def stednavn(p, value):
     assert isinstance(p, Person)
     p.stednavn = value
-
+    p.valid = not not value
 
 def husstands_familienr(p, value):
     assert isinstance(p, Person)
     p.husstands_familienr = value
-
+    p.valid = not not value
 
 def matr_nr_adresse(p, value):
     assert isinstance(p, Person)
     p.matr_nr_adresse = value
+    p.valid = not not value
 
 
 def navn(p, value):
     assert isinstance(p, Person)
     p.navn = value
-
+    p.valid = not not value
 
 def kon(p, value):
     assert isinstance(p, Person)
     p.kon = value == "M"
-
+    p.valid = not not value
 
 def alder_tal(p, value):
     if value:
@@ -103,7 +110,14 @@ civil_dic = {
 
 
 def civiltilstand(p, value):
+    assert isinstance(p, Person)
     p.civilstand = civil_dic.get(value, 0)
+    p.civilstand_source = value
+
+
+def fodested(p, value):
+    assert isinstance(p, Person)
+    p.fodested = value
 
 
 switcher = {
@@ -121,12 +135,12 @@ switcher = {
     "køn": kon,
     "alder_tal": alder_tal,
     "fødeår": fodeaar,
-    "nr_ægteskab": civiltilstand
+    "nr_ægteskab": civiltilstand,
+    "fødested": fodested
 }
 
 
 def get_people(path):
-    t_start = time()
     people = []
 
     with codecs.open(path, "r", "iso-8859-1") as f:
@@ -151,14 +165,12 @@ def get_people(path):
                     try:
                         r = d[i]
                         method = switcher.get(r, None)
-                        if callable(method):
+                        if method is not None:
                             method(p, field)
                     except KeyError:
                         print(fields)
                         p.valid = False
                 people.append(p)
-    t_end = time()
-    print(t_end - t_start)
     return people
 
 
