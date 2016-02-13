@@ -1,7 +1,5 @@
 from Person import Person
-from jellyfish import jaro_distance
-from jellyfish import damerau_levenshtein_distance
-import pp
+from comparison import damerau_levenshtein_distance
 
 
 def run(people):
