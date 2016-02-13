@@ -5,6 +5,10 @@ from os.path import join
 import PersonAnalyser
 from time import time
 from output import Outputter
+from comparison import damerau_levenshtein_distance
+import collections
+import Person
+
 
 people = []
 jobs = []
@@ -35,9 +39,29 @@ def get_people_from_directory(dir, job_server, jobs):
             jobs.append(job)
 
 
+def rebuild_matches(p):
+    assert isinstance(p, list)
+    for person in p:
+        assert isinstance(person, Person.Person)
+        for k in person.matches:
+            m = person.matches[k]
+            ml = []
+            assert isinstance(m, list)
+            for i in m:
+                pers = None
+                for per in p:
+                    assert isinstance(per, Person.Person)
+                    if i == per.id:
+                        pers = per
+                if pers is not None:
+                    ml.append(pers)
+            person.matches[k] = ml
+    return p
+
+
 # TODO Modify this to point to the local files on your machine
 # Fetch the current data
-get_people_from_directory("F:\smaller", job_server, jobs)
+get_people_from_directory(".\\toy", job_server, jobs)
 
 # Create lists of data
 invalidPeople = []
@@ -60,7 +84,7 @@ for job in jobs:
         else:
             invalidPeople.append(person)
 
-job_server.print_stats()
+# job_server.print_stats()
 
 # Tell us how many of each type of person we have
 print("Invalid people count: %d" % (len(invalidPeople)))
@@ -78,21 +102,28 @@ for p in people:
 
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males,))
+j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females,))
+j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,), ("collections", "Person"))
 jobs.append(j)
+
+people = []
 
 for job in jobs:
-    job()
+    pe = job()
+    # print(len(pe))
+    people.extend(pe)
+
+people = rebuild_matches(people)
+
 t2 = time()
 
-job_server.print_stats()
+#job_server.print_stats()
 
-print(t2 - t1)
+#print(t2 - t1)
 
 t1 = time()
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
-print(t2 - t1)
+#print(t2 - t1)

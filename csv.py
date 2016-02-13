@@ -115,6 +115,11 @@ def civiltilstand(p, value):
     p.civilstand_source = value
 
 
+def fodested(p, value):
+    assert isinstance(p, Person)
+    p.fodested = value
+
+
 switcher = {
     "KIPnr": kipnr,
     "kilde": kilde,
@@ -130,12 +135,12 @@ switcher = {
     "køn": kon,
     "alder_tal": alder_tal,
     "fødeår": fodeaar,
-    "nr_ægteskab": civiltilstand
+    "nr_ægteskab": civiltilstand,
+    "fødested": fodested
 }
 
 
 def get_people(path):
-    t_start = time()
     people = []
 
     with codecs.open(path, "r", "iso-8859-1") as f:
@@ -160,14 +165,12 @@ def get_people(path):
                     try:
                         r = d[i]
                         method = switcher.get(r, None)
-                        if callable(method):
+                        if method is not None:
                             method(p, field)
                     except KeyError:
                         print(fields)
                         p.valid = False
                 people.append(p)
-    t_end = time()
-    print(t_end - t_start)
     return people
 
 
