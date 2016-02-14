@@ -1,3 +1,5 @@
+from comparison import damerau_levenshtein_distance
+
 class Person:
     def __init__(self, year):
         assert isinstance(year, int)
