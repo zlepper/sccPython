@@ -1,0 +1,1380 @@
+id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|valid
+1|1787||FT-1787|Aars|Aars|Aalborg|1|side 53|Præstegaarden|0|Præstegaarden|Friderich Gottfried Stampe|M|0|1756||1|True
+		47|1801||FT-1801|Aars|Aars|Aalborg|48|side 1|Aars Bye|0||Thomas Mogensen|M|0|1756||1|True
+2|1787||FT-1787|Aars|Aars|Aalborg|3|side 53|Præstegaarden|0|Præstegaarden|Jens Poulsen Stampe|M|0|1762|||True
+		24|1801||FT-1801|Aars|Aars|Aalborg|1|side 1|Aars Bye|0||Peder Jensen|M|0|1766||1|True
+3|1787||FT-1787|Aars|Aars|Aalborg|5|side 53|Præstegaarden|0|Præstegaarden|Christen Larsen|M|0|1751|||True
+		31|1801||FT-1801|Aars|Aars|Aalborg|13|side 1|Aars Bye|0||Anders Jensen|M|0|1751||1|True
+4|1787||FT-1787|Aars|Aars|Aalborg|6|side 53|Præstegaarden|0|Præstegaarden|Mads Sørensen|M|0|1759|||True
+		32|1801||FT-1801|Aars|Aars|Aalborg|18|side 1|Aars Bye|0||Niels Christensen|M|0|1757||1|True
+		37|1801||FT-1801|Aars|Aars|Aalborg|28|side 1|Aars Bye|0||Peder Christensen|M|0|1756||1|True
+5|1787||FT-1787|Aars|Aars|Aalborg|7|side 53|Præstegaarden|0|Præstegaarden|Søren Jensen|M|0|1765|||True
+		24|1801||FT-1801|Aars|Aars|Aalborg|1|side 1|Aars Bye|0||Peder Jensen|M|0|1766||1|True
+6|1787||FT-1787|Aars|Aars|Aalborg|11|side 53|Aars Bye|0||Peder Jensen (Grøn)|M|0|1764||1|True
+		24|1801||FT-1801|Aars|Aars|Aalborg|1|side 1|Aars Bye|0||Peder Jensen|M|0|1766||1|True
+7|1787||FT-1787|Aars|Aars|Aalborg|13|side 53|Aars Bye|0||Peder Jensen|M|0|1770|||True
+		43|1801||FT-1801|Aars|Aars|Aalborg|39|side 1|Aars Bye|0||Bertel Sørensen|M|0|1772|||True
+8|1787||FT-1787|Aars|Aars|Aalborg|14|side 53|Aars Bye|0||Jens Andersen|M|0|1779|||True
+		82|1840||FT-1840|Ensted|Lundtoft|Aabenraa|20|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Rasmus R. Fischer|M|0|1778|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+9|1787||FT-1787|Aars|Aars|Aalborg|15|side 53|Aars Bye|0||Hans Andersen|M|0|1785|||True
+		53|1834||FT-1834|Aars|Aars|Aalborg|11|side 1|Aars|0|Aars Præstegaard|Niels Jensen Bach|M|0|1789|||True
+		64|1834||FT-1834|Aars|Aars|Aalborg|32|side 2|Aars Bye|0|en gaard|Thøger Christensen|M|0|1788|||True
+10|1787||FT-1787|Aars|Aars|Aalborg|18|side 53|Aars Bye|0||Jens Christensen|M|0|1743||2|True
+11|1787||FT-1787|Aars|Aars|Aalborg|20|side 53|Aars Bye|0||Christen Jensen|M|0|1775|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+12|1787||FT-1787|Aars|Aars|Aalborg|21|side 53|Aars Bye|0||Niels Jensen|M|0|1780|||True
+		82|1840||FT-1840|Ensted|Lundtoft|Aabenraa|20|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Rasmus R. Fischer|M|0|1778|||True
+13|1787||FT-1787|Aars|Aars|Aalborg|26|side 53|Aars Bye|0||Anders Jensen|M|0|1751||1|True
+		40|1801||FT-1801|Aars|Aars|Aalborg|34|side 1|Aars Bye|0||Christen Jensen|M|0|1751||1|True
+14|1787||FT-1787|Aars|Aars|Aalborg|29|side 53|Aars Bye|0||Søren Jensen|M|0|1753|||True
+		32|1801||FT-1801|Aars|Aars|Aalborg|18|side 1|Aars Bye|0||Niels Christensen|M|0|1757||1|True
+15|1787||FT-1787|Aars|Aars|Aalborg|31|side 53|Aars Bye|0||Christen Christensen|M|0|1760||1|True
+		47|1801||FT-1801|Aars|Aars|Aalborg|48|side 1|Aars Bye|0||Thomas Mogensen|M|0|1756||1|True
+16|1787||FT-1787|Aars|Aars|Aalborg|34|side 53|Aars Bye|0||Christen Christensen|M|0|1786|||True
+		53|1834||FT-1834|Aars|Aars|Aalborg|11|side 1|Aars|0|Aars Præstegaard|Niels Jensen Bach|M|0|1789|||True
+17|1787||FT-1787|Aars|Aars|Aalborg|35|side 53|Aars Bye|0||Niels Christensen|M|0|1763|||True
+		24|1801||FT-1801|Aars|Aars|Aalborg|1|side 1|Aars Bye|0||Peder Jensen|M|0|1766||1|True
+18|1787||FT-1787|Aars|Aars|Aalborg|36|side 53|Aars Bye|0||Christen Christiansen|M|0|1773|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+19|1787||FT-1787|Aars|Aars|Aalborg|39|side 53|Aars Bye|0||Christen Madsen|M|0|1730||1|True
+		46|1801||FT-1801|Aars|Aars|Aalborg|46|side 1|Aars Bye|0||Niels Sørensen|M|0|1731||1|True
+20|1787||FT-1787|Aars|Aars|Aalborg|41|side 53|Aars Bye|0||Niels Christensen|M|0|1757|||True
+		47|1801||FT-1801|Aars|Aars|Aalborg|48|side 1|Aars Bye|0||Thomas Mogensen|M|0|1756||1|True
+21|1787||FT-1787|Aars|Aars|Aalborg|44|side 53|Aars Bye|0||Niels Nörgaard|M|0|1738||1|True
+		27|1801||FT-1801|Aars|Aars|Aalborg|6|side 1|Aars Bye|0||Jens Christensen|M|0|1740||2|True
+22|1787||FT-1787|Aars|Aars|Aalborg|47|side 53|Aars Bye|0||Jens Andersen|M|0|1721||2|True
+23|1787||FT-1787|Aars|Aars|Aalborg|49|side 53|Aars Bye|0||Søren Christensen|M|0|1754||1|True
+		47|1801||FT-1801|Aars|Aars|Aalborg|48|side 1|Aars Bye|0||Thomas Mogensen|M|0|1756||1|True
+24|1801||FT-1801|Aars|Aars|Aalborg|1|side 1|Aars Bye|0||Peder Jensen|M|0|1766||1|True
+		2|1787||FT-1787|Aars|Aars|Aalborg|3|side 53|Præstegaarden|0|Præstegaarden|Jens Poulsen Stampe|M|0|1762|||True
+25|1801||FT-1801|Aars|Aars|Aalborg|3|side 1|Aars Bye|0||Jens Andersen|M|0|1779|||True
+		82|1840||FT-1840|Ensted|Lundtoft|Aabenraa|20|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Rasmus R. Fischer|M|0|1778|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+26|1801||FT-1801|Aars|Aars|Aalborg|5|side 1|Aars Bye|0||Anders Pedersen|M|0|1788|||True
+		16|1787||FT-1787|Aars|Aars|Aalborg|34|side 53|Aars Bye|0||Christen Christensen|M|0|1786|||True
+27|1801||FT-1801|Aars|Aars|Aalborg|6|side 1|Aars Bye|0||Jens Christensen|M|0|1740||2|True
+		21|1787||FT-1787|Aars|Aars|Aalborg|44|side 53|Aars Bye|0||Niels Nörgaard|M|0|1738||1|True
+28|1801||FT-1801|Aars|Aars|Aalborg|8|side 1|Aars Bye|0||Christen Jensen|M|0|1777|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+29|1801||FT-1801|Aars|Aars|Aalborg|9|side 1|Aars Bye|0||Niels Jensen|M|0|1778|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+30|1801||FT-1801|Aars|Aars|Aalborg|10|side 1|Aars Bye|0||Lars Jensen|M|0|1792|||True
+		76|1840||FT-1840|Ensted|Lundtoft|Aabenraa|8|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Hansen Petersen|M|0|1794|||True
+31|1801||FT-1801|Aars|Aars|Aalborg|13|side 1|Aars Bye|0||Anders Jensen|M|0|1751||1|True
+		3|1787||FT-1787|Aars|Aars|Aalborg|5|side 53|Præstegaarden|0|Præstegaarden|Christen Larsen|M|0|1751|||True
+32|1801||FT-1801|Aars|Aars|Aalborg|18|side 1|Aars Bye|0||Niels Christensen|M|0|1757||1|True
+		1|1787||FT-1787|Aars|Aars|Aalborg|1|side 53|Præstegaarden|0|Præstegaarden|Friderich Gottfried Stampe|M|0|1756||1|True
+33|1801||FT-1801|Aars|Aars|Aalborg|22|side 1|Aars Bye|0||Søren Nielsen|M|0|1796|||True
+		97|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|1|430|Beuskowskow|0|Instengebäude|Sören Iwersen  Lorenzen|M|0|1799|Jeising A. Tondern||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+		186|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|2|Aakirkeby 1 Kv.|0|Forhuus|Jens Clausen Sonne|M|0|1799|||True
+34|1801||FT-1801|Aars|Aars|Aalborg|23|side 1|Aars Bye|0||Christen Nielsen|M|0|1797|||True
+		97|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|1|430|Beuskowskow|0|Instengebäude|Sören Iwersen  Lorenzen|M|0|1799|Jeising A. Tondern||True
+35|1801||FT-1801|Aars|Aars|Aalborg|24|side 1|Aars Bye|0||Søren Madsen|M|0|1780||1|True
+		68|1834||FT-1834|Aars|Aars|Aalborg|42|side 2|Aars Bye|0|en gaard|Niels Jensen Fisker|M|0|1777|||True
+36|1801||FT-1801|Aars|Aars|Aalborg|27|side 1|Aars Bye|0||Hans Jensen|M|0|1750|||True
+		3|1787||FT-1787|Aars|Aars|Aalborg|5|side 53|Præstegaarden|0|Præstegaarden|Christen Larsen|M|0|1751|||True
+		23|1787||FT-1787|Aars|Aars|Aalborg|49|side 53|Aars Bye|0||Søren Christensen|M|0|1754||1|True
+37|1801||FT-1801|Aars|Aars|Aalborg|28|side 1|Aars Bye|0||Peder Christensen|M|0|1756||1|True
+		1|1787||FT-1787|Aars|Aars|Aalborg|1|side 53|Præstegaarden|0|Præstegaarden|Friderich Gottfried Stampe|M|0|1756||1|True
+38|1801||FT-1801|Aars|Aars|Aalborg|32|side 1|Aars Bye|0||Hans Pedersen|M|0|1796|||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+39|1801||FT-1801|Aars|Aars|Aalborg|33|side 1|Aars Bye|0||Jens Pedersen|M|0|1798|||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+40|1801||FT-1801|Aars|Aars|Aalborg|34|side 1|Aars Bye|0||Christen Jensen|M|0|1751||1|True
+		23|1787||FT-1787|Aars|Aars|Aalborg|49|side 53|Aars Bye|0||Søren Christensen|M|0|1754||1|True
+41|1801||FT-1801|Aars|Aars|Aalborg|36|side 1|Aars Bye|0||Niels Christensen|M|0|1795|||True
+		97|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|1|430|Beuskowskow|0|Instengebäude|Sören Iwersen  Lorenzen|M|0|1799|Jeising A. Tondern||True
+42|1801||FT-1801|Aars|Aars|Aalborg|37|side 1|Aars Bye|0||Jens Christensen|M|0|1798|||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+43|1801||FT-1801|Aars|Aars|Aalborg|39|side 1|Aars Bye|0||Bertel Sørensen|M|0|1772|||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+44|1801||FT-1801|Aars|Aars|Aalborg|41|side 1|Aars Bye|0||Just Jensen|M|0|1751||1|True
+		23|1787||FT-1787|Aars|Aars|Aalborg|49|side 53|Aars Bye|0||Søren Christensen|M|0|1754||1|True
+45|1801||FT-1801|Aars|Aars|Aalborg|44|side 1|Aars Bye|0||Jens Jørgensen|M|0|1716||3|True
+46|1801||FT-1801|Aars|Aars|Aalborg|46|side 1|Aars Bye|0||Niels Sørensen|M|0|1731||1|True
+		19|1787||FT-1787|Aars|Aars|Aalborg|39|side 53|Aars Bye|0||Christen Madsen|M|0|1730||1|True
+47|1801||FT-1801|Aars|Aars|Aalborg|48|side 1|Aars Bye|0||Thomas Mogensen|M|0|1756||1|True
+		1|1787||FT-1787|Aars|Aars|Aalborg|1|side 53|Præstegaarden|0|Præstegaarden|Friderich Gottfried Stampe|M|0|1756||1|True
+48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+		18|1787||FT-1787|Aars|Aars|Aalborg|36|side 53|Aars Bye|0||Christen Christiansen|M|0|1773|||True
+49|1834||FT-1834|Aars|Aars|Aalborg|5|side 1|Aars|0|Aars Præstegaard|Sigfred Viktor Sletting|M|0|1805|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+50|1834||FT-1834|Aars|Aars|Aalborg|6|side 1|Aars|0|Aars Præstegaard|Hans Mathias Toldorph|M|0|1822|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+		251|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Poul Christjan Larsen|M|0|1819|||True
+		279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+		106|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|17|430|Beuskowskow|0|Käthnergebaüde|Christ. Christiansen|M|0|1824|Traasbüll||True
+52|1834||FT-1834|Aars|Aars|Aalborg|10|side 1|Aars|0|Aars Præstegaard|Anders Jacobsen|M|0|1802|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+53|1834||FT-1834|Aars|Aars|Aalborg|11|side 1|Aars|0|Aars Præstegaard|Niels Jensen Bach|M|0|1789|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+		16|1787||FT-1787|Aars|Aars|Aalborg|34|side 53|Aars Bye|0||Christen Christensen|M|0|1786|||True
+54|1834||FT-1834|Aars|Aars|Aalborg|12|side 1|Aars|0|Aars Præstegaard|Søren Thomadsen|M|0|1803|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+55|1834||FT-1834|Aars|Aars|Aalborg|15|side 1|Aars|0|Aars kirkesanger bolig|Peter Ryge|M|0|1805|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+56|1834||FT-1834|Aars|Aars|Aalborg|20|side 1|Aars|0|Dahlgaard|Hans Laugesen|M|0|1791|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+57|1834||FT-1834|Aars|Aars|Aalborg|22|side 1|Aars|0|Dahlgaard|Lauge Christian Hansen|M|0|1824|||True
+		279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+58|1834||FT-1834|Aars|Aars|Aalborg|23|side 1|Aars|0|Dahlgaard|Poul Christian Hansen|M|0|1825|||True
+		279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+59|1834||FT-1834|Aars|Aars|Aalborg|24|side 1|Aars|0|Dahlgaard|Morten Hansen|M|0|1827|||True
+		279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+		141|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Anders Christian Laursen|M|0|1829|Hundrup. Aalborg Amt||True
+		228|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Markus Christian Nielsen|M|0|1824|||True
+60|1834||FT-1834|Aars|Aars|Aalborg|25|side 1|Aars|0|Dahlgaard|Ole Hansen|M|0|1828|||True
+		228|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Markus Christian Nielsen|M|0|1824|||True
+61|1834||FT-1834|Aars|Aars|Aalborg|27|side 1|Aars|0|Dahlgaard|Christen Hansen|M|0|1830|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+		218|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Johan Pedersen Blok|M|0|1830|||True
+62|1834||FT-1834|Aars|Aars|Aalborg|29|side 1|Aars|0|Dahlgaard|Lauge Jensen|M|0|1815|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+63|1834||FT-1834|Aars|Aars|Aalborg|30|side 1|Aars|0|Dahlgaard|Jørgen Christensen|M|0|1818|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+64|1834||FT-1834|Aars|Aars|Aalborg|32|side 2|Aars Bye|0|en gaard|Thøger Christensen|M|0|1788|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+65|1834||FT-1834|Aars|Aars|Aalborg|34|side 2|Aars Bye|0|en gaard|Anders Thøgersen|M|0|1816|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+66|1834||FT-1834|Aars|Aars|Aalborg|36|side 2|Aars Bye|0|en gaard|Niels Christian Thøgersen|M|0|1824|||True
+		78|1840||FT-1840|Ensted|Lundtoft|Aabenraa|10|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Jes Heisel|M|0|1822|||True
+		93|1840||FT-1840|Ensted|Lundtoft|Aabenraa|46|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Lorenz Nielsen|M|0|1827|||True
+		163|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Rasmus Olsen|M|0|1820|||True
+		120|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|49|431|Beuskowskow|0|Kathengebäude|Andreas Knudsen|M|0|1821|Beuskowholz||True
+		229|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Gaard|Jacop Nielsen|M|0|1827|||True
+		206|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Thomas Nielsen Bruun|M|0|1822|||True
+67|1834||FT-1834|Aars|Aars|Aalborg|39|side 2|Aars Bye|0|en gaard|Lars Christensen|M|0|1792|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+68|1834||FT-1834|Aars|Aars|Aalborg|42|side 2|Aars Bye|0|en gaard|Niels Jensen Fisker|M|0|1777|||True
+		18|1787||FT-1787|Aars|Aars|Aalborg|36|side 53|Aars Bye|0||Christen Christiansen|M|0|1773|||True
+69|1834||FT-1834|Aars|Aars|Aalborg|44|side 2|Aars Bye|0|en gaard|Søren Christensen|M|0|1807|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+70|1834||FT-1834|Aars|Aars|Aalborg|46|side 2|Aars Bye|0|en gaard|Niels Christian Sørensen|M|0|1832|||True
+		236|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1832|||True
+		218|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Johan Pedersen Blok|M|0|1830|||True
+71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+72|1834||FT-1834|Aars|Aars|Aalborg|49|side 2|Aars Bye|0|en gaard|Niels Christensen|M|0|1827|||True
+		218|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Johan Pedersen Blok|M|0|1830|||True
+73|1834||FT-1834|Aars|Aars|Aalborg|50|side 2|Aars Bye|0|en gaard|Jens Christensen|M|0|1829|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+74|1840||FT-1840|Ensted|Lundtoft|Aabenraa|1|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Hans Petersen|M|0|1785|||True
+		53|1834||FT-1834|Aars|Aars|Aalborg|11|side 1|Aars|0|Aars Præstegaard|Niels Jensen Bach|M|0|1789|||True
+		16|1787||FT-1787|Aars|Aars|Aalborg|34|side 53|Aars Bye|0||Christen Christensen|M|0|1786|||True
+75|1840||FT-1840|Ensted|Lundtoft|Aabenraa|3|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Hansen Petersen|M|0|1816|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+76|1840||FT-1840|Ensted|Lundtoft|Aabenraa|8|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Hansen Petersen|M|0|1794|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+77|1840||FT-1840|Ensted|Lundtoft|Aabenraa|9|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Ludvig Sönnichsen|M|0|1814|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+78|1840||FT-1840|Ensted|Lundtoft|Aabenraa|10|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Jes Heisel|M|0|1822|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+		66|1834||FT-1834|Aars|Aars|Aalborg|36|side 2|Aars Bye|0|en gaard|Niels Christian Thøgersen|M|0|1824|||True
+79|1840||FT-1840|Ensted|Lundtoft|Aabenraa|14|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Jensen|M|0|1824|||True
+		50|1834||FT-1834|Aars|Aars|Aalborg|6|side 1|Aars|0|Aars Præstegaard|Hans Mathias Toldorph|M|0|1822|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+80|1840||FT-1840|Ensted|Lundtoft|Aabenraa|16|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Chresten Andersen|M|0|1836|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+81|1840||FT-1840|Ensted|Lundtoft|Aabenraa|17|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Peter Petersen|M|0|1787|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+		53|1834||FT-1834|Aars|Aars|Aalborg|11|side 1|Aars|0|Aars Præstegaard|Niels Jensen Bach|M|0|1789|||True
+82|1840||FT-1840|Ensted|Lundtoft|Aabenraa|20|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Rasmus R. Fischer|M|0|1778|||True
+		119|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|47|431|Beuskowskow|0|Kathengebäude|Christian Petersen|M|0|1781|Beuskowholz||True
+		48|1834||FT-1834|Aars|Aars|Aalborg|1|side 1|Aars|0|Aars Præstegaard|Gerhard Toldorph|M|0|1775|||True
+83|1840||FT-1840|Ensted|Lundtoft|Aabenraa|21|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Jörgen Stabel Tögesen|M|0|1804|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+84|1840||FT-1840|Ensted|Lundtoft|Aabenraa|25|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Christian Peter Lorenzen|M|0|1819|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+85|1840||FT-1840|Ensted|Lundtoft|Aabenraa|27|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Sören Juhl|M|0|1801|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+86|1840||FT-1840|Ensted|Lundtoft|Aabenraa|30|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Peter Magnus Juhl|M|0|1839|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+87|1840||FT-1840|Ensted|Lundtoft|Aabenraa|32|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Johann Jepsen|M|0|1787|||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+		16|1787||FT-1787|Aars|Aars|Aalborg|34|side 53|Aars Bye|0||Christen Christensen|M|0|1786|||True
+88|1840||FT-1840|Ensted|Lundtoft|Aabenraa|37|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Martin Appel|M|0|1839|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+89|1840||FT-1840|Ensted|Lundtoft|Aabenraa|38|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|6 Instengebäude|Andreas Hansen|M|0|1793|||True
+		105|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|14|430|Beuskowskow|0|Käthnergebaüde|Christian Andresen|M|0|1789|Atzbüll||True
+90|1840||FT-1840|Ensted|Lundtoft|Aabenraa|40|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|6 Instengebäude|Hans Hansen|M|0|1827|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+91|1840||FT-1840|Ensted|Lundtoft|Aabenraa|43|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|6 Instengebäude|Peter Hansen|M|0|1834|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+92|1840||FT-1840|Ensted|Lundtoft|Aabenraa|44|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Jürgen Nielsen|M|0|1796|||True
+		97|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|1|430|Beuskowskow|0|Instengebäude|Sören Iwersen  Lorenzen|M|0|1799|Jeising A. Tondern||True
+93|1840||FT-1840|Ensted|Lundtoft|Aabenraa|46|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Lorenz Nielsen|M|0|1827|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+94|1840||FT-1840|Ensted|Lundtoft|Aabenraa|47|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Johann Nielsen|M|0|1829|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+95|1840||FT-1840|Ensted|Lundtoft|Aabenraa|48|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Rasmus Nielsen|M|0|1831|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+96|1840||FT-1840|Ensted|Lundtoft|Aabenraa|49|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Jürgen Nielsen|M|0|1833|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+97|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|1|430|Beuskowskow|0|Instengebäude|Sören Iwersen  Lorenzen|M|0|1799|Jeising A. Tondern||True
+		199|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Lars Rasmussen|M|0|1802|||True
+		215|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Rasmus Nielsen|M|0|1800|||True
+98|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|3|430|Beuskowskow|0|Instengebäude|Jens Iwersen|M|0|1822|Feldstedt||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+99|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|5|430|Beuskowskow|0|Instengebäude|Philip Jacobsen|M|0|1806|Düppel||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+100|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|7|430|Beuskowskow|0|Instengebäude|Philip Jacobsen|M|0|1843|Atzbüll||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+101|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|8|430|Beuskowskow|0|Instengebäude|Jens Iwersen|M|0|1818|Traasbüll||True
+		77|1840||FT-1840|Ensted|Lundtoft|Aabenraa|9|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Ludvig Sönnichsen|M|0|1814|||True
+		84|1840||FT-1840|Ensted|Lundtoft|Aabenraa|25|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Christian Peter Lorenzen|M|0|1819|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+102|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|10|430|Beuskowskow|0|Instengebäude|Jörgen Iwersen|M|0|1844|Atzbüll||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+103|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|11|430|Beuskowskow|0|Instengebäude|Lorenz Chr. Davidsen|M|0|1820|Atzbüll||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+104|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|13|430|Beuskowskow|0|Instengebäude|Peter Davidsen|M|0|1842|Atzbüll||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+105|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|14|430|Beuskowskow|0|Käthnergebaüde|Christian Andresen|M|0|1789|Atzbüll||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+106|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|17|430|Beuskowskow|0|Käthnergebaüde|Christ. Christiansen|M|0|1824|Traasbüll||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+107|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|18|430|Beuskowskow|0|Käthnergebaüde|Jörgen J. Clausen|M|0|1791|Atzbüll||True
+		53|1834||FT-1834|Aars|Aars|Aalborg|11|side 1|Aars|0|Aars Præstegaard|Niels Jensen Bach|M|0|1789|||True
+108|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|20|430|Beuskowskow|0|Käthnergebaüde|Jens Jensen|M|0|1824|Atzbüll||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+109|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|24|431|Beuskowskow|0|Käthnergebaüde|Richel Clausen|M|0|1816|Beuskowskow||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+110|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|26|431|Beuskowskow|0|Käthnergebaüde|Johan Clausen|M|0|1815|Ulderup||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+111|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|28|431|Beuskowskow|0|Käthnergebaüde|Hans Clausen|M|0|1842|Ulderup||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+112|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|29|431|Beuskowskow|0|Instengebäude|Nicolai Petersen|M|0|1789|Atzbüll||True
+		221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+113|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|33|431|Beuskowskow|0|Instengebäude|Christian Lausen|M|0|1808|Beuskow Holz||True
+		49|1834||FT-1834|Aars|Aars|Aalborg|5|side 1|Aars|0|Aars Præstegaard|Sigfred Viktor Sletting|M|0|1805|||True
+114|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|36|431|Beuskowskow|0|Instengebäude|Hans P. Lausen|M|0|1813|Atzbüll||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+115|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|37|431|Beuskowskow|0|Kathenbesitzer|Hans Chr. Thaysen|M|0|1807|Beuskowholz||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+117|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|41|431|Beuskowskow|0|Kathengebäude|Paul Hansen|M|0|1796|Schnabeck||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+118|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|43|431|Beuskowskow|0|Kathengebäude|Paul Paulsen|M|0|1832|Beuskowholz||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+119|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|47|431|Beuskowskow|0|Kathengebäude|Christian Petersen|M|0|1781|Beuskowholz||True
+		82|1840||FT-1840|Ensted|Lundtoft|Aabenraa|20|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Rasmus R. Fischer|M|0|1778|||True
+120|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|49|431|Beuskowskow|0|Kathengebäude|Andreas Knudsen|M|0|1821|Beuskowholz||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+		190|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Ole Mølder|M|0|1806|||True
+122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+		86|1840||FT-1840|Ensted|Lundtoft|Aabenraa|30|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Peter Magnus Juhl|M|0|1839|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+123|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Niels Frederik Lassen|M|0|1844|Hvornum sogn Randers amt||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+		238|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1846|||True
+124|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Christen Pedersen|M|0|1818|Skivum sogn Aalborg amt||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+125|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Janus Sørensen Ørum|M|0|1814|Haasum sogn Viborg amt||True
+		77|1840||FT-1840|Ensted|Lundtoft|Aabenraa|9|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Ludvig Sönnichsen|M|0|1814|||True
+126|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Poul Peter Ørum|M|0|1846|her i sognet||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+127|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Jens Christian Christensen|M|0|1805|Farsø sogn Aalborg amt||True
+		190|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Ole Mølder|M|0|1806|||True
+128|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Christen Jensen|M|0|1846|her i sognet||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+129|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Niels Madsen|M|0|1805|Bjereegrav sogn Viborg amt||True
+		49|1834||FT-1834|Aars|Aars|Aalborg|5|side 1|Aars|0|Aars Præstegaard|Sigfred Viktor Sletting|M|0|1805|||True
+130|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Anders Christian Andersen|M|0|1849|her i sognet||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+131|1850||FT-1850|Aars|Aars|Aalborg|2|side 2|Aars Bye|0|en Gaard|Christen Christensen|M|0|1832|her i sognet||True
+		236|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1832|||True
+132|1850||FT-1850|Aars|Aars|Aalborg|2|side 2|Aars Bye|0|en Gaard|Poul Christensen|M|0|1840|her i sognet||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+133|1850||FT-1850|Aars|Aars|Aalborg|2|side 2|Aars Bye|0|en Gaard|Niels Christensen|M|0|1827|her i sognet||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+134|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Søren Andersen|M|0|1814|her i sognet||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+135|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Anders Sørensen|M|0|1847|her i sognet||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+136|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Christen Larsen|M|0|1802|Foulum sogn Aalborg amt||True
+		49|1834||FT-1834|Aars|Aars|Aalborg|5|side 1|Aars|0|Aars Præstegaard|Sigfred Viktor Sletting|M|0|1805|||True
+137|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Jens Larsen|M|0|1800|Foulum sogn Aalborg amt||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+138|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Anders Henriksen|M|0|1811|Vindblæs sogn Aalborg amt||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+139|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Søren Christensen|M|0|1798|Ejdrup sogn Aalborg amt||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+140|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Jens Sørensen|M|0|1839|her i sognet||True
+		149|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Anders Christian Nielsen|M|0|1839|Vilsted Sogn, Aalborg Amt||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+141|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Anders Christian Laursen|M|0|1829|Hundrup. Aalborg Amt||True
+		218|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Johan Pedersen Blok|M|0|1830|||True
+142|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Niels Gregersen|M|0|1845|Sebber Sogn, Aalborg Amt||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+143|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1811|Skive, Viborg Amt||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+		236|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1832|||True
+145|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johannes Clemmensen|M|0|1851|Bjørnsholm Sogn, Aalborg Amt||True
+		130|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Anders Christian Andersen|M|0|1849|her i sognet||True
+146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+		259|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Jacob Vøldike Winther|M|0|1880|||True
+147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+		86|1840||FT-1840|Ensted|Lundtoft|Aabenraa|30|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Peter Magnus Juhl|M|0|1839|||True
+		88|1840||FT-1840|Ensted|Lundtoft|Aabenraa|37|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Martin Appel|M|0|1839|||True
+		100|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|7|430|Beuskowskow|0|Instengebäude|Philip Jacobsen|M|0|1843|Atzbüll||True
+		104|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|13|430|Beuskowskow|0|Instengebäude|Peter Davidsen|M|0|1842|Atzbüll||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+148|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1877|Her i Sognet||True
+		259|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Jacob Vøldike Winther|M|0|1880|||True
+149|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Anders Christian Nielsen|M|0|1839|Vilsted Sogn, Aalborg Amt||True
+		86|1840||FT-1840|Ensted|Lundtoft|Aabenraa|30|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Peter Magnus Juhl|M|0|1839|||True
+		258|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Ole Winther|M|0|1839|||True
+150|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Markus Christian Nielsen|M|0|1844|Vilsted Sogn, Aalborg Amt||True
+		126|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Poul Peter Ørum|M|0|1846|her i sognet||True
+151|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Gaard|Jacop Nielsen|M|0|1847|Gundersted Sogn, Aalborg Amt||True
+		130|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Anders Christian Andersen|M|0|1849|her i sognet||True
+152|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Jens Sørensen|M|0|1844|Her i Sognet||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+153|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Niels Christian Sørensen|M|0|1853|Her i Sognet||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+154|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Anders Sørensen|M|0|1874|Her i Sognet||True
+		284|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Christian Vilhelm Nielsen|M|0|1877|||True
+155|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren Andersen|M|0|1814|Her i Sognet||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+156|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Christen Jensen|M|0|1847|Her i Sognet||True
+		238|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1846|||True
+157|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Jens  Jensen|M|0|1879|Her i Sognet||True
+		241|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Christjan Marinus Andersen|M|0|1880|||True
+		285|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Thorvald Waldemar Nielsen|M|0|1879|||True
+158|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1852|Middelfart||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+159|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Jens Nielsen|M|0|1866|Bonderup Sogn, Aalborg Amt||True
+		183|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Ansteer? Andrias Sonne|M|0|1869|||True
+160|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1866|Her i Sognet||True
+		197|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Christian Peder Hansen|M|0|1867|||True
+161|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Jacob Hansen|M|0|1836|||True
+		231|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Niels Christian Sørensen|M|0|1833|||True
+		70|1834||FT-1834|Aars|Aars|Aalborg|46|side 2|Aars Bye|0|en gaard|Niels Christian Sørensen|M|0|1832|||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+162|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Hans Pedersen|M|0|1835|||True
+		231|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Niels Christian Sørensen|M|0|1833|||True
+		70|1834||FT-1834|Aars|Aars|Aalborg|46|side 2|Aars Bye|0|en gaard|Niels Christian Sørensen|M|0|1832|||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+163|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Rasmus Olsen|M|0|1820|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+164|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Skolen|Otto Christian Lavigne|M|0|1804|||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+		209|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 498|Raadmandshuse|0|N. 5|Johan Theodor Køhler|M|0|1852|||True
+166|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Hans Larsen|M|0|1839|||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+167|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Hus|Søren Jørgensen|M|0|1827|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+168|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Hus|Hans Pedersen|M|0|1795|||True
+		97|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|1|430|Beuskowskow|0|Instengebäude|Sören Iwersen  Lorenzen|M|0|1799|Jeising A. Tondern||True
+169|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Hus|Christian Madsen|M|0|1828|||True
+		279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+170|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Hus|Hans Peder Madsen|M|0|1859|||True
+		280|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|861|Opslag 90|Enkefru M. Friis, matrikel 233|0|Slottensgade, matrikel 233 Baghus|Gerhard Carl Christian Nielsen|M|0|1859|||True
+171|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Gaard|Niels Jensen|M|0|1810|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+172|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Gaard|Søren Jensen|M|0|1836|||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+173|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Gaard|Frederik Jensen|M|0|1840|||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+		122|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Andreas Christian Lassen|M|0|1837|Hvornum sogn Randers amt||True
+174|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Gaard|Peder Nielsen|M|0|1845|||True
+		130|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Anders Christian Andersen|M|0|1849|her i sognet||True
+175|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Hans Christensen|M|0|1815|||True
+		225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+176|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Christen Hansen|M|0|1847|||True
+		244|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Jens Andersen Leth|M|0|1846|||True
+		238|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1846|||True
+177|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Jens Sørensen|M|0|1782|||True
+		82|1840||FT-1840|Ensted|Lundtoft|Aabenraa|20|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Rasmus R. Fischer|M|0|1778|||True
+178|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Jacob Porgensen|M|0|1826|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+179|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Gaard|Jens Jacobsen|M|0|1829|||True
+		231|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Niels Christian Sørensen|M|0|1833|||True
+		70|1834||FT-1834|Aars|Aars|Aalborg|46|side 2|Aars Bye|0|en gaard|Niels Christian Sørensen|M|0|1832|||True
+180|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Gaard|Søren Nielsen|M|0|1842|||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+181|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Hus|Jens Jensen|M|0|1820|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+182|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Hus|Niels Peter  Jensen|M|0|1854|||True
+		246|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Anthon Christjan Olsen|M|0|1855|||True
+		290|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Christian Lauritz Hansen|M|0|1858|||True
+183|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Ansteer? Andrias Sonne|M|0|1869|||True
+		255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+184|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Evardt Anthon Sonne|M|0|1869|||True
+		255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+185|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|2|Aakirkeby 1 Kv.|0|Forhuus|Anthon Siffred Pedersen|M|0|1853|||True
+		245|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Niels Peter Møller|M|0|1852|||True
+		158|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1852|Middelfart||True
+186|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|2|Aakirkeby 1 Kv.|0|Forhuus|Jens Clausen Sonne|M|0|1799|||True
+		71|1834||FT-1834|Aars|Aars|Aalborg|47|side 2|Aars Bye|0|en gaard|Christen Nielsen Støttrup|M|0|1800|||True
+187|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Hans Jørgen Munch|M|0|1857|||True
+		280|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|861|Opslag 90|Enkefru M. Friis, matrikel 233|0|Slottensgade, matrikel 233 Baghus|Gerhard Carl Christian Nielsen|M|0|1859|||True
+188|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Ole Børe ?? Nielsen|M|0|1853|||True
+		158|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1852|Middelfart||True
+		130|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Anders Christian Andersen|M|0|1849|her i sognet||True
+189|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Lars Hansen|M|0|1838|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+190|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Ole Mølder|M|0|1806|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+191|1870||FT-1870|Øland|Øster Han|Hjørring|3|Side 357|Oxholm|0|Hovedgaard|Hans Peder Hansen|M|0|1869|||True
+		255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+192|1870||FT-1870|Øland|Øster Han|Hjørring|3|Side 357|Oxholm|0|Hovedgaard|Lars Jensen Larsen|M|0|1854|||True
+		246|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Anthon Christjan Olsen|M|0|1855|||True
+		290|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Christian Lauritz Hansen|M|0|1858|||True
+		226|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1857|||True
+193|1870||FT-1870|Øland|Øster Han|Hjørring|4|Side 357|Oxholm Mark|0|Hus|Lars Gerthsen|M|0|1835|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+194|1870||FT-1870|Øland|Øster Han|Hjørring|4|Side 357|Oxholm Mark|0|Hus|Lars Chr. Gerthsen|M|0|1862|||True
+		267|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|251|Opslag 7|Statsbanerne, Halskov bygrund|0|Halskov, (Bygrund) matrikel 248 a|Victor Alexander Andreasen|M|0|1859|||True
+195|1870||FT-1870|Øland|Øster Han|Hjørring|4|Side 357|Oxholm Mark|0|Hus|Christoffer Gerthsen|M|0|1863|||True
+		280|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|861|Opslag 90|Enkefru M. Friis, matrikel 233|0|Slottensgade, matrikel 233 Baghus|Gerhard Carl Christian Nielsen|M|0|1859|||True
+196|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Lars Hansen|M|0|1835|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+197|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Christian Peder Hansen|M|0|1867|||True
+		160|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1866|Her i Sognet||True
+198|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Jens Wilhelm Hansen|M|0|1869|||True
+		255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+199|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Lars Rasmussen|M|0|1802|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+200|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmands Huse|0|N. 2|Niels Peder Jensen|M|0|1823|||True
+		50|1834||FT-1834|Aars|Aars|Aalborg|6|side 1|Aars|0|Aars Præstegaard|Hans Mathias Toldorph|M|0|1822|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+201|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuus|0|N. 3|Christen Nielsen|M|0|1812|||True
+		77|1840||FT-1840|Ensted|Lundtoft|Aabenraa|9|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Ludvig Sönnichsen|M|0|1814|||True
+202|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuus|0|N. 3|Niels Reamussen|M|0|1848|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+203|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Frederik Jensen|M|0|1824|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+204|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Jens Frederik Jensen|M|0|1861|||True
+		280|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|861|Opslag 90|Enkefru M. Friis, matrikel 233|0|Slottensgade, matrikel 233 Baghus|Gerhard Carl Christian Nielsen|M|0|1859|||True
+205|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 4|Hans Peder Jensen|M|0|1869|||True
+		255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+206|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Thomas Nielsen Bruun|M|0|1822|||True
+		50|1834||FT-1834|Aars|Aars|Aalborg|6|side 1|Aars|0|Aars Præstegaard|Hans Mathias Toldorph|M|0|1822|||True
+207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+		280|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|861|Opslag 90|Enkefru M. Friis, matrikel 233|0|Slottensgade, matrikel 233 Baghus|Gerhard Carl Christian Nielsen|M|0|1859|||True
+208|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 498|Raadmandshuse|0|N. 5|Peder Andreas Lund|M|0|1815|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+209|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 498|Raadmandshuse|0|N. 5|Johan Theodor Køhler|M|0|1852|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+210|1870||FT-1870|Bromme|Alsted|Sorø|28|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 8|Niels Peder Hansen|M|0|1867|||True
+		160|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1866|Her i Sognet||True
+211|1870||FT-1870|Bromme|Alsted|Sorø|28|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 9|Jens Peder Christiansen|M|0|1856|||True
+		267|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|251|Opslag 7|Statsbanerne, Halskov bygrund|0|Halskov, (Bygrund) matrikel 248 a|Victor Alexander Andreasen|M|0|1859|||True
+		158|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1852|Middelfart||True
+212|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 10|Hans Nielsen|M|0|1816|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+213|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 10|Peder Christian Hansen|M|0|1862|||True
+		267|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|251|Opslag 7|Statsbanerne, Halskov bygrund|0|Halskov, (Bygrund) matrikel 248 a|Victor Alexander Andreasen|M|0|1859|||True
+214|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Mads Rasmussen|M|0|1836|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+215|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Rasmus Nielsen|M|0|1800|||True
+		121|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Lauritz Christian Ludvig Lassen|M|0|1804|Ondløse sogn Holbæk amt||True
+216|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 12|Peder Hansen|M|0|1846|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+217|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 12|Hans Peder Hansen|M|0|1869|||True
+		255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+218|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Johan Pedersen Blok|M|0|1830|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+219|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Anders Christian Laursen|M|0|1809|||True
+		190|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Ole Mølder|M|0|1806|||True
+220|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Niels Gregersen|M|0|1825|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+221|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Antonius Brøndum|M|0|1791|||True
+		76|1840||FT-1840|Ensted|Lundtoft|Aabenraa|8|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Hansen Petersen|M|0|1794|||True
+222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+		77|1840||FT-1840|Ensted|Lundtoft|Aabenraa|9|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Ludvig Sönnichsen|M|0|1814|||True
+223|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johannes Clemmensen|M|0|1831|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+224|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1859|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+225|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1819|||True
+		84|1840||FT-1840|Ensted|Lundtoft|Aabenraa|25|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Christian Peter Lorenzen|M|0|1819|||True
+		50|1834||FT-1834|Aars|Aars|Aalborg|6|side 1|Aars|0|Aars Præstegaard|Hans Mathias Toldorph|M|0|1822|||True
+226|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1857|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+227|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Anders Christian Nielsen|M|0|1819|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+228|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Markus Christian Nielsen|M|0|1824|||True
+		279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+229|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Gaard|Jacop Nielsen|M|0|1827|||True
+		141|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Anders Christian Laursen|M|0|1829|Hundrup. Aalborg Amt||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+		66|1834||FT-1834|Aars|Aars|Aalborg|36|side 2|Aars Bye|0|en gaard|Niels Christian Thøgersen|M|0|1824|||True
+230|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Jens Sørensen|M|0|1824|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+231|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Niels Christian Sørensen|M|0|1833|||True
+		218|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Johan Pedersen Blok|M|0|1830|||True
+232|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Anders Sørensen|M|0|1854|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+233|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren Andersen|M|0|1794|||True
+		76|1840||FT-1840|Ensted|Lundtoft|Aabenraa|8|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Peter Hansen Petersen|M|0|1794|||True
+		41|1801||FT-1801|Aars|Aars|Aalborg|36|side 1|Aars Bye|0||Niels Christensen|M|0|1795|||True
+234|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Christen Jensen|M|0|1827|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+235|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Jens  Jensen|M|0|1859|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+236|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Joh Aug Lund|M|0|1832|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+237|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Jens Nielsen|M|0|1846|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+238|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Peder Thomsen Aarup|M|0|1846|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+239|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Laust Nielsen|M|0|1840|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+240|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Niels Chr. Andersen|M|0|1878|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+241|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Christjan Marinus Andersen|M|0|1880|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+		157|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Jens  Jensen|M|0|1879|Her i Sognet||True
+242|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Jens Christian Andersen|M|0|1885|||True
+243|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Ludvig Andersen|M|0|1888|||True
+244|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Jens Andersen Leth|M|0|1846|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+245|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Niels Peter Møller|M|0|1852|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+246|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Anthon Christjan Olsen|M|0|1855|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+247|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Morten Christensen|M|0|1855|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+248|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Poul Christjan Marinus Eskild Christensen|M|0|1885|||True
+249|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Christen Martin Otte Christensen|M|0|1886|||True
+250|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Marinus Christensen|M|0|1889|||True
+251|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Poul Christjan Larsen|M|0|1819|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+252|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Jørgen Jørgensen|M|0|1845|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+253|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Jens Nielsen|M|0|1813|||True
+		222|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1813|||True
+254|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Søren Mikkelsen|M|0|1835|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+255|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Niels Christjan Mikkelsen|M|0|1871|||True
+		183|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Ansteer? Andrias Sonne|M|0|1869|||True
+		184|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Evardt Anthon Sonne|M|0|1869|||True
+256|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Peder Mikkelsen|M|0|1874|||True
+		148|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1877|Her i Sognet||True
+257|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Anthon Marinus Mikkelsen|M|0|1876|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+258|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Ole Winther|M|0|1839|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+259|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Jacob Vøldike Winther|M|0|1880|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+260|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Niels Christjan Nielsen|M|0|1870|||True
+		183|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Ansteer? Andrias Sonne|M|0|1869|||True
+261|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Peder Sørensen|M|0|1874|||True
+		148|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1877|Her i Sognet||True
+262|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Kristen Peter Jensen|M|0|1876|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+263|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Christen Nielsen|M|0|1848|||True
+		165|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Carl Wilh Frederik  Magd.Lavigne|M|0|1848|||True
+264|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|59|Opslag 63|Købmand Chr. K. Petersen B|0|Algade matr nr.116 Bagbygning stuen|Peter Meiner Feilberg|M|0|1862|||True
+		224|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1859|||True
+265|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|93|Opslag 106|Barber Johansen|0|Algade matrikel nr. 153 Baghus|Jens Petersen|M|0|1825|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+266|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|190|Opslag 63|Vognmand Niels Hansen|0|Baggade matrikel 33 Forhus|Hans Christian Hansen|M|0|1877|||True
+		148|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1877|Her i Sognet||True
+267|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|251|Opslag 7|Statsbanerne, Halskov bygrund|0|Halskov, (Bygrund) matrikel 248 a|Victor Alexander Andreasen|M|0|1859|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+268|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|339|Opslag 105|Peter Christensen|0|Halskov, (Bygrund) matr. 274e|Peter Christensen|M|0|1853|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+269|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|465|Opslag 21|Arbejdsmand Hans Hansen Forsikring 275|0|Halskov, (markjorder) Forhus stue|Jens Christian Larsen|M|0|1889|||True
+270|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|497|Opslag 77|Godsejer A. Bech Forsikring 304|0|Halskov, (markjorder) (Prokurist Jacobsen)|Carl Oluf Pedersen|M|0|1885|||True
+271|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|504|Opslag 92|Avlsbruger Joh. Magnus Jensen, Forsikring 317|0|Halskov, (markjorder) Forhus|Alfred Jensen|M|0|1889|||True
+272|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|569|Opslag 27|Skibe i havnen|0|Dampskib  THORVALDSEN  af København|Anders Carl Larsen|M|0|1866|||True
+		184|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Evardt Anthon Sonne|M|0|1869|||True
+273|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|603|Opslag 6|Fragtmand H. Justesen, matrikel 98|0|Kirkepladsen,  1. sal|Raymond Baumann|M|0|1875|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+274|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|637|Opslag 9|Matros Jørgen Skov, matrikel 43|0|Møllebjerggade, sidehus|Jens Peter Jensen|M|0|1870|||True
+		183|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Ansteer? Andrias Sonne|M|0|1869|||True
+275|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|669|Opslag 65|Litzer Niels Kaarup, matrikel 67|0|Møllebjerggade,  Forhus|Arthur Valdemar Larsen|M|0|1873|||True
+		184|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|1|Aakirkeby 1 Kv.|0|Forhuus|Evardt Anthon Sonne|M|0|1869|||True
+276|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|760|Opslag 9|Sadelmager M. Sibbern, matrikel 165b|0|Sandvejen, Matrikel 165b forhus stue|Hans Jørgensen|M|0|1840|||True
+		147|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Niels Sørensen Østergaard|M|0|1839|Simmested Sogn, Viborg Amt||True
+		149|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Anders Christian Nielsen|M|0|1839|Vilsted Sogn, Aalborg Amt||True
+277|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|799|Opslag 54|Købmand H. Rasmussen, matrikel 188|0|Sandvejen, Matrikel 188 forhus|Niels Mads Gundersen Rasmussen|M|0|1889|||True
+278|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|817|Opslag 18|Bager Lembcke, matrikel 198|0|Slottensgade, matrikel 198, bagbygning|Carl Georg Vilhelm Hansen|M|0|1875|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+279|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|848|Opslag 75|Skibstømrer N. P. L. Skov, matrikel 229|0|Slottensgade, matrikel 229, forhus|Niels Peter Larsen Skou|M|0|1824|||True
+		51|1834||FT-1834|Aars|Aars|Aalborg|7|side 1|Aars|0|Aars Præstegaard|Mathias Clemmen Toldorph|M|0|1823|||True
+280|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|861|Opslag 90|Enkefru M. Friis, matrikel 233|0|Slottensgade, matrikel 233 Baghus|Gerhard Carl Christian Nielsen|M|0|1859|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+281|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|842|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, Forhus|Niels Jørgen Nielsen|M|0|1889|||True
+282|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|842|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, Forhus|Carl Vilhelm Lebel|M|0|1862|||True
+		224|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1859|||True
+283|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|842|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Niels Nielsen|M|0|1843|||True
+		116|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|40|431|Beuskowskow|0|Kathenbesitzer|Hans Peter Chr. Thaysen|M|0|1842|Beuskowholz||True
+284|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Christian Vilhelm Nielsen|M|0|1877|||True
+		148|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mikkel Aarup  Sørensen|M|0|1877|Her i Sognet||True
+		154|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Anders Sørensen|M|0|1874|Her i Sognet||True
+285|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Thorvald Waldemar Nielsen|M|0|1879|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+286|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Carl Frederik Nielsen|M|0|1881|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+287|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Theodor Martin Nielsen|M|0|1883|||True
+		146|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Johan Christian  Clemmensen|M|0|1879|Her i Sognet||True
+288|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Ferdinand Marius Nielsen|M|0|1888|||True
+289|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Henrik Hansen|M|0|1834|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+290|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Christian Lauritz Hansen|M|0|1858|||True
+		207|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Rolph Niels Peter Thuesen Bruun|M|0|1856|||True
+291|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|845|Opslag 69|Arbejdsmand John Hansen, matrikel 215|0|Slottensgade, matrikel 215, forhus|John Hansen|M|0|1835|||True
+		144|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Christen Christensen Støttrup|M|0|1833|Her i Sognet||True
+292|1787||FT-1787|Aars|Aars|Aalborg|2|side 53|Præstegaarden|0|Præstegaarden|Dorthe Ørum|K|0|1754||1|True
+		338|1801||FT-1801|Aars|Aars|Aalborg|42|side 1|Aars Bye|0||Maren Hansdatter|K|0|1756||1|True
+293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+		363|1834||FT-1834|Aars|Aars|Aalborg|43|side 2|Aars Bye|0|en gaard|Mette Marie Andersdatter|K|0|1772|||True
+294|1787||FT-1787|Aars|Aars|Aalborg|8|side 53|Præstegaarden|0|Præstegaarden|Karen Marie Christensdatter|K|0|1768|||True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+295|1787||FT-1787|Aars|Aars|Aalborg|9|side 53|Præstegaarden|0|Præstegaarden|Anna Dorthe Nielsdatter|K|0|1769|||True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+296|1787||FT-1787|Aars|Aars|Aalborg|10|side 53|Præstegaarden|0|Præstegaarden|Anna Nielsdatter|K|0|1773|||True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+297|1787||FT-1787|Aars|Aars|Aalborg|12|side 53|Aars Bye|0||Dorthe Jensdatter|K|0|1747||3|True
+298|1787||FT-1787|Aars|Aars|Aalborg|16|side 53|Aars Bye|0||Maren Andersdatter|K|0|1774|||True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+299|1787||FT-1787|Aars|Aars|Aalborg|17|side 53|Aars Bye|0||Kirsten Andersdatter|K|0|1776|||True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+300|1787||FT-1787|Aars|Aars|Aalborg|19|side 53|Aars Bye|0||Karen Nielsdatter|K|0|1752||1|True
+		338|1801||FT-1801|Aars|Aars|Aalborg|42|side 1|Aars Bye|0||Maren Hansdatter|K|0|1756||1|True
+301|1787||FT-1787|Aars|Aars|Aalborg|22|side 53|Aars Bye|0||Mette Jensdatter|K|0|1777|||True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+302|1787||FT-1787|Aars|Aars|Aalborg|23|side 53|Aars Bye|0||Johanne Jensdatter|K|0|1781|||True
+		550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+303|1787||FT-1787|Aars|Aars|Aalborg|24|side 53|Aars Bye|0||Mette Christensdatter|K|0|1765|||True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+304|1787||FT-1787|Aars|Aars|Aalborg|25|side 53|Aars Bye|0||Dorthe Christensdatter|K|0|1731||1|True
+		336|1801||FT-1801|Aars|Aars|Aalborg|38|side 1|Aars Bye|0||Ane Cathrine Salig Nørgaards|K|0|1727||2|True
+305|1787||FT-1787|Aars|Aars|Aalborg|27|side 53|Aars Bye|0||Mette Pedersdatter|K|0|1755||1|True
+		374|1840||FT-1840|Ensted|Lundtoft|Aabenraa|15|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Kjesten Andersen|K|0|1758|||True
+306|1787||FT-1787|Aars|Aars|Aalborg|28|side 53|Aars Bye|0||Mette Marie Andersdatter|K|0|1784|||True
+		550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+307|1787||FT-1787|Aars|Aars|Aalborg|30|side 53|Aars Bye|0||Anna Jensdatter|K|0|1772|||True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+308|1787||FT-1787|Aars|Aars|Aalborg|32|side 53|Aars Bye|0||Anna Marie Nielsdatter|K|0|1765||1|True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+309|1787||FT-1787|Aars|Aars|Aalborg|33|side 53|Aars Bye|0||Else Marie Christensdatter|K|0|1784|||True
+		550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+310|1787||FT-1787|Aars|Aars|Aalborg|37|side 53|Aars Bye|0||Bodill Michelsdatter|K|0|1764|||True
+		332|1801||FT-1801|Aars|Aars|Aalborg|29|side 1|Aars Bye|0||Anna Cathrine Hansdatter|K|0|1761||1|True
+311|1787||FT-1787|Aars|Aars|Aalborg|38|side 53|Aars Bye|0||Maren Poulsdatter|K|0|1735||2|True
+		340|1801||FT-1801|Aars|Aars|Aalborg|45|side 1|Aars Bye|0||Inger Nielsdatter|K|0|1737||1|True
+312|1787||FT-1787|Aars|Aars|Aalborg|40|side 53|Aars Bye|0||Karen Dahlsdatter|K|0|1724||1|True
+		336|1801||FT-1801|Aars|Aars|Aalborg|38|side 1|Aars Bye|0||Ane Cathrine Salig Nørgaards|K|0|1727||2|True
+313|1787||FT-1787|Aars|Aars|Aalborg|42|side 53|Aars Bye|0||Dorthe Christensdatter|K|0|1756|||True
+		374|1840||FT-1840|Ensted|Lundtoft|Aabenraa|15|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Kjesten Andersen|K|0|1758|||True
+314|1787||FT-1787|Aars|Aars|Aalborg|43|side 53|Aars Bye|0||Anna Pedersdatter|K|0|1785|||True
+		549|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Kjerstine Christensen|K|0|1784|||True
+		550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+315|1787||FT-1787|Aars|Aars|Aalborg|45|side 53|Aars Bye|0||Karen Svenningsdatter|K|0|1705||2|True
+316|1787||FT-1787|Aars|Aars|Aalborg|46|side 53|Aars Bye|0||Mette Nielsdatter|K|0|1763|||True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+		332|1801||FT-1801|Aars|Aars|Aalborg|29|side 1|Aars Bye|0||Anna Cathrine Hansdatter|K|0|1761||1|True
+317|1787||FT-1787|Aars|Aars|Aalborg|48|side 53|Aars Bye|0||Karen Sørensdatter|K|0|1750||1|True
+		318|1801||FT-1801|Aars|Aars|Aalborg|2|side 1|Aars Bye|0||Dorthe Jensdatter|K|0|1746||3|True
+318|1801||FT-1801|Aars|Aars|Aalborg|2|side 1|Aars Bye|0||Dorthe Jensdatter|K|0|1746||3|True
+		317|1787||FT-1787|Aars|Aars|Aalborg|48|side 53|Aars Bye|0||Karen Sørensdatter|K|0|1750||1|True
+319|1801||FT-1801|Aars|Aars|Aalborg|4|side 1|Aars Bye|0||Kirsten Andersdatter|K|0|1777|||True
+		293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+320|1801||FT-1801|Aars|Aars|Aalborg|7|side 1|Aars Bye|0||Karen Nielsdatter|K|0|1761||1|True
+		374|1840||FT-1840|Ensted|Lundtoft|Aabenraa|15|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Kjesten Andersen|K|0|1758|||True
+321|1801||FT-1801|Aars|Aars|Aalborg|11|side 1|Aars Bye|0||Mette Jensdatter|K|0|1777|||True
+		293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+322|1801||FT-1801|Aars|Aars|Aalborg|12|side 1|Aars Bye|0||Johanne Jensdatter|K|0|1780|||True
+		549|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Kjerstine Christensen|K|0|1784|||True
+323|1801||FT-1801|Aars|Aars|Aalborg|14|side 1|Aars Bye|0||Mette Nielsdatter !!|K|0|1760||1|True
+		374|1840||FT-1840|Ensted|Lundtoft|Aabenraa|15|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Kjesten Andersen|K|0|1758|||True
+324|1801||FT-1801|Aars|Aars|Aalborg|15|side 1|Aars Bye|0||Mette Marie Andersdatter|K|0|1786|||True
+		550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+325|1801||FT-1801|Aars|Aars|Aalborg|16|side 1|Aars Bye|0||Maren Andersdatter|K|0|1791|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+326|1801||FT-1801|Aars|Aars|Aalborg|17|side 1|Aars Bye|0||Anna Andersdatter|K|0|1796|||True
+		573|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Kjerstine Thøgersen|K|0|1800|||True
+327|1801||FT-1801|Aars|Aars|Aalborg|19|side 1|Aars Bye|0||Maren Sørensdatter|K|0|1765||1|True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+328|1801||FT-1801|Aars|Aars|Aalborg|20|side 1|Aars Bye|0||Karen Nielsdatter|K|0|1793|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+329|1801||FT-1801|Aars|Aars|Aalborg|21|side 1|Aars Bye|0||Mette Nielsdatter|K|0|1794|||True
+		405|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|30|431|Beuskowskow|0|Instengebäude|Sünnet Jensen Brandt|K|0|1790|Atzbüll||True
+330|1801||FT-1801|Aars|Aars|Aalborg|25|side 1|Aars Bye|0||Mette Hansdatter|K|0|1776||1|True
+		293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+331|1801||FT-1801|Aars|Aars|Aalborg|26|side 1|Aars Bye|0||Mariane Sørensdatter|K|0|1800|||True
+		350|1834||FT-1834|Aars|Aars|Aalborg|16|side 1|Aars|0|Aars kirkesanger bolig|Maren Kjerstine Christensen|K|0|1804|||True
+332|1801||FT-1801|Aars|Aars|Aalborg|29|side 1|Aars Bye|0||Anna Cathrine Hansdatter|K|0|1761||1|True
+		374|1840||FT-1840|Ensted|Lundtoft|Aabenraa|15|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Kjesten Andersen|K|0|1758|||True
+333|1801||FT-1801|Aars|Aars|Aalborg|30|side 1|Aars Bye|0||Mette Pedersdatter|K|0|1790|||True
+		375|1840||FT-1840|Ensted|Lundtoft|Aabenraa|18|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Anna Maria Thaysen|K|0|1786|||True
+		402|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|23|431|Beuskowskow|0|Käthnergebaüde|Sophia Fr. Clausen|K|0|1792|Beuskowskow||True
+		405|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|30|431|Beuskowskow|0|Instengebäude|Sünnet Jensen Brandt|K|0|1790|Atzbüll||True
+334|1801||FT-1801|Aars|Aars|Aalborg|31|side 1|Aars Bye|0||Anne Pedersdatter|K|0|1793|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+335|1801||FT-1801|Aars|Aars|Aalborg|35|side 1|Aars Bye|0||Maren Nielsdatter|K|0|1775||1|True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+		293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+336|1801||FT-1801|Aars|Aars|Aalborg|38|side 1|Aars Bye|0||Ane Cathrine Salig Nørgaards|K|0|1727||2|True
+		304|1787||FT-1787|Aars|Aars|Aalborg|25|side 53|Aars Bye|0||Dorthe Christensdatter|K|0|1731||1|True
+		312|1787||FT-1787|Aars|Aars|Aalborg|40|side 53|Aars Bye|0||Karen Dahlsdatter|K|0|1724||1|True
+337|1801||FT-1801|Aars|Aars|Aalborg|40|side 1|Aars Bye|0||Maren Larsdatter|K|0|1741||1|True
+338|1801||FT-1801|Aars|Aars|Aalborg|42|side 1|Aars Bye|0||Maren Hansdatter|K|0|1756||1|True
+		292|1787||FT-1787|Aars|Aars|Aalborg|2|side 53|Præstegaarden|0|Præstegaarden|Dorthe Ørum|K|0|1754||1|True
+339|1801||FT-1801|Aars|Aars|Aalborg|43|side 1|Aars Bye|0||Anna Justdatter|K|0|1794|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+340|1801||FT-1801|Aars|Aars|Aalborg|45|side 1|Aars Bye|0||Inger Nielsdatter|K|0|1737||1|True
+		311|1787||FT-1787|Aars|Aars|Aalborg|38|side 53|Aars Bye|0||Maren Poulsdatter|K|0|1735||2|True
+341|1801||FT-1801|Aars|Aars|Aalborg|47|side 1|Aars Bye|0||Karen Jensdatter|K|0|1740||1|True
+342|1801||FT-1801|Aars|Aars|Aalborg|49|side 1|Aars Bye|0||Zidsel Sørensdatter|K|0|1767||1|True
+		294|1787||FT-1787|Aars|Aars|Aalborg|8|side 53|Præstegaarden|0|Præstegaarden|Karen Marie Christensdatter|K|0|1768|||True
+343|1834||FT-1834|Aars|Aars|Aalborg|2|side 1|Aars|0|Aars Præstegaard|Nicoline Hansen|K|0|1794|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+		441|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Ane Marie Thomadsdatter|K|0|1795|her i sognet||True
+344|1834||FT-1834|Aars|Aars|Aalborg|3|side 1|Aars|0|Aars Præstegaard|jomfru Sine Villemose|K|0|1812|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+345|1834||FT-1834|Aars|Aars|Aalborg|4|side 1|Aars|0|Aars Præstegaard|jomfru Marie Nielsen|K|0|1815|||True
+		431|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Christiane Olesdatter|K|0|1819|Pederstrup sogn Viborg amt||True
+346|1834||FT-1834|Aars|Aars|Aalborg|8|side 1|Aars|0|Aars Præstegaard|Lovise Toldorph|K|0|1825|||True
+		566|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Gjertrud Kjerstine Laursen|K|0|1825|||True
+347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+		566|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Gjertrud Kjerstine Laursen|K|0|1825|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+348|1834||FT-1834|Aars|Aars|Aalborg|13|side 1|Aars|0|Aars Præstegaard|Ane Kjerstine Jensdatter|K|0|1813|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+349|1834||FT-1834|Aars|Aars|Aalborg|14|side 1|Aars|0|Aars Præstegaard|Ane Marie Christensdatter|K|0|1813|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+350|1834||FT-1834|Aars|Aars|Aalborg|16|side 1|Aars|0|Aars kirkesanger bolig|Maren Kjerstine Christensen|K|0|1804|||True
+		542|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Ane Madsdatter|K|0|1806|||True
+351|1834||FT-1834|Aars|Aars|Aalborg|17|side 1|Aars|0|Aars kirkesanger bolig|Andrea Dorthea Ryge|K|0|1829|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+352|1834||FT-1834|Aars|Aars|Aalborg|18|side 1|Aars|0|Aars kirkesanger bolig|Inger Christine Ryge|K|0|1833|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+353|1834||FT-1834|Aars|Aars|Aalborg|21|side 1|Aars|0|Dahlgaard|Mette Hansdatter|K|0|1793|||True
+		405|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|30|431|Beuskowskow|0|Instengebäude|Sünnet Jensen Brandt|K|0|1790|Atzbüll||True
+354|1834||FT-1834|Aars|Aars|Aalborg|26|side 1|Aars|0|Dahlgaard|Ane Kjerstine Hansen|K|0|1829|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+355|1834||FT-1834|Aars|Aars|Aalborg|28|side 1|Aars|0|Dahlgaard|Mette Marie Hansen|K|0|1833|||True
+		370|1840||FT-1840|Ensted|Lundtoft|Aabenraa|7|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Anna Christina Petersen|K|0|1829|||True
+		480|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Ane Kirstine Mortensdatter|K|0|1836|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+356|1834||FT-1834|Aars|Aars|Aalborg|31|side 1|Aars|0|Dahlgaard|Ane Marie Nielsdatter|K|0|1812|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+357|1834||FT-1834|Aars|Aars|Aalborg|33|side 2|Aars Bye|0|en gaard|Ane Andersdatter|K|0|1798|||True
+		392|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|2|430|Beuskowskow|0|Instengebäude|Gunder Maria Iwersen|K|0|1799|Feldstedt||True
+		573|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Kjerstine Thøgersen|K|0|1800|||True
+358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+		507|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Martha Christine Munch|K|0|1824|||True
+359|1834||FT-1834|Aars|Aars|Aalborg|37|side 2|Aars Bye|0|en gaard|Mette Thøgersdatter|K|0|1828|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+360|1834||FT-1834|Aars|Aars|Aalborg|38|side 2|Aars Bye|0|en gaard|Ane Marie Thøgersdatter|K|0|1832|||True
+		477|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Emma Johansine Qvist|K|0|1829|||True
+361|1834||FT-1834|Aars|Aars|Aalborg|40|side 2|Aars Bye|0|en gaard|Ane Hansdatter|K|0|1791|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+362|1834||FT-1834|Aars|Aars|Aalborg|41|side 2|Aars Bye|0|en gaard|Maren Sørensdatter|K|0|1764|||True
+		380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+363|1834||FT-1834|Aars|Aars|Aalborg|43|side 2|Aars Bye|0|en gaard|Mette Marie Andersdatter|K|0|1772|||True
+		293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+364|1834||FT-1834|Aars|Aars|Aalborg|45|side 2|Aars Bye|0|en gaard|Karen Marie Nielsdatter|K|0|1813|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+365|1834||FT-1834|Aars|Aars|Aalborg|48|side 2|Aars Bye|0|en gaard|Karen Marie Jensdatter|K|0|1800|||True
+		381|1840||FT-1840|Ensted|Lundtoft|Aabenraa|28|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Anna Magdalena Petersen|K|0|1801|||True
+		391|1840||FT-1840|Ensted|Lundtoft|Aabenraa|45|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Ingeborg Johannsen|K|0|1803|||True
+		412|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|42|431|Beuskowskow|0|Kathengebäude|Christina Hansen|K|0|1799|Blans||True
+		573|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Kjerstine Thøgersen|K|0|1800|||True
+366|1840||FT-1840|Ensted|Lundtoft|Aabenraa|2|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Maria Lorenzen|K|0|1790|||True
+		324|1801||FT-1801|Aars|Aars|Aalborg|15|side 1|Aars Bye|0||Mette Marie Andersdatter|K|0|1786|||True
+367|1840||FT-1840|Ensted|Lundtoft|Aabenraa|4|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Metta Maria Petersen|K|0|1821|||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+368|1840||FT-1840|Ensted|Lundtoft|Aabenraa|5|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Anna Botilla Petersen|K|0|1823|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+		433|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Kirstine Christensdatter|K|0|1821|Binderup sogn Aalborg amt||True
+369|1840||FT-1840|Ensted|Lundtoft|Aabenraa|6|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Maria Dorethea Petersen|K|0|1826|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+370|1840||FT-1840|Ensted|Lundtoft|Aabenraa|7|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Anna Christina Petersen|K|0|1829|||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+371|1840||FT-1840|Ensted|Lundtoft|Aabenraa|11|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Lena Lorenzen|K|0|1812|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+372|1840||FT-1840|Ensted|Lundtoft|Aabenraa|12|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Ellen Jörgensen|K|0|1815|||True
+		348|1834||FT-1834|Aars|Aars|Aalborg|13|side 1|Aars|0|Aars Præstegaard|Ane Kjerstine Jensdatter|K|0|1813|||True
+		349|1834||FT-1834|Aars|Aars|Aalborg|14|side 1|Aars|0|Aars Præstegaard|Ane Marie Christensdatter|K|0|1813|||True
+		426|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Dorthe Marie Andersdatter|K|0|1813|Vilsted sogn Aalborg amt||True
+373|1840||FT-1840|Ensted|Lundtoft|Aabenraa|13|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Bodel Hansen|K|0|1825|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+374|1840||FT-1840|Ensted|Lundtoft|Aabenraa|15|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 b Abnahmehaus|Kjesten Andersen|K|0|1758|||True
+		332|1801||FT-1801|Aars|Aars|Aalborg|29|side 1|Aars Bye|0||Anna Cathrine Hansdatter|K|0|1761||1|True
+375|1840||FT-1840|Ensted|Lundtoft|Aabenraa|18|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Anna Maria Thaysen|K|0|1786|||True
+		405|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|30|431|Beuskowskow|0|Instengebäude|Sünnet Jensen Brandt|K|0|1790|Atzbüll||True
+		549|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Kjerstine Christensen|K|0|1784|||True
+		550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+		324|1801||FT-1801|Aars|Aars|Aalborg|15|side 1|Aars Bye|0||Mette Marie Andersdatter|K|0|1786|||True
+		333|1801||FT-1801|Aars|Aars|Aalborg|30|side 1|Aars Bye|0||Mette Pedersdatter|K|0|1790|||True
+		306|1787||FT-1787|Aars|Aars|Aalborg|28|side 53|Aars Bye|0||Mette Marie Andersdatter|K|0|1784|||True
+		309|1787||FT-1787|Aars|Aars|Aalborg|33|side 53|Aars Bye|0||Else Marie Christensdatter|K|0|1784|||True
+376|1840||FT-1840|Ensted|Lundtoft|Aabenraa|19|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|2 Instengebäude|Anna Christina Petersen|K|0|1826|||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+377|1840||FT-1840|Ensted|Lundtoft|Aabenraa|22|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Anna Maria Jörgensen|K|0|1804|||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+378|1840||FT-1840|Ensted|Lundtoft|Aabenraa|23|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Cathrina Maria Tögesen|K|0|1834|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+379|1840||FT-1840|Ensted|Lundtoft|Aabenraa|24|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Lena Margr. Tögesen|K|0|1837|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+380|1840||FT-1840|Ensted|Lundtoft|Aabenraa|26|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|3 Instengebäude|Bodel Matthiesen|K|0|1767|||True
+		294|1787||FT-1787|Aars|Aars|Aalborg|8|side 53|Præstegaarden|0|Præstegaarden|Karen Marie Christensdatter|K|0|1768|||True
+381|1840||FT-1840|Ensted|Lundtoft|Aabenraa|28|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Anna Magdalena Petersen|K|0|1801|||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+382|1840||FT-1840|Ensted|Lundtoft|Aabenraa|29|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Cathrina Juhl|K|0|1837|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+383|1840||FT-1840|Ensted|Lundtoft|Aabenraa|31|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Metta Maria Hansen|K|0|1824|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+384|1840||FT-1840|Ensted|Lundtoft|Aabenraa|33|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Maren Jensen|K|0|1787|||True
+		309|1787||FT-1787|Aars|Aars|Aalborg|33|side 53|Aars Bye|0||Else Marie Christensdatter|K|0|1784|||True
+385|1840||FT-1840|Ensted|Lundtoft|Aabenraa|34|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Anna Jepsen|K|0|1817|||True
+		426|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Dorthe Marie Andersdatter|K|0|1813|Vilsted sogn Aalborg amt||True
+		435|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Gjertrud Christensdatter|K|0|1815|Ulstrup sogn Aalborg amt||True
+386|1840||FT-1840|Ensted|Lundtoft|Aabenraa|35|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Karolina Jepsen|K|0|1825|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+387|1840||FT-1840|Ensted|Lundtoft|Aabenraa|36|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Anna Botilla Jepsen|K|0|1827|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+388|1840||FT-1840|Ensted|Lundtoft|Aabenraa|39|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|6 Instengebäude|Metta Maria Hansen|K|0|1795|||True
+		494|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Karen Sophie Jensdatter|K|0|1797|||True
+389|1840||FT-1840|Ensted|Lundtoft|Aabenraa|41|Fotokopi-Side 604|Amt Tondern.Dorf Hostrup|0|6 Instengebäude|Maren Hansen|K|0|1830|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+390|1840||FT-1840|Ensted|Lundtoft|Aabenraa|42|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|6 Instengebäude|Anna Maria Hansen|K|0|1832|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+391|1840||FT-1840|Ensted|Lundtoft|Aabenraa|45|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|7 Instengebäude|Ingeborg Johannsen|K|0|1803|||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+392|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|2|430|Beuskowskow|0|Instengebäude|Gunder Maria Iwersen|K|0|1799|Feldstedt||True
+		442|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Kirstine Pedersdatter|K|0|1802|Tostrup sogn Aalborg amt||True
+393|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|4|430|Beuskowskow|0|Instengebäude|Anna Kirstina Hansen|K|0|1823|Traasbüll||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+394|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|6|430|Beuskowskow|0|Instengebäude|Cath. M. Jacobsen|K|0|1819|Düppel||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+		433|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Kirstine Christensdatter|K|0|1821|Binderup sogn Aalborg amt||True
+		435|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Gjertrud Christensdatter|K|0|1815|Ulstrup sogn Aalborg amt||True
+395|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|9|430|Beuskowskow|0|Instengebäude|Anna Bot: Iwersen|K|0|1819|Traasbüll||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+		435|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Gjertrud Christensdatter|K|0|1815|Ulstrup sogn Aalborg amt||True
+396|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|12|430|Beuskowskow|0|Instengebäude|Gunder Mar: Jessen|K|0|1817|Atzbüll||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+		433|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Kirstine Christensdatter|K|0|1821|Binderup sogn Aalborg amt||True
+397|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|15|430|Beuskowskow|0|Käthnergebaüde|Maria Andresen|K|0|1794|Atzbüll||True
+		494|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Karen Sophie Jensdatter|K|0|1797|||True
+		441|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Ane Marie Thomadsdatter|K|0|1795|her i sognet||True
+		523|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuus|0|N. 3|Kirsten JørgensDatter|K|0|1792|||True
+398|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|16|430|Beuskowskow|0|Käthnergebaüde|Ingeborg M. Andresen|K|0|1821|Atzbüll||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+399|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|19|430|Beuskowskow|0|Käthnergebaüde|Anna Elenore Jensen|K|0|1813|Atzbüll||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+400|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|21|430|Beuskowskow|0|Käthnergebaüde|Catharina Jensen|K|0|1827|Atzbüll||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+401|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|22|430|Beuskowskow|0|Käthnergebaüde|Dorothea Jensen|K|0|1839|Atzbüll||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+402|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|23|431|Beuskowskow|0|Käthnergebaüde|Sophia Fr. Clausen|K|0|1792|Beuskowskow||True
+		441|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Ane Marie Thomadsdatter|K|0|1795|her i sognet||True
+403|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|25|431|Beuskowskow|0|Käthnergebaüde|Metta M. Andresen|K|0|1826|Beuskowskow||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+404|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|27|431|Beuskowskow|0|Käthnergebaüde|Dorothea Olesen|K|0|1820|Ulderup||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+405|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|30|431|Beuskowskow|0|Instengebäude|Sünnet Jensen Brandt|K|0|1790|Atzbüll||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+406|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|31|431|Beuskowskow|0|Instengebäude|Grethe Maria Petersen|K|0|1834|Atzbüll||True
+		480|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Ane Kirstine Mortensdatter|K|0|1836|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+407|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|32|431|Beuskowskow|0|Instengebäude|Gretha M. Iwersen|K|0|1805|Atzbüll||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+408|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|34|431|Beuskowskow|0|Instengebäude|Margar: Petersen|K|0|1813|Beuskow Holz||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+		296|1787||FT-1787|Aars|Aars|Aalborg|10|side 53|Præstegaarden|0|Præstegaarden|Anna Nielsdatter|K|0|1773|||True
+		307|1787||FT-1787|Aars|Aars|Aalborg|30|side 53|Aars Bye|0||Anna Jensdatter|K|0|1772|||True
+410|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|38|431|Beuskowskow|0|Kathenbesitzer|Magdalena Thaysen|K|0|1808|Beuskowholz||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+411|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|39|431|Beuskowskow|0|Kathenbesitzer|Anna M. Hans: Thaysen|K|0|1839|Beuskowholz||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+412|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|42|431|Beuskowskow|0|Kathengebäude|Christina Hansen|K|0|1799|Blans||True
+		494|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Karen Sophie Jensdatter|K|0|1797|||True
+		441|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Ane Marie Thomadsdatter|K|0|1795|her i sognet||True
+413|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|44|431|Beuskowskow|0|Kathengebäude|Anna Christina Paulsen|K|0|1834|Beuskowholz||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+414|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|45|431|Beuskowskow|0|Kathengebäude|Ingeborg Paulsen|K|0|1840|Beuskowholz||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+415|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|46|431|Beuskowskow|0|Kathengebäude|Dorothea Paulsen|K|0|1842|Beuskowholz||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+416|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|48|431|Beuskowskow|0|Kathengebäude|Ingeborg Hansen|K|0|1788|Beuskowholz||True
+		309|1787||FT-1787|Aars|Aars|Aalborg|33|side 53|Aars Bye|0||Else Marie Christensdatter|K|0|1784|||True
+417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+		482|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Joh Car Lovise Grubb|K|0|1809|||True
+		410|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|38|431|Beuskowskow|0|Kathenbesitzer|Magdalena Thaysen|K|0|1808|Beuskowholz||True
+		542|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Ane Madsdatter|K|0|1806|||True
+418|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Elise Frederikke Sophie Lassen|K|0|1841|Hvornum sogn Randers amt||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+419|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Camilla Sophie Lassen|K|0|1848|her i sognet||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+420|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Johanne Christine Venzel|K|0|1825|København||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+421|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Abelone Poulsen|K|0|1833|Østerbølle sogn Viborg amt||True
+		480|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Ane Kirstine Mortensdatter|K|0|1836|||True
+		352|1834||FT-1834|Aars|Aars|Aalborg|18|side 1|Aars|0|Aars kirkesanger bolig|Inger Christine Ryge|K|0|1833|||True
+422|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Præstegaarden|Ane Dorthe Mortensdatter|K|0|1830|Nørre Tranders sogn Aalborg amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+423|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mariane Ørum|K|0|1813|Nørre Felding sogn Ringkøbing amt||True
+		348|1834||FT-1834|Aars|Aars|Aalborg|13|side 1|Aars|0|Aars Præstegaard|Ane Kjerstine Jensdatter|K|0|1813|||True
+		349|1834||FT-1834|Aars|Aars|Aalborg|14|side 1|Aars|0|Aars Præstegaard|Ane Marie Christensdatter|K|0|1813|||True
+424|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Cathrine Marie Ørum|K|0|1849|her i sognet||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+		382|1840||FT-1840|Ensted|Lundtoft|Aabenraa|29|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Cathrina Juhl|K|0|1837|||True
+426|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Dorthe Marie Andersdatter|K|0|1813|Vilsted sogn Aalborg amt||True
+		371|1840||FT-1840|Ensted|Lundtoft|Aabenraa|11|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Lena Lorenzen|K|0|1812|||True
+		385|1840||FT-1840|Ensted|Lundtoft|Aabenraa|34|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Anna Jepsen|K|0|1817|||True
+		399|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|19|430|Beuskowskow|0|Käthnergebaüde|Anna Elenore Jensen|K|0|1813|Atzbüll||True
+		344|1834||FT-1834|Aars|Aars|Aalborg|3|side 1|Aars|0|Aars Præstegaard|jomfru Sine Villemose|K|0|1812|||True
+427|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Ane Mette Jensdatter|K|0|1837|her i sognet||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+428|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Ane Margrethe Jensdatter|K|0|1842|her i sognet||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+429|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Else Jensdatter|K|0|1844|her i sognet||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+430|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Pouline Jensdatter|K|0|1849|her i sognet||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+431|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Christiane Olesdatter|K|0|1819|Pederstrup sogn Viborg amt||True
+		398|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|16|430|Beuskowskow|0|Käthnergebaüde|Ingeborg M. Andresen|K|0|1821|Atzbüll||True
+432|1850||FT-1850|Aars|Aars|Aalborg|2|side 2|Aars Bye|0|en Gaard|Karen Marie Jensdatter|K|0|1801|Haubro sogn Aalborg amt||True
+		451|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1805|Her i Sognet||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+433|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Kirstine Christensdatter|K|0|1821|Binderup sogn Aalborg amt||True
+		368|1840||FT-1840|Ensted|Lundtoft|Aabenraa|5|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Anna Botilla Petersen|K|0|1823|||True
+434|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Karen Marie Nielsdatter|K|0|1849|Binderup sogn Aalborg amt||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+435|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Gjertrud Christensdatter|K|0|1815|Ulstrup sogn Aalborg amt||True
+		395|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|9|430|Beuskowskow|0|Instengebäude|Anna Bot: Iwersen|K|0|1819|Traasbüll||True
+436|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Kirstine Nielsdatter|K|0|1845|Ulstrup sogn Aalborg amt||True
+		467|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Gjertrud Kjerstine Laursen|K|0|1845|Aarestrup Sogn, Aalborg Amt||True
+		554|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1846|||True
+437|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Mette Marie Nielsdatter|K|0|1815|her i sognet||True
+		371|1840||FT-1840|Ensted|Lundtoft|Aabenraa|11|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Lena Lorenzen|K|0|1812|||True
+		372|1840||FT-1840|Ensted|Lundtoft|Aabenraa|12|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Ellen Jörgensen|K|0|1815|||True
+		385|1840||FT-1840|Ensted|Lundtoft|Aabenraa|34|Fotokopi.Side 604|Amt Tondern.Dorf Hostrup|0|5 Instengebäude|Anna Jepsen|K|0|1817|||True
+		394|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|6|430|Beuskowskow|0|Instengebäude|Cath. M. Jacobsen|K|0|1819|Düppel||True
+		395|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|9|430|Beuskowskow|0|Instengebäude|Anna Bot: Iwersen|K|0|1819|Traasbüll||True
+		399|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|19|430|Beuskowskow|0|Käthnergebaüde|Anna Elenore Jensen|K|0|1813|Atzbüll||True
+		344|1834||FT-1834|Aars|Aars|Aalborg|3|side 1|Aars|0|Aars Præstegaard|jomfru Sine Villemose|K|0|1812|||True
+438|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Maren Sørensdatter|K|0|1837|her i sognet||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+439|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Karen Sørensdatter|K|0|1842|her i sognet||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+440|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Maren Nielsdatter|K|0|1773|Østerbølle sogn Viborg amt||True
+		409|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|35|431|Beuskowskow|0|Instengebäude|Mette Margr: Hansen|K|0|1775|Feldsted||True
+		293|1787||FT-1787|Aars|Aars|Aalborg|4|side 53|Præstegaarden|0|Præstegaarden|Lorenze Marie Holm|K|0|1773|||True
+441|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|et Huus|Ane Marie Thomadsdatter|K|0|1795|her i sognet||True
+		402|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|23|431|Beuskowskow|0|Käthnergebaüde|Sophia Fr. Clausen|K|0|1792|Beuskowskow||True
+442|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Kirstine Pedersdatter|K|0|1802|Tostrup sogn Aalborg amt||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+444|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Else Marie Jensdatter|K|0|1818|her i sognet||True
+		474|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Kjerstine Thøgersen|K|0|1820|Her i Sognet||True
+		394|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|6|430|Beuskowskow|0|Instengebäude|Cath. M. Jacobsen|K|0|1819|Düppel||True
+		395|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|9|430|Beuskowskow|0|Instengebäude|Anna Bot: Iwersen|K|0|1819|Traasbüll||True
+		398|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|16|430|Beuskowskow|0|Käthnergebaüde|Ingeborg M. Andresen|K|0|1821|Atzbüll||True
+		404|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|27|431|Beuskowskow|0|Käthnergebaüde|Dorothea Olesen|K|0|1820|Ulderup||True
+		505|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Caroline Sonne|K|0|1820|||True
+445|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Karen Marie Sørensdatter|K|0|1836|her i sognet||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+446|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Karen Nielsdatter|K|0|1830|Her i Sognet||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+447|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Karen Marie Andersen|K|0|1857|Gislum Sogn, Aalborg Amt||True
+		560|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine Kristine  Sørensen|K|0|1853|||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+448|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine  Andersen|K|0|1858|Her i Sognet||True
+		569|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Kathrine Maria  Jensen|K|0|1856|||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+449|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Christensen|K|0|1804|Fleisborg Sogn, Aalborg Amt||True
+		442|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Kirstine Pedersdatter|K|0|1802|Tostrup sogn Aalborg amt||True
+		520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+450|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Kjerstine Christensen|K|0|1804|Aarestrup Sogn, Aalborg Amt||True
+		381|1840||FT-1840|Ensted|Lundtoft|Aabenraa|28|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Anna Magdalena Petersen|K|0|1801|||True
+451|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1805|Her i Sognet||True
+		432|1850||FT-1850|Aars|Aars|Aalborg|2|side 2|Aars Bye|0|en Gaard|Karen Marie Jensdatter|K|0|1801|Haubro sogn Aalborg amt||True
+452|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Inger Marie Andersen|K|0|1846|Haverslev Sogn, Hjørring Amt||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+453|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Else Christensen|K|0|1827|Rørbek Sogn, Aalborg Amt||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+454|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Ane Nielsen|K|0|1835|Skivum, Aalborg Amt||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+455|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1866|Her i Sognet||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+456|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Maren Christensen|K|0|1859|Her i Sognet||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+457|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Andrea Kristine Clemmensen|K|0|1878|Her i Sognet||True
+		600|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|128|Opslag 151|Proprietær G. Kruuse|0|Algade matrikel nr. 168 Forhus 1. sal|Laurine Maren Sopie Larsen|K|0|1874|||True
+458|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Maren Thomsen|K|0|1851|Sebber Sogn, Aalborg Amt||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+459|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mette Maria Nielsen|K|0|1843|Rørbek Sogn, Aalborg Amt||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+460|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Ane Sørensen|K|0|1870|Simmested Sogn, Viborg Amt||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+461|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine Kristine  Sørensen|K|0|1873|Her i Sognet||True
+		600|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|128|Opslag 151|Proprietær G. Kruuse|0|Algade matrikel nr. 168 Forhus 1. sal|Laurine Maren Sopie Larsen|K|0|1874|||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+462|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Sørine  Sørensen|K|0|1874|Her i Sognet||True
+		600|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|128|Opslag 151|Proprietær G. Kruuse|0|Algade matrikel nr. 168 Forhus 1. sal|Laurine Maren Sopie Larsen|K|0|1874|||True
+463|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Nielsine  Sørensen|K|0|1878|Her i Sognet||True
+		600|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|128|Opslag 151|Proprietær G. Kruuse|0|Algade matrikel nr. 168 Forhus 1. sal|Laurine Maren Sopie Larsen|K|0|1874|||True
+464|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Ane Marie Christensen|K|0|1853|Bislev Sogn, Aalborg Amt||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+466|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Larsine Maria Andersen|K|0|1867|Haverslev Sogn, Aalborg Amt||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+467|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Gjertrud Kjerstine Laursen|K|0|1845|Aarestrup Sogn, Aalborg Amt||True
+		612|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|872|Opslag 102|Fhv. Damskibsfører P. Hansen, matrikel 236|0|Slottensgade, matrikel 236, bagbyg i stuen|Charlotte Henriette Hess|K|0|1844|||True
+		428|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Ane Margrethe Jensdatter|K|0|1842|her i sognet||True
+		429|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Else Jensdatter|K|0|1844|her i sognet||True
+		430|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Pouline Jensdatter|K|0|1849|her i sognet||True
+		434|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Karen Marie Nielsdatter|K|0|1849|Binderup sogn Aalborg amt||True
+468|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Karen Andersen|K|0|1849|Ulstrup Sogn, Aalborg Amt||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+469|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Else Kathrine Jensen|K|0|1850|Her i Sognet||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+470|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Kathrine Maria  Jensen|K|0|1876|Her i Sognet||True
+		600|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|128|Opslag 151|Proprietær G. Kruuse|0|Algade matrikel nr. 168 Forhus 1. sal|Laurine Maren Sopie Larsen|K|0|1874|||True
+471|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1810|Sebber Sogn, Aalborg Amt||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+472|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Maria Alvilda Rasmusen|K|0|1854|Kjøbenhavn||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+473|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Inger Kjerstine Kragbech|K|0|1860|Brøndum  Sogn, Aalborg Amt||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+		569|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Kathrine Maria  Jensen|K|0|1856|||True
+474|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Kjerstine Thøgersen|K|0|1820|Her i Sognet||True
+		507|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Martha Christine Munch|K|0|1824|||True
+475|1860||FT-1860|Lynge|Alsted|Sorø|74|Sorø amt|Lynge By|0|Gaard|Helene Marie Tryde|K|0|1848|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+476|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Wilhelmine  Tryde|K|0|1849|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+477|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Emma Johansine Qvist|K|0|1829|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+478|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Thora Marie Augusta Dreier|K|0|1840|||True
+		564|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1840|||True
+		418|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Elise Frederikke Sophie Lassen|K|0|1841|Hvornum sogn Randers amt||True
+479|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Inger Marie Nielsdatter|K|0|1834|||True
+		382|1840||FT-1840|Ensted|Lundtoft|Aabenraa|29|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Cathrina Juhl|K|0|1837|||True
+		571|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Maria Alvilda Rasmusen|K|0|1834|||True
+480|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Ane Kirstine Mortensdatter|K|0|1836|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+481|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Bdil Marie Pedersen|K|0|1833|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+482|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Joh Car Lovise Grubb|K|0|1809|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+483|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Marie Magd.Lavigne|K|0|1842|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+484|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Emilie Sop F.Lavigne|K|0|1851|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+485|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Hanne  Lavigne|K|0|1853|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+486|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Kirsten Christensdatter|K|0|1841|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+487|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Hus|Johanne Marie Smidt|K|0|1815|||True
+		348|1834||FT-1834|Aars|Aars|Aalborg|13|side 1|Aars|0|Aars Præstegaard|Ane Kjerstine Jensdatter|K|0|1813|||True
+		435|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Gjertrud Christensdatter|K|0|1815|Ulstrup sogn Aalborg amt||True
+488|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Hus|Maren Aug Hansen|K|0|1837|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+489|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Hus|Elise Christine Petersen|K|0|1850|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+490|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Gaard|Else Jensdatter|K|0|1790|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+491|1860||FT-1860|Lynge|Alsted|Sorø|77|Sorø amt|Lynge By|0|Gaard|Kirsten Wilasen|K|0|1841|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+492|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Ane Marie Chrisensen|K|0|1843|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+493|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Johanne Jensdatter|K|0|1822|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+494|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Karen Sophie Jensdatter|K|0|1797|||True
+		381|1840||FT-1840|Ensted|Lundtoft|Aabenraa|28|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|4 Schulhaus|Anna Magdalena Petersen|K|0|1801|||True
+495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+496|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Ane Marg Jacobsen|K|0|1848|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+497|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Maren Marie  Jacobsen|K|0|1854|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+498|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Gaard|Maren Sophie  Jacobsen|K|0|1858|||True
+		575|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Nielsine Christine Nielsen|K|0|1854|||True
+499|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Gaard|Sidse Marie Hansen|K|0|1844|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+500|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Gaard|Bolette Madsen|K|0|1845|||True
+		418|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Elise Frederikke Sophie Lassen|K|0|1841|Hvornum sogn Randers amt||True
+501|1860||FT-1860|Lynge|Alsted|Sorø|79|Sorø amt|Lynge By|0|Hus|Mette Kirtine Jensen|K|0|1852|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+502|1870||FT-1870|Havbro|Aars|Aalborg|2|143|Jelstrup Mark|0|3,Huus|Else Katrine Nielsen|K|0|1832|||True
+		422|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Præstegaarden|Ane Dorthe Mortensdatter|K|0|1830|Nørre Tranders sogn Aalborg amt||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+503|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|2|Aakirkeby 1 Kv.|0|Forhuus|Christine Caroline Anina Hansen|K|0|1851|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		458|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Maren Thomsen|K|0|1851|Sebber Sogn, Aalborg Amt||True
+		485|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Hanne  Lavigne|K|0|1853|||True
+504|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|2|Aakirkeby 1 Kv.|0|Forhuus|Magine Christine Westh|K|0|1824|||True
+		373|1840||FT-1840|Ensted|Lundtoft|Aabenraa|13|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Bodel Hansen|K|0|1825|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+505|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Caroline Sonne|K|0|1820|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+		496|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Ane Marg Jacobsen|K|0|1848|||True
+507|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Martha Christine Munch|K|0|1824|||True
+		398|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|16|430|Beuskowskow|0|Käthnergebaüde|Ingeborg M. Andresen|K|0|1821|Atzbüll||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+508|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Karen Marie Olsen|K|0|1822|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+509|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Ane Marie Nielsen|K|0|1854|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+511|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Dothe Marie Larsen|K|0|1852|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+512|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Karen Marie Nielsen|K|0|1840|||True
+		418|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Elise Frederikke Sophie Lassen|K|0|1841|Hvornum sogn Randers amt||True
+513|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Dothe Marie Hansen|K|0|1865|||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+514|1870||FT-1870|Ferslev|Horns|Frederiksborg|3|122|Ferslev|0|Hus|Anne Marie Hansen|K|0|1867|||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+515|1870||FT-1870|Øland|Øster Han|Hjørring|3|Side 357|Oxholm|0|Hovedgaard|Jensine Pedersen|K|0|1859|||True
+		569|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Kathrine Maria  Jensen|K|0|1856|||True
+516|1870||FT-1870|Øland|Øster Han|Hjørring|4|Side 357|Oxholm Mark|0|Hus|Ane Christine Christensen|K|0|1832|||True
+		446|1860||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Karen Nielsdatter|K|0|1830|Her i Sognet||True
+		571|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Maria Alvilda Rasmusen|K|0|1834|||True
+		351|1834||FT-1834|Aars|Aars|Aalborg|17|side 1|Aars|0|Aars kirkesanger bolig|Andrea Dorthea Ryge|K|0|1829|||True
+		359|1834||FT-1834|Aars|Aars|Aalborg|37|side 2|Aars Bye|0|en gaard|Mette Thøgersdatter|K|0|1828|||True
+517|1870||FT-1870|Øland|Øster Han|Hjørring|4|Side 357|Oxholm Mark|0|Hus|Mariane Gerthsen|K|0|1859|||True
+		473|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Inger Kjerstine Kragbech|K|0|1860|Brøndum  Sogn, Aalborg Amt||True
+518|1870||FT-1870|Øland|Øster Han|Hjørring|4|Side 357|Oxholm Mark|0|Hus|Christiane Else Marie|K|0|1867|||True
+		455|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1866|Her i Sognet||True
+519|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Karen Larsen|K|0|1836|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+520|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmandshuse|0|N. 1|Margrethe Kirstine Christensen|K|0|1805|||True
+		482|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Joh Car Lovise Grubb|K|0|1809|||True
+521|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmands Huse|0|N. 2|Ane Sophie Jørgensen|K|0|1828|||True
+		566|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Gjertrud Kjerstine Laursen|K|0|1825|||True
+522|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|0|Side 497|Raadmands Huse|0|N. 2|Jørgine Caroline Nielsen|K|0|1856|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+523|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuus|0|N. 3|Kirsten JørgensDatter|K|0|1792|||True
+		570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+524|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Ane Marie Hansen|K|0|1839|||True
+		418|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Elise Frederikke Sophie Lassen|K|0|1841|Hvornum sogn Randers amt||True
+525|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Dorthe Marie Bryds|K|0|1804|||True
+		350|1834||FT-1834|Aars|Aars|Aalborg|16|side 1|Aars|0|Aars kirkesanger bolig|Maren Kjerstine Christensen|K|0|1804|||True
+526|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Hansine Petrine Jensen|K|0|1859|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+527|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Anna Kirstine Jensen|K|0|1863|||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+528|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|1|Side 497|Raadmandshuse|0|N. 4|Caroline Marie Jensen|K|0|1865|||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+529|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 4|Henriette Dorthea Jensen|K|0|1867|||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+		477|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Emma Johansine Qvist|K|0|1829|||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+531|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Ane Kirstine Nielsen|K|0|1850|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+532|1870||FT-1870|Bromme|Alsted|Sorø|28|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 8|Ane Sophie Kirstine Hansen|K|0|1865|||True
+		466|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Larsine Maria Andersen|K|0|1867|Haverslev Sogn, Aalborg Amt||True
+533|1870||FT-1870|Bromme|Alsted|Sorø|28|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 8|Karen Marie Hansen|K|0|1869|||True
+		461|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine Kristine  Sørensen|K|0|1873|Her i Sognet||True
+534|1870||FT-1870|Bromme|Alsted|Sorø|28|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 9|Marie Jensdatter|K|0|1819|||True
+		368|1840||FT-1840|Ensted|Lundtoft|Aabenraa|5|Fotokopi.Side 603|Amt Tondern.Dorf Hostrup|0|1 a Hufengebäude|Anna Botilla Petersen|K|0|1823|||True
+		398|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|16|430|Beuskowskow|0|Käthnergebaüde|Ingeborg M. Andresen|K|0|1821|Atzbüll||True
+535|1870||FT-1870|Bromme|Alsted|Sorø|28|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 9|Ane Marie Olsen|K|0|1865|||True
+		599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+536|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 10|Maren Jacobsen|K|0|1829|||True
+		422|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Præstegaarden|Ane Dorthe Mortensdatter|K|0|1830|Nørre Tranders sogn Aalborg amt||True
+		443|1850||FT-1850|Aars|Aars|Aalborg|4|side 2|Aars Bye|0|en Gaard|Mette Kathrine Sørensdatter|K|0|1829|Oudrup sogn Aalborg amt||True
+537|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 10|Karen Hansen|K|0|1857|||True
+		575|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Nielsine Christine Nielsen|K|0|1854|||True
+		560|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine Kristine  Sørensen|K|0|1853|||True
+538|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 10|Ane Marie Hansen|K|0|1869|||True
+		461|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine Kristine  Sørensen|K|0|1873|Her i Sognet||True
+539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+		564|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1840|||True
+540|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Ane Elise Kristine Rasmussen|K|0|1867|||True
+		611|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|792|Opslag 45|Husejer P. Hansen, matrikel 187|0|Sandvejen, Matrikel 187, forhus, stuen|Johanne Petersen|K|0|1867|||True
+541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+		611|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|792|Opslag 45|Husejer P. Hansen, matrikel 187|0|Sandvejen, Matrikel 187, forhus, stuen|Johanne Petersen|K|0|1867|||True
+		460|1860||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Ane Sørensen|K|0|1870|Simmested Sogn, Viborg Amt||True
+542|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Ane Madsdatter|K|0|1806|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+543|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 12|Karen Jørgensen|K|0|1848|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+544|1870||FT-1870|Bromme|Alsted|Sorø|30|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 13|Maren Marie Sørensen|K|0|1832|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+545|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Karen Nielsdatter|K|0|1810|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+546|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Karen Marie Andersen|K|0|1837|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+547|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine  Andersen|K|0|1838|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+548|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Christensen|K|0|1784|||True
+		324|1801||FT-1801|Aars|Aars|Aalborg|15|side 1|Aars Bye|0||Mette Marie Andersdatter|K|0|1786|||True
+		306|1787||FT-1787|Aars|Aars|Aalborg|28|side 53|Aars Bye|0||Mette Marie Andersdatter|K|0|1784|||True
+549|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Kjerstine Christensen|K|0|1784|||True
+		324|1801||FT-1801|Aars|Aars|Aalborg|15|side 1|Aars Bye|0||Mette Marie Andersdatter|K|0|1786|||True
+		306|1787||FT-1787|Aars|Aars|Aalborg|28|side 53|Aars Bye|0||Mette Marie Andersdatter|K|0|1784|||True
+550|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Ane Kjerstine Grønning|K|0|1785|||True
+		309|1787||FT-1787|Aars|Aars|Aalborg|33|side 53|Aars Bye|0||Else Marie Christensdatter|K|0|1784|||True
+551|1880||FT-1880|Aars|Aars|Aalborg|0|Lb. 1  side 2|Aars Bye|0|Huus|Inger Marie Andersen|K|0|1826|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+552|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Else Christensen|K|0|1807|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+553|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Ane Nielsen|K|0|1815|||True
+		426|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|et Huus|Dorthe Marie Andersdatter|K|0|1813|Vilsted sogn Aalborg amt||True
+554|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1846|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+555|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Maren Christensen|K|0|1839|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+556|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Andrea Kristine Clemmensen|K|0|1858|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+557|1880||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Maren Thomsen|K|0|1831|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+558|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Mette Maria Nielsen|K|0|1823|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+559|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Ane Sørensen|K|0|1850|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+560|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Nielsine Kristine  Sørensen|K|0|1853|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+561|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 2|Aars Bye|0|Huus|Sørine  Sørensen|K|0|1854|||True
+		610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+562|1880||FT-1880|Aars|Aars|Aalborg|2|Lb. 1  side 3|Aars Bye|0|Huus|Nielsine  Sørensen|K|0|1858|||True
+		473|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Inger Kjerstine Kragbech|K|0|1860|Brøndum  Sogn, Aalborg Amt||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+563|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Ane Marie Christensen|K|0|1833|||True
+		477|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Emma Johansine Qvist|K|0|1829|||True
+564|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1840|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+565|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Larsine Maria Andersen|K|0|1847|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+566|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Huus|Gjertrud Kjerstine Laursen|K|0|1825|||True
+		346|1834||FT-1834|Aars|Aars|Aalborg|8|side 1|Aars|0|Aars Præstegaard|Lovise Toldorph|K|0|1825|||True
+		347|1834||FT-1834|Aars|Aars|Aalborg|9|side 1|Aars|0|Aars Præstegaard|Else Toldorph|K|0|1827|||True
+567|1880||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Karen Andersen|K|0|1829|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+568|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Else Kathrine Jensen|K|0|1830|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
+569|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Kathrine Maria  Jensen|K|0|1856|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+570|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Mette Maria Christensen|K|0|1790|||True
+		405|1845||FT-1845|Adsbøl|Lundtoft|Aabenraa|30|431|Beuskowskow|0|Instengebäude|Sünnet Jensen Brandt|K|0|1790|Atzbüll||True
+571|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Maria Alvilda Rasmusen|K|0|1834|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+572|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Inger Kjerstine Kragbech|K|0|1840|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+573|1880||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Kjerstine Thøgersen|K|0|1800|||True
+		494|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Hus|Karen Sophie Jensdatter|K|0|1797|||True
+574|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Johanne Marie Mortensen|K|0|1831|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+575|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Nielsine Christine Nielsen|K|0|1854|||True
+		485|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Hanne  Lavigne|K|0|1853|||True
+576|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Marie Cesilie Andersen|K|0|1882|||True
+		457|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Andrea Kristine Clemmensen|K|0|1878|Her i Sognet||True
+577|1890||FT-1890|Aars|Aars|Aalborg|0|Mikrokort 5225, liste10|Sjøstrup|0||Marie Cesilie Jensen|K|0|1820|||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+578|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Kristine Nielsen|K|0|1844|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+579|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Johanne Marie Nielsen|K|0|1854|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+580|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste10|Sjøstrup|0||Kirstine Marie Nielsen|K|0|1856|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+		473|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Inger Kjerstine Kragbech|K|0|1860|Brøndum  Sogn, Aalborg Amt||True
+581|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Ane Marie Poulsen|K|0|1832|||True
+		425|1850||FT-1850|Aars|Aars|Aalborg|1|side 1|Aars Bye|0|Skolen|Mette Kirstine Christensdatter|K|0|1834|her i sognet||True
+582|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Mette Marie Jensen|K|0|1860|||True
+		473|1860||FT-1880|Aars|Aars|Aalborg|4|Lb. 1  side 3|Aars Bye|0|Huus|Inger Kjerstine Kragbech|K|0|1860|Brøndum  Sogn, Aalborg Amt||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+583|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Petrea Marthine Olsen|K|0|1888|||True
+584|1890||FT-1890|Aars|Aars|Aalborg|1|Mikrokort 5225, liste 10|Sjøstrup|0||Christine Olsen|K|0|1889|||True
+585|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Laura Kathrine Marie Olsen|K|0|1889|||True
+586|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Anne Cathrine Andersen|K|0|1820|||True
+		431|1850||FT-1850|Aars|Aars|Aalborg|2|side 1|Aars Bye|0|et Huus|Christiane Olesdatter|K|0|1819|Pederstrup sogn Viborg amt||True
+		507|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Martha Christine Munch|K|0|1824|||True
+587|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Mette Marie Larsen|K|0|1860|||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+588|1890||FT-1890|Aars|Aars|Aalborg|2|Mikrokort 5225, liste 10|Sjøstrup|0||Maren Jensen|K|0|1847|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+589|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Anne Marie Jensen|K|0|1818|||True
+		358|1834||FT-1834|Aars|Aars|Aalborg|35|side 2|Aars Bye|0|en gaard|Kjerstine Thøgersdatter|K|0|1820|||True
+		435|1850||FT-1850|Aars|Aars|Aalborg|3|side 2|Aars Bye|0|en Gaard|Gjertrud Christensdatter|K|0|1815|Ulstrup sogn Aalborg amt||True
+590|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Gjertru Marie Pedersen|K|0|1814|||True
+		417|1850||FT-1850|Aars|Aars|Aalborg|0|side 1|Aars Bye|0|Præstegaarden|Henriette Petrine Lassen f. Frederiksen|K|0|1810|Espe sogn Svendborg amt||True
+591|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Anne Pedersen|K|0|1840|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+592|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Dorte Marie Mikkelsen|K|0|1865|||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+593|1890||FT-1890|Aars|Aars|Aalborg|3|Mikrokort 5225, liste 10|Sjøstrup|0||Mariane Mikkelsen|K|0|1868|||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+594|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 10|Sjøstrup|0||Mette Marie Mikkelsen|K|0|1878|||True
+		457|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Andrea Kristine Clemmensen|K|0|1878|Her i Sognet||True
+595|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Kirstine Christensen|K|0|1844|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+596|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Christine Lautsen|K|0|1870|||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+597|1890||FT-1890|Aars|Aars|Aalborg|4|Mikrokort 5225, liste 11|Sjøstrup|0||Nielsine Christensen|K|0|1855|||True
+		503|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|2|2|Aakirkeby 1 Kv.|0|Forhuus|Christine Caroline Anina Hansen|K|0|1851|||True
+598|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|6|Opslag 12|Tømrermester Bruus Baghus Stuen|0|Algade matr nr. 5|Kristine Christensen|K|0|1886|||True
+599|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|31|Opslag 37|Malermester F. Petersen|0|Algade matr nr.12b Sidehuset|Frederikke Hansine Andersen|K|0|1863|||True
+		465|1860||FT-1880|Aars|Aars|Aalborg|3|Lb. 1  side 3|Aars Bye|0|Gaard|Søren|K|0|1860|||True
+600|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|128|Opslag 151|Proprietær G. Kruuse|0|Algade matrikel nr. 168 Forhus 1. sal|Laurine Maren Sopie Larsen|K|0|1874|||True
+		457|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Andrea Kristine Clemmensen|K|0|1878|Her i Sognet||True
+601|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|162|Opslag 12|Arbejdsformand Peter jensen|0|Baggade matrikel 16 Baghus|Mary Hansigne Katrine Petrea Elisabeth Nielsen|K|0|1887|||True
+602|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|223|Opslag 111|Tømrer D. Müller  B|0|Baggade matrikel 105 b Sidehus 1. sal|Boline Carlsen|K|0|1857|||True
+		510|1870||FT-1870|Ferslev|Horns|Frederiksborg|2|122|Ferslev|0|Gaard|Hanne Chrestine Sofie Nielsen|K|0|1858|||True
+603|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|279|Opslag 36|Godsejer Edv. Bech|0|Halskov, (Bygrund) matrikel 258|Petra Johanne Hansen|K|0|1868|||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+604|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|312|Opslag 72|Snedker Jens Søren Petersen|0|Halskov, (Bygrund) matrikel 272 c Forhus (Loft)|Amalie Pedersen|K|0|1886|||True
+605|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|373|Opslag 153|Købmand N. Chr. Hansen|0|Halskov, (Bygrund) matr. 289a Forhus|Thyra Camilla Jensen|K|0|1881|||True
+		457|1860||FT-1880|Aars|Aars|Aalborg|1|Lb. 1  side 2|Aars Bye|0|Huus|Andrea Kristine Clemmensen|K|0|1878|Her i Sognet||True
+606|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|400|Opslag 183|Portør Niels Olsens enke|0|Halskov, (Bygrund) matr. 298 Forhus stuen|Petrea Karoline født Andersen|K|0|1852|||True
+		484|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Emilie Sop F.Lavigne|K|0|1851|||True
+607|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|432|Opslag 212|Arbejdsmand Jens Peter Nielsen|0|Halskov, (Bygrund) matr. 300l Kvisten|Anna Konradine Nielsen|K|0|1885|||True
+608|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|537|Opslag 128|Matros Jens A. Hansen, forsikring 362|0|Halskov, (markjorder) 1. sal|Marie Christine Nielsen|K|0|1886|||True
+609|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|695|Opslag 110|Litser H. P. Kruuses enke, matrikel 81|0|Møllebjerggade matrikel 81 baghuset|+ Karoline Mathilde Andresen|K|0|1846|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+610|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|728|Opslag 21|Fyrbøder Frantz Chr. Nielsen, matrikel 161 f|0|Nygade matrikel 161f|Gertrud Elisabeth Olivia Nielsen|K|0|1852|||True
+		476|1860||FT-1860|Lynge|Alsted|Sorø|75|Sorø amt|Lynge By|0|Gaard|Wilhelmine  Tryde|K|0|1849|||True
+		485|1860||FT-1860|Lynge|Alsted|Sorø|76|Sorø amt|Lynge By|0|Skolen|Hanne  Lavigne|K|0|1853|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+611|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|792|Opslag 45|Husejer P. Hansen, matrikel 187|0|Sandvejen, Matrikel 187, forhus, stuen|Johanne Petersen|K|0|1867|||True
+		541|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Nielsine Mathilde Sophie Rasmussen|K|0|1869|||True
+612|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|872|Opslag 102|Fhv. Damskibsfører P. Hansen, matrikel 236|0|Slottensgade, matrikel 236, bagbyg i stuen|Charlotte Henriette Hess|K|0|1844|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+613|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|842|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, Forhus|Ketty Nielsen|K|0|1887|||True
+614|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|842|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Ane Marie Nielsen|K|0|1849|||True
+		506|1870||FT-1870|Aakirkeby Købstad|Sønder|Bornholm|3|2|Aakirkeby 1 Kv.|0|Forhuus|Thora Christine Wilhelmine Westh|K|0|1850|||True
+615|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|843|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Ottomine Katrine Amalie Nielsen|K|0|1886|||True
+616|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, bagbygning|Karen Hansen|K|0|1840|||True
+		539|1870||FT-1870|Bromme|Alsted|Sorø|29|DDA|Bromme sogn|0|Krøjerup By, et Hus, nr. 11|Claudine Nathalia Augusta Kerregaard|K|0|1840|||True
+617|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|844|Opslag 66|Skipper O. H. Rasmussens enke matrikel 214|0|Slottensgade, matrikel 214, Sidehus|Ane Marie Larsen|K|0|1819|||True
+		495|1860||FT-1860|Lynge|Alsted|Sorø|78|Sorø amt|Lynge By|0|Gaard|Mette CathrineJacobsdatter|K|0|1823|||True
+618|1890||FT-1890|Korsør Købstad|Slagelse|Sorø|845|Opslag 69|Arbejdsmand John Hansen, matrikel 215|0|Slottensgade, matrikel 215, forhus|Ane Marie Hansen|K|0|1829|||True
+		530|1870||FT-1870|Skælskør Landdistrikt|Vester Flakkebjerg|Sorø|2|Side 497|Raadmandshuse|0|N. 5|Dorthea Cicilie Thuesen Bruun|K|0|1826|||True
