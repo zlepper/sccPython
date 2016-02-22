@@ -1,3 +1,5 @@
+from comparison import damerau_levenshtein_distance
+
 class Person:
     def __init__(self, year):
         assert isinstance(year, int)
@@ -73,3 +75,17 @@ class Person:
                 highest = key
                 closest = value
         return closest
+
+    #def compare_home(self, other):
+
+    def compare_origin(self, other):
+
+        if self and other != "":
+            proximity = damerau_levenshtein_distance(self, other)
+            if proximity > 0.50:
+                return 1
+            else:
+                return 0
+
+        else:
+            return 0

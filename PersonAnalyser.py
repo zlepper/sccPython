@@ -1,6 +1,5 @@
-import Person
 from comparison import damerau_levenshtein_distance
-
+import Person
 
 def run(people):
     assert isinstance(people, list)
@@ -56,5 +55,14 @@ def run(people):
                         m = person.matches.get(proximity, [])
                         m.append(possible_match.id)
                         person.matches[proximity] = m
+
+                # Sammenlign fødested
+                for possible_match in possible_matches:
+                    fodested = person.compare_origin(person.fodested, possible_match.fodested)
+
+                    if fodested != 0:
+                        # Deres fødested er tilnærmelsesvis ens eller ens
+                    else:
+                        # Deres fødested er enten ikke ens, ellers mangler der data på dette
     return people
 
