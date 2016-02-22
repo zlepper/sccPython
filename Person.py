@@ -76,12 +76,23 @@ class Person:
                 closest = value
         return closest
 
-    #def compare_home(self, other):
-
     def compare_origin(self, other):
 
-        if self and other != "":
-            proximity = damerau_levenshtein_distance(self, other)
+        if self.fodested and other.fodested != "":
+
+            if "Her i Sognet" in self.fodested & "Her i Sognet" in other.fodested:
+                proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
+
+            else:
+                if "Her i Sognet" in self.fodested:
+                    proximity = damerau_levenshtein_distance(self.sogn, other.fodested)
+
+                if "Her i Sognet" in other.fodested:
+                    proximity = damerau_levenshtein_distance(self.fodested, other.sogn)
+
+                else:
+                    proximity = damerau_levenshtein_distance(self.fodested, other.fodested)
+
             if proximity > 0.50:
                 return 1
             else:
