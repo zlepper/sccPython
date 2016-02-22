@@ -58,11 +58,13 @@ def run(people):
 
                 # Sammenlign fødested
                 for possible_match in possible_matches:
-                    fodested = person.compare_origin(person.fodested, possible_match.fodested)
+                    fodested = person.compare_origin(person, possible_match)
 
                     if fodested != 0:
                         # Deres fødested er tilnærmelsesvis ens eller ens
+
                     else:
                         # Deres fødested er enten ikke ens, ellers mangler der data på dette
+
     return people
 
