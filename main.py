@@ -61,7 +61,7 @@ def rebuild_matches(p):
 
 # TODO Modify this to point to the local files on your machine
 # Fetch the current data
-get_people_from_directory(".\\toy", job_server, jobs)
+get_people_from_directory(join(".", "toy"), job_server, jobs)
 
 # Create lists of data
 invalidPeople = []
