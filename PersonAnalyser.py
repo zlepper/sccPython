@@ -56,9 +56,5 @@ def run(people):
                         m.append(possible_match.id)
                         person.matches[proximity] = m
 
-                # Sammenlign fødested
-                        # for possible_match in possible_matches:
-                        #    fodested = person.compare_origin(person, possible_match)
-
     return people
 

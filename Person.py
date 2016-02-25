@@ -80,9 +80,9 @@ class Person:
 
     def compare_origin(self, other):
 
-        if self.fodested and other.fodested != "":
+        if self.fodested != "" and other.fodested != "":
 
-            if "Her i Sognet" in self.fodested & "Her i Sognet" in other.fodested:
+            if "Her i Sognet" in self.fodested in other.fodested and "Her i Sognet" in other.fodested:
                 proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
 
             else:
@@ -92,13 +92,10 @@ class Person:
                 if "Her i Sognet" in other.fodested:
                     proximity = damerau_levenshtein_distance(self.fodested, other.sogn)
 
-                else:
+                if "Her i Sognet" not in self.fodested in other.fodested and "Her i Sognet" not in other.fodested:
                     proximity = damerau_levenshtein_distance(self.fodested, other.fodested)
 
-            if proximity > 0.50:
-                return 1
-            else:
-                return 0
+            return proximity
 
         else:
-            return 0
+            return 1
