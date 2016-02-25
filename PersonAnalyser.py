@@ -50,7 +50,7 @@ def run(people):
                 for possible_match in possible_matches:
                     assert isinstance(possible_match, Person.Person)
                     proximity = damerau_levenshtein_distance(person.navn, possible_match.navn)
-                    if proximity > 0.50:
+                    if proximity < 3:
                         print(proximity)
                         m = person.matches.get(proximity, [])
                         m.append(possible_match.id)

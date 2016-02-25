@@ -23,6 +23,7 @@ class Person:
         self.fodested = str()
         self.valid = True
         self.matches = dict()
+        self.erhverv = str()
         self.id = -1
         pass
 
@@ -56,12 +57,13 @@ class Person:
         s += str(self.fodeaar) + "|"
         s += str(self.fodested) + "|"
         s += str(self.civilstand_source) + "|"
+        s += str(self.erhverv) + "|"
         s += str(self.valid) + "\n"
         return s
 
     @staticmethod
     def topline():
-        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|valid\n"
+        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|erhverv|valid\n"
 
     def get_closests(self):
         highest = None

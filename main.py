@@ -9,6 +9,7 @@ from comparison import damerau_levenshtein_distance
 import collections
 import Person
 
+t56 = time();
 
 people = []
 jobs = []
@@ -61,7 +62,7 @@ def rebuild_matches(p):
 
 # TODO Modify this to point to the local files on your machine
 # Fetch the current data
-get_people_from_directory(".\\toy", job_server, jobs)
+get_people_from_directory(join(".", "toy"), job_server, jobs)
 
 # Create lists of data
 invalidPeople = []
@@ -126,4 +127,4 @@ t1 = time()
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
-#print(t2 - t1)
+print(t2 - t56)

@@ -120,6 +120,12 @@ def fodested(p, value):
     p.fodested = value
 
 
+def erhverv(p, value):
+    if p.erhverv:
+        p.erhverv += " "
+    p.erhverv += value
+
+
 switcher = {
     "KIPnr": kipnr,
     "kilde": kilde,
@@ -136,7 +142,9 @@ switcher = {
     "alder_tal": alder_tal,
     "fødeår": fodeaar,
     "nr_ægteskab": civiltilstand,
-    "fødested": fodested
+    "fødested": fodested,
+    "erhverv": erhverv,
+    "stilling_i_husstanden": erhverv
 }
 
 
