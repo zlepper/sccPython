@@ -9,6 +9,7 @@ from comparison import damerau_levenshtein_distance
 import collections
 import Person
 
+t56 = time();
 
 people = []
 jobs = []
@@ -126,4 +127,4 @@ t1 = time()
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
-#print(t2 - t1)
+print(t2 - t56)
