@@ -1,5 +1,3 @@
-from comparison import damerau_levenshtein_distance
-
 class Person:
     def __init__(self, year):
         assert isinstance(year, int)
@@ -23,7 +21,6 @@ class Person:
         self.fodested = str()
         self.valid = True
         self.matches = dict()
-        self.erhverv = str()
         self.id = -1
         pass
 
@@ -57,14 +54,26 @@ class Person:
         s += str(self.fodeaar) + "|"
         s += str(self.fodested) + "|"
         s += str(self.civilstand_source) + "|"
-        s += str(self.erhverv) + "|"
         s += str(self.valid) + "\n"
         return s
 
     @staticmethod
     def topline():
-        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|erhverv|valid\n"
+        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|valid\n"
 
+	def Compare_where_they_live();
+		living_proximity = 0
+		#sammenlign bosteder
+		if person.amt == possible_match.amt:
+			living_proximity = living_proximity + 0.1 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+			if person.herred == possible_match.herred:
+				living_proximity = living_proximity + 0.2 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+				if person.sogn == possible_match.sogn:
+					living_proximity = living_proximity + 0.3 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+					if person.stednavn == possible_match.stednavn:
+						living_proximity = living_proximity + 0.4 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+		return living_proximity
+	
     def get_closests(self):
         highest = None
         closest = None
@@ -77,25 +86,3 @@ class Person:
                 highest = key
                 closest = value
         return closest
-
-    def compare_origin(self, other):
-
-        if self.fodested != "" and other.fodested != "":
-
-            if "Her i Sognet" in self.fodested in other.fodested and "Her i Sognet" in other.fodested:
-                proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
-
-            else:
-                if "Her i Sognet" in self.fodested:
-                    proximity = damerau_levenshtein_distance(self.sogn, other.fodested)
-
-                if "Her i Sognet" in other.fodested:
-                    proximity = damerau_levenshtein_distance(self.fodested, other.sogn)
-
-                if "Her i Sognet" not in self.fodested in other.fodested and "Her i Sognet" not in other.fodested:
-                    proximity = damerau_levenshtein_distance(self.fodested, other.fodested)
-
-            return proximity
-
-        else:
-            return 1
