@@ -82,20 +82,31 @@ class Person:
 
         if self.fodested != "" and other.fodested != "":
 
-            if "Her i Sognet" in self.fodested in other.fodested and "Her i Sognet" in other.fodested:
+            if "her i sognet" in self.fodested.lower() and "her i sognet" in other.fodested.lower():
                 proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
 
             else:
-                if "Her i Sognet" in self.fodested:
+                if "her i sognet" in self.fodested.lower():
                     proximity = damerau_levenshtein_distance(self.sogn, other.fodested)
 
-                if "Her i Sognet" in other.fodested:
+                if "her i sognet" in other.fodested.lower():
                     proximity = damerau_levenshtein_distance(self.fodested, other.sogn)
 
-                if "Her i Sognet" not in self.fodested in other.fodested and "Her i Sognet" not in other.fodested:
+                '''
+                if "her i sognet" not in self.fodested.lower() and "her i sognet" not in other.fodested.lower():
                     proximity = damerau_levenshtein_distance(self.fodested, other.fodested)
+                '''
 
             return proximity
 
         else:
-            return 1
+            return 10
+
+    def compare_family(self, other):
+
+        # Sammenlign personerne efter deres mand eller kones navn
+        if self.civilstand_source is "gift" and self.civilstand is 1: # Hvis personen ikke er gift, så findes personens mand eller kone ikke
+
+            if other.civilstand_source is "gift" and other.civilstand is 1:
+
+
