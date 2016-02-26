@@ -61,18 +61,6 @@ class Person:
     def topline():
     	return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|valid\n"
 
-    def Compare_where_they_live();
-        living_proximity = 0
-        #sammenlign bosteder
-	if person.amt == possible_match.amt:
-		living_proximity = living_proximity + 0.1 #her skal vi sætte en variable som kan ændres fra et .txt dokument
-		if person.herred == possible_match.herred:
-			living_proximity = living_proximity + 0.2 #her skal vi sætte en variable som kan ændres fra et .txt dokument
-			if person.sogn == possible_match.sogn:
-				living_proximity = living_proximity + 0.3 #her skal vi sætte en variable som kan ændres fra et .txt dokument
-				if person.stednavn == possible_match.stednavn:
-					living_proximity = living_proximity + 0.4 #her skal vi sætte en variable som kan ændres fra et .txt dokument
-	return living_proximity
 	
     def get_closests(self):
         highest = None
@@ -86,3 +74,16 @@ class Person:
                 highest = key
                 closest = value
         return closest
+
+def compare_where_they_live(person, possible_match):
+    living_proximity = 0
+    #sammenlign bosteder
+    if person.amt == possible_match.amt:
+        living_proximity = living_proximity + 0.1 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+        if person.herred == possible_match.herred:
+            living_proximity = living_proximity + 0.2 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+            if person.sogn == possible_match.sogn:
+                living_proximity = living_proximity + 0.3 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+                if person.stednavn == possible_match.stednavn:
+                    living_proximity = living_proximity + 0.4 #her skal vi sætte en variable som kan ændres fra et .txt dokument
+    return living_proximity
