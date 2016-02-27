@@ -1,4 +1,5 @@
 from comparison import damerau_levenshtein_distance
+from fodestedData import get_ditto_fodested
 
 class Person:
     def __init__(self, year):
@@ -91,6 +92,22 @@ class Person:
 
                 if "her i sognet" in other.fodested.lower():
                     proximity = damerau_levenshtein_distance(self.fodested, other.sogn)
+
+                if "do" in self.fodsted.lower() or "ditto" in self.fodested.lower():
+                    fodested = get_ditto_fodested(people, self.KIPnr, self.ibnr) # Tilføj liste af personer
+
+                    if "her i sognet" in fodested.lower():
+                        proximity = damerau_levenshtein_distance(fodested, other.fodested)
+
+                    else: # Bliv ved indtil der den møder "her i sognet" eller det ikke længere er samme hus
+
+                if "do" in other.fodsted.lower() or "ditto" in other.fodested.lower():
+                    fodested = get_ditto_fodested(people, self.KIPnr, self.ibnr) # Tilføj liste af personer
+
+                    if "her i sognet" in fodested.lower():
+                        proximity = damerau_levenshtein_distance(self.fodested, fodested)
+
+                    else: # Bliv ved indtil der den møder "her i sognet" eller det ikke længere er samme hus
 
                 '''
                 if "her i sognet" not in self.fodested.lower() and "her i sognet" not in other.fodested.lower():

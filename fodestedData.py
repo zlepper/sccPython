@@ -1,14 +1,13 @@
 
 def get_ditto_fodested(people, KIPnr, Ibnr):
 
-    fodested = []
+    fodested = ""
 
     for person in people:
         for person.KIPnr in person and person.ibnr in person:
 
             if person.KIPnr is KIPnr and person.ibnr - 1 is Ibnr - 1:
-                fodested.append(person.KIPnr)
-                fodested.append(person.ibnr - 1)
+                fodested.append(person.fodested)
 
     return fodested
 
