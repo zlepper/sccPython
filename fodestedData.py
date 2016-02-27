@@ -1,23 +1,28 @@
 
-def get_ditto_fodested(people):
+def get_ditto_fodested(people, KIPnr, Ibnr):
 
-    dic = dict()
+    fodested = []
+
     for person in people:
-        KIPnr_list = dic.get(person.KIPnr, [])
-        KIPnr_list.append(person)
-        dic[person.sogn] = KIPnr_list
+        for person.KIPnr in person and person.ibnr in person:
 
-        KIPnr_list = dic.get(person.KIPnr, [])
-        KIPnr_list.append(person)
-        dic[person.sogn] = KIPnr_list
+            if person.KIPnr is KIPnr and person.ibnr - 1 is Ibnr - 1:
+                fodested.append(person.KIPnr)
+                fodested.append(person.ibnr - 1)
+
+    return fodested
 
 def get_all_sogn(people):
 
-    dic = dict()
+    all_sogn = []
+
     for person in people:
-        sogn_list = dic.get(person.sogn, [])
-        sogn_list.append(person)
-        dic[person.sogn] = sogn_list
+        for person.sogn in person:
+
+            if person.sogn not in all_sogn:
+                all_sogn.append(person.sogn)
+
+    return all_sogn
 
 
 
