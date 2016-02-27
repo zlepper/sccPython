@@ -87,27 +87,23 @@ class Person:
                 proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
 
             else:
-                if "her i sognet" in self.fodested.lower():
-                    proximity = damerau_levenshtein_distance(self.sogn, other.fodested)
+                if "her i sognet" in self.fodested.lower() and "do" in other.fodested.lower() or "ditto" in other.fodested.lower():
+                    fodested = get_ditto_fodested(people, other.KIPnr, other.ibnr) # Tilføj liste af personer
 
-                if "her i sognet" in other.fodested.lower():
-                    proximity = damerau_levenshtein_distance(self.fodested, other.sogn)
+                    while other.husstands_familienr is fodested[0]:
+                        fodested = get_ditto_fodested(people, other.KIPnr, other.ibnr - 1) # Tilføj liste af personer
 
-                if "do" in self.fodsted.lower() or "ditto" in self.fodested.lower():
+                    if "her i sognet" in fodested[1].lower():
+                        proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
+
+                if "her i sognet" in other.fodested.lower() and "do" in self.fodested.lower() or "ditto" in self.fodested.lower():
                     fodested = get_ditto_fodested(people, self.KIPnr, self.ibnr) # Tilføj liste af personer
 
-                    if "her i sognet" in fodested.lower():
-                        proximity = damerau_levenshtein_distance(fodested, other.fodested)
+                    while self.husstands_familienr is fodested[0]:
+                        fodested = get_ditto_fodested(people, self.KIPnr, self.ibnr - 1) # Tilføj liste af personer
 
-                    else: # Bliv ved indtil der den møder "her i sognet" eller det ikke længere er samme hus
-
-                if "do" in other.fodsted.lower() or "ditto" in other.fodested.lower():
-                    fodested = get_ditto_fodested(people, self.KIPnr, self.ibnr) # Tilføj liste af personer
-
-                    if "her i sognet" in fodested.lower():
-                        proximity = damerau_levenshtein_distance(self.fodested, fodested)
-
-                    else: # Bliv ved indtil der den møder "her i sognet" eller det ikke længere er samme hus
+                    if "her i sognet" in fodested[1].lower():
+                        proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
 
                 '''
                 if "her i sognet" not in self.fodested.lower() and "her i sognet" not in other.fodested.lower():
