@@ -1,5 +1,6 @@
 from comparison import damerau_levenshtein_distance
 from fodestedData import get_ditto_fodested
+from fodestedData import get_home
 
 class Person:
     def __init__(self, year):
@@ -110,7 +111,7 @@ class Person:
                     proximity = damerau_levenshtein_distance(self.fodested, other.fodested)
                 '''
 
-            return proximity
+            return proximity # Begge personer er født i samme sogn
 
         else:
             return 10
@@ -118,8 +119,25 @@ class Person:
     def compare_family(self, other):
 
         # Sammenlign personerne efter deres mand eller kones navn
-        if self.civilstand_source is "gift" and self.civilstand is 1: # Hvis personen ikke er gift, så findes personens mand eller kone ikke
+        if self.civilstand_source is "gift" and self.civilstand is 1 and other.civilstand_source is "gift" and other.civilstand is 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
+            person_home = get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr) # Tilføj liste af personer
+            other_home = get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr) # Tilføj liste af personer
 
-            if other.civilstand_source is "gift" and other.civilstand is 1:
+            mand = ["mand", "hosbonde", "huusbond", "huusbonde", "boelsmand", "gaardmand", "huusmand", "dagleier", "huusfader", "huusfad"]
+            kone = ["kone", "madmoder", "konen", "madmoeder", "huusmoder"]
+
+            for person in person_home:
+
+                if mand in person.erhverv.lower() or kone in person.erhverv.lower():
+                    person_aegtefaelle = person.navn
+
+                    for other in other_home:
+                        if mand in other.erhverv.lower() or kone in other.erhverv.lower():
+                            other_aegtefaelle = other.navn
+
+                            proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+            return proximity # Begge personer har en ægtefælle med samme navn
+
 
 
