@@ -1,5 +1,5 @@
-from comparison import damerau_levenshtein_distance
 import Person
+
 
 def run(people):
     assert isinstance(people, list)
@@ -46,15 +46,13 @@ def run(people):
 
                 possible_matches = temp
 
-                # Sammenlign navne
                 for possible_match in possible_matches:
                     assert isinstance(possible_match, Person.Person)
-                    proximity = damerau_levenshtein_distance(person.navn, possible_match.navn)
-                    if proximity < 3:
-                        print(proximity)
-                        m = person.matches.get(proximity, [])
-                        m.append(possible_match.id)
-                        person.matches[proximity] = m
-
+                    prox = person.get_proximity(possible_match, people)
+                    if prox < 8:
+                        lis = person.matches.get(prox, [])
+                        assert isinstance(lis, list)
+                        lis.append(possible_match.id)
+                        person.matches[prox] = lis
     return people
 

@@ -15,7 +15,7 @@ class Outputter:
                 s = person.to_csv()
                 g = person.get_closests()
                 if g is not None:
-                    for h in g:
-                        s += "\t\t" + h.to_csv()
+                    for h in g[0]:
+                        s += "\t" + str(g[1]) + "\t" + h.to_csv()
                 file.write(s)
         print("Done writing")

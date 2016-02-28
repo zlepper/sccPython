@@ -1,3 +1,4 @@
 .idea/
 *.pyc
+/smallscc.out.csv
 smallscc.out.csv
