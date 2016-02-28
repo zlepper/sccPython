@@ -58,13 +58,13 @@ class Person:
         s += str(self.fodeaar) + "|"
         s += str(self.fodested) + "|"
         s += str(self.civilstand_source) + "|"
-        s += str(self.erhverv) + "|"
         s += str(self.valid) + "\n"
         return s
 
     @staticmethod
     def topline():
-        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|erhverv|valid\n"
+        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|" \
+               "matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|erhverv|valid\n"
 
     def get_closests(self):
         lowest = None
@@ -85,6 +85,7 @@ class Person:
         proximity = self.compare_name(other)
         proximity += self.compare_origin(other, people)
         proximity += self.compare_family(other, people)
+        proximity += self.compare_where_they_live(other)
         return proximity
 
     def compare_name(self, other):
@@ -150,4 +151,12 @@ class Person:
             return proximity  # Begge personer har en ægtefælle med samme navn
         return 0
 
+    def compare_where_they_live(self, possible_match):
+        if self.amt != possible_match.amt:
+            return 3
+        if self.herred != possible_match.herred:
+            return 2
+        if self.sogn != possible_match.sogn:
+            return 1
+        return 0
 
