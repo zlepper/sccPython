@@ -30,4 +30,4 @@ def get_home(people, kilde, sogn, herred, amt, stednavn, husstand):
         if person.kilde is kilde and person.sogn is sogn and person.herred is herred and person.amt is amt and person.stednavn is stednavn and person.husstands_familienr is husstand:
             home.append(person)
 
-        return home
+    return home
