@@ -91,6 +91,7 @@ class Person:
     def compare_name(self, other):
         return damerau_levenshtein_distance(self.navn, other.navn)
 
+    # Forudsætter, at navnet på personerne også er ens
     def compare_origin(self, other, people):
 
         if self.fodested != "" and other.fodested != "":
@@ -129,7 +130,7 @@ class Person:
 
     def compare_family(self, other, people):
 
-        # Sammenlign personerne efter deres mand eller kones navn
+        # Sammenlign personerne efter deres mand eller kones navn  - Forudsætter, at personernes navne er ens
         if self.civilstand is 1 and other.civilstand is 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
             person_home = fodestedData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
             other_home = fodestedData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
