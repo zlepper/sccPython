@@ -153,11 +153,21 @@ class Person:
         return 0
 
     def compare_where_they_live(self, possible_match):
-        if self.amt != possible_match.amt:
-            return 3
-        if self.herred != possible_match.herred:
-            return 2
-        if self.sogn != possible_match.sogn:
-            return 1
-        return 0
+        if self.amt != "" and possible_match.amt != "":
+            proximity = damerau_levenshtein_distance(self.amt, possible_match.amt)
+            if proximity > 3:
+                return 4
+        if self.herred != "" and possible_match.herred != "":
+            proximity = damerau_levenshtein_distance(self.herred, possible_match.herred)
+            if proximity > 3:
+                return 3
+        if self.sogn != "" and possible_match.sogn != "":
+            proximity = damerau_levenshtein_distance(self.sogn, possible_match.sogn)
+            if proximity > 3:
+                return 2
+        if self.stednavn != "" and possible_match.stednavn != "":
+            proximity = damerau_levenshtein_distance(self.stednavn, possible_match.stednavn)
+            if proximity > 3:
+                return 1
+        return 0 # Begge personer bor præcis samme sted
 
