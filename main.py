@@ -117,14 +117,14 @@ for job in jobs:
 
 people = rebuild_matches(people)
 
-# Hvis en anden person med samme navn har et køn, brug den persons køn
-
+# Gør invalide personer valide - Hvis en anden person med samme navn har et køn, brug den persons køn
 if invalidPeople != []:
     for person in invalidPeople:
 
         if person.navn != "":
 
             for match in people:
+
                 proximity = damerau_levenshtein_distance(person.navn, match.navn)
 
                 if proximity < 3:
@@ -133,16 +133,24 @@ if invalidPeople != []:
 
                         if match.kon:
                             person.kon = "M"
-                            people.append(person)
-                            invalidPeople.remove(person)
+
+                            if person not in people:
+                                people.append(person)
+                                print("Navn: " + person.navn + " " + "Køn: " + person.kon)
+
+                            if invalidPeople != []:
+                                del invalidPeople[0]
 
                         else:
                             person.kon = "K"
-                            people.append(person)
-                            invalidPeople.remove(person)
+                            if person not in people:
+                                people.append(person)
+                                print("Navn: " + person.navn + " " + "Køn: " + person.kon)
+                            if invalidPeople != []:
+                                del invalidPeople[0]
 
-print("Ny Invalid people count: " + str(new_invalidpeople))
-
+print("Ny invalid people count: %d" % (len(invalidPeople)))
+print(str(invalidPeople))
 t2 = time()
 
 #job_server.print_stats()
