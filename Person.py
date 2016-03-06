@@ -1,5 +1,5 @@
 from comparison import damerau_levenshtein_distance
-import fodestedData
+import getData
 
 class Person:
     def __init__(self, year):
@@ -101,19 +101,19 @@ class Person:
 
             else:
                 if "her i sognet" in self.fodested.lower() and "do" in other.fodested.lower() or "ditto" in other.fodested.lower():
-                    fodested = fodestedData.get_ditto_fodested(people, other.KIPnr, other.ibnr)  # Tilføj liste af personer
+                    fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
 
                     while other.husstands_familienr is fodested[0]:
-                        fodested = fodestedData.get_ditto_fodested(people, other.KIPnr, other.ibnr - 1)  # Tilføj liste af personer
+                        fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
                         proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
 
                 if "her i sognet" in other.fodested.lower() and "do" in self.fodested.lower() or "ditto" in self.fodested.lower():
-                    fodested = fodestedData.get_ditto_fodested(people, self.KIPnr, self.ibnr)  # Tilføj liste af personer
+                    fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
 
                     while self.husstands_familienr is fodested[0]:
-                        fodested = fodestedData.get_ditto_fodested(people, self.KIPnr, self.ibnr - 1)  # Tilføj liste af personer
+                        fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
                         proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
@@ -132,8 +132,8 @@ class Person:
 
         # Sammenlign personerne efter deres mand eller kones navn  - Forudsætter, at personernes navne er ens
         if self.civilstand >= 1 and other.civilstand >= 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
-            person_home = fodestedData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
-            other_home = fodestedData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
+            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
+            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
 
             kone = ["kone", "madmoder", "konen", "madmoeder", "huusmoder", "hustru"]
             mand = ["mand", "hosbonde", "huusbond", "huusbonde", "boelsmand", "gaardmand", "huusmand", "dagleier", "huusfader", "huusfad"]

@@ -8,7 +8,7 @@ from output import Outputter
 from comparison import damerau_levenshtein_distance
 import collections
 import Person
-import fodestedData
+import getData
 
 t56 = time();
 
@@ -104,7 +104,7 @@ for p in people:
 
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "fodestedData"))
+j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,), ("collections", "Person"))
 jobs.append(j)
@@ -114,8 +114,6 @@ people = []
 for job in jobs:
     pe = job()
     people.extend(pe)
-
-people = rebuild_matches(people)
 
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, brug den persons køn
 if invalidPeople != []:
@@ -151,6 +149,9 @@ if invalidPeople != []:
 
 print("Ny invalid people count: %d" % (len(invalidPeople)))
 print(str(invalidPeople))
+
+people = rebuild_matches(people)
+
 t2 = time()
 
 #job_server.print_stats()
