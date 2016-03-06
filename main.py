@@ -8,6 +8,7 @@ from output import Outputter
 from comparison import damerau_levenshtein_distance
 import collections
 import Person
+import fodestedData
 
 t56 = time();
 
@@ -115,6 +116,32 @@ for job in jobs:
     people.extend(pe)
 
 people = rebuild_matches(people)
+
+# Hvis en anden person med samme navn har et køn, brug den persons køn
+
+if invalidPeople != []:
+    for person in invalidPeople:
+
+        if person.navn != "":
+
+            for match in people:
+                proximity = damerau_levenshtein_distance(person.navn, match.navn)
+
+                if proximity < 3:
+
+                    if match.valid:
+
+                        if match.kon:
+                            person.kon = "M"
+                            people.append(person)
+                            invalidPeople.remove(person)
+
+                        else:
+                            person.kon = "K"
+                            people.append(person)
+                            invalidPeople.remove(person)
+
+print("Ny Invalid people count: " + str(new_invalidpeople))
 
 t2 = time()
 

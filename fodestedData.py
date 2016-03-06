@@ -23,6 +23,16 @@ def get_all_sogn(people):
     return all_sogn
 
 
+def get_all_names(people):
+    all_names = []
+
+    for person in people:
+        if person.navn not in all_names:
+            all_names.append(person.navn)
+
+    return all_names
+
+
 def get_home(people, kilde, sogn, herred, amt, stednavn, husstand):
     home = []
 
