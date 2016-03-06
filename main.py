@@ -8,8 +8,10 @@ from output import Outputter
 from comparison import damerau_levenshtein_distance
 import collections
 import Person
+from group import create_groups
 
-t56 = time();
+
+t56 = time()
 
 people = []
 jobs = []
@@ -60,7 +62,6 @@ def rebuild_matches(p):
     return p
 
 
-# TODO Modify this to point to the local files on your machine
 # Fetch the current data
 get_people_from_directory(join(".", "toy"), job_server, jobs)
 
@@ -119,9 +120,12 @@ people = rebuild_matches(people)
 
 t2 = time()
 
+# Create groups
+people = create_groups(people)
+
 #job_server.print_stats()
 
-#print(t2 - t1)
+print(t2 - t1)
 
 t1 = time()
 Outputter.output(people, "smallscc.out.csv")
