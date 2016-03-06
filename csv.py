@@ -101,11 +101,18 @@ def fodeaar(p, value):
 
 civil_dic = {
     "gift": 2,
-    "ugift": 0,
+    "Gift": 2,
+    "ugift": 1,
+    "Ugift": 1,
     "ukendt": 0,
+    "Ukendt": 0,
     "enke": 3,
+    "Enke": 3,
+    "Enkemand": 3,
     "sepereret": 3,
-    "fraskilt": 3
+    "Sepereret": 3,
+    "fraskilt": 3,
+    "Fraskilt": 3
 }
 
 
@@ -113,6 +120,7 @@ def civiltilstand(p, value):
     assert isinstance(p, Person)
     p.civilstand = civil_dic.get(value, 0)
     p.civilstand_source = value
+    print(value)
 
 
 def fodested(p, value):
@@ -124,6 +132,20 @@ def erhverv(p, value):
     if p.erhverv:
         p.erhverv += " "
     p.erhverv += value
+
+
+def civilstkode(p, value):
+    assert isinstance(p, Person)
+    try:
+        p.civilstand = int(value)
+    except ValueError:
+        p.valid = False
+    p.civilstand_source = value
+
+
+def ng_ægteskab(p, value):
+    assert isinstance(p, Person)
+    p.nregteskab = value
 
 
 switcher = {
@@ -141,10 +163,12 @@ switcher = {
     "køn": kon,
     "alder_tal": alder_tal,
     "fødeår": fodeaar,
-    "nr_ægteskab": civiltilstand,
+    "nr_ægteskab": ng_ægteskab,
+    "civilstand": civiltilstand,
     "fødested": fodested,
     "erhverv": erhverv,
-    "stilling_i_husstanden": erhverv
+    "stilling_i_husstanden": erhverv,
+    "civilstkode": civilstkode
 }
 
 
@@ -184,11 +208,7 @@ def get_people(path):
 
 class CsvParser:
     def __init__(self, path):
-        self.people = []
         self.path = path
 
     def get_people(self):
-        people = get_people(self.path)
-        assert isinstance(self.people, list)
-        self.people.extend(people)
-        return self.people
+        return get_people(self.path)

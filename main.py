@@ -105,7 +105,8 @@ t1 = time()
 jobs = []
 j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "fodestedData"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,), ("collections", "Person"))
+j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,),
+                      ("collections", "Person", "fodestedData"))
 jobs.append(j)
 
 people = []

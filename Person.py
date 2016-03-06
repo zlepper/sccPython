@@ -25,6 +25,7 @@ class Person:
         self.valid = True
         self.matches = dict()
         self.erhverv = str()
+        self.nregteskab = int()
         self.id = -1
         pass
 
