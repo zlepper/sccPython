@@ -27,6 +27,7 @@ class Person:
         self.erhverv = str()
         self.nregteskab = int()
         self.id = -1
+        self.group = -1
         pass
 
     def __str__(self):
@@ -38,6 +39,7 @@ class Person:
     def to_csv(self):
         s = ""
         s += str(self.id) + "|"
+        s += str(self.group) + "|"
         s += str(self.year) + "|"
         s += str(self.KIPnr) + "|"
         s += str(self.kilde) + "|"
@@ -64,7 +66,7 @@ class Person:
 
     @staticmethod
     def topline():
-        return "id|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|" \
+        return "id|group|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|" \
                "matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|erhverv|valid\n"
 
     def get_closests(self):
