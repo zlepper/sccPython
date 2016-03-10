@@ -107,7 +107,7 @@ jobs = []
 j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,),
-                      ("collections", "Person", "fodestedData"))
+                      ("collections", "Person", "getData"))
 jobs.append(j)
 
 people = []

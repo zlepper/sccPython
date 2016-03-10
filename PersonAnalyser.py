@@ -19,7 +19,7 @@ def run(people):
 
         # Iterate over all the person in this year
         for person in this_year_list:
-            print(person.civilstand)
+
             # Compare with all the other years
             for other_year in dic:
 
@@ -49,7 +49,7 @@ def run(people):
                 for possible_match in possible_matches:
                     assert isinstance(possible_match, Person.Person)
                     prox = person.get_proximity(possible_match, people)
-                    if prox < 80:
+                    if prox < 3:
                         lis = person.matches.get(prox, [])
                         assert isinstance(lis, list)
                         lis.append(possible_match.id)

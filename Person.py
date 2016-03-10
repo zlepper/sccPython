@@ -83,10 +83,10 @@ class Person:
         return closest, lowest
 
     def get_proximity(self, other, people):
-        proximity = self.compare_name(other)
-        proximity += self.compare_origin(other, people)
-        proximity += self.compare_family(other, people)
-        proximity += self.compare_where_they_live(other)
+     #   proximity = self.compare_name(other)
+      #  proximity += self.compare_origin(other, people)
+        proximity = self.compare_family(other, people)
+    #    proximity += self.compare_where_they_live(other)
         return proximity
 
     def compare_name(self, other):
@@ -132,43 +132,48 @@ class Person:
     def compare_family(self, other, people):
 
         # Sammenlign personerne efter deres mand eller kones navn  - Forudsætter, at personernes navne er ens
-        if self.civilstand >= 1 and other.civilstand >= 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
+        if self.civilstand is other.civilstand >= 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
+
             person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
             other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
 
             kone = ["kone", "madmoder", "konen", "madmoeder", "huusmoder", "hustru"]
             mand = ["mand", "hosbonde", "huusbond", "huusbonde", "boelsmand", "gaardmand", "huusmand", "dagleier", "huusfader", "huusfad"]
 
-            if self.kon is "M" and other.kon is "M":
-
-                for person in person_home:
-
-                    if kone in person.erhverv.lower():
-                        person_aegtefaelle = person.navn
-
-                        for other in other_home:
-                            if kone in other.erhverv.lower():
-                                other_aegtefaelle = other.navn
-
-                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
-                                print("M Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
-                return proximity # Begge personer har en ægtefælle med samme navn
-
-            if self.kon is "K" and other.kon is "K":
-                if kone in self.erhverv and kone in other.erhverv:
+            if person_home != []:
+                if self.kon is True and other.kon is True:
+                    print("TEST1")
 
                     for person in person_home:
-
-                        if mand in person.erhverv.lower():
+                       # print("person: " + str(person) + "i hjemmet: " + str(person_home))
+                        if any(element in person.erhverv.lower().split() for element in kone):
+                            print("TEST3")
                             person_aegtefaelle = person.navn
 
                             for other in other_home:
-                                if mand in other.erhverv.lower():
+                                if any(element in kone for element in other.erhverv.lower()):
+                                    other_aegtefaelle = other.navn
+
+                                    proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                    print("M Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
+
+                                    return proximity # Begge personer har en ægtefælle med samme navn
+
+            if self.kon is False and other.kon is False:
+                if any(element in kone for element in self.erhverv.lower()) and any(element in kone for element in other.erhverv.lower()):
+
+                    for person in person_home:
+
+                        if any(element in mand for element in self.erhverv.lower()):
+                            person_aegtefaelle = person.navn
+
+                            for other in other_home:
+                                if any(element in mand for element in other.erhverv.lower()):
                                     other_aegtefaelle = other.navn
 
                                     proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
                                     print("K Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
-                    return proximity # Begge personer har en ægtefælle med samme navn
+                                    return proximity # Begge personer har en ægtefælle med samme navn
 
         return 0
 
