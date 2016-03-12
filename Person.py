@@ -106,7 +106,7 @@ class Person:
                 if "her i sognet" in self.fodested.lower() and "do" in other.fodested.lower() or "ditto" in other.fodested.lower():
                     fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
 
-                    while other.husstands_familienr is fodested[0]:
+                    while other.husstands_familienr == fodested[0]:
                         fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
@@ -115,7 +115,7 @@ class Person:
                 if "her i sognet" in other.fodested.lower() and "do" in self.fodested.lower() or "ditto" in self.fodested.lower():
                     fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
 
-                    while self.husstands_familienr is fodested[0]:
+                    while self.husstands_familienr == fodested[0]:
                         fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
@@ -134,26 +134,25 @@ class Person:
     def compare_family(self, other, people):
 
         # Sammenlign personerne efter deres mand eller kones navn  - Forudsætter, at personernes navne er ens
-        if self.civilstand is other.civilstand >= 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
+        if self.civilstand == 1 and other.civilstand == 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
 
-            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
-            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
+            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr, self.lbnr)  # Tilføj liste af personer
+            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr, other.lbnr)  # Tilføj liste af personer
 
             kone = ["kone", "madmoder", "konen", "madmoeder", "huusmoder", "hustru"]
             mand = ["mand", "hosbonde", "huusbond", "huusbonde", "boelsmand", "gaardmand", "huusmand", "dagleier", "huusfader", "huusfad"]
 
-            if person_home != []:
-                if self.kon is True and other.kon is True:
-                    print("TEST1")
-
-                    for person in person_home:
-                       # print("person: " + str(person) + "i hjemmet: " + str(person_home))
+            if self.kon == True and other.kon == True:
+                print("Person: TEST1")
+                for person in person_home:
+                        print("person: TEST2")
+                        print("")
                         if any(element in person.erhverv.lower().split() for element in kone):
-                            print("TEST3")
+                            print("Person: TEST3")
                             person_aegtefaelle = person.navn
 
                             for other in other_home:
-                                if any(element in kone for element in other.erhverv.lower()):
+                                if any(element in other.erhverv.lower().split() for element in kone):
                                     other_aegtefaelle = other.navn
 
                                     proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
@@ -161,21 +160,23 @@ class Person:
 
                                     return proximity # Begge personer har en ægtefælle med samme navn
 
-            if self.kon is False and other.kon is False:
-                if any(element in kone for element in self.erhverv.lower()) and any(element in kone for element in other.erhverv.lower()):
+            if self.kon == False and other.kon == False:
+                print("Person: TEST1")
 
-                    for person in person_home:
+                for person in person_home:
+                    print("Person: TEST2")
 
-                        if any(element in mand for element in self.erhverv.lower()):
-                            person_aegtefaelle = person.navn
+                    if any(element in person.erhverv.lower().split() for element in mand):
+                        person_aegtefaelle = person.navn
+                        print("Person: TEST3")
 
-                            for other in other_home:
-                                if any(element in mand for element in other.erhverv.lower()):
-                                    other_aegtefaelle = other.navn
+                        for other in other_home:
+                            if any(element in person.erhverv.lower().split() for element in mand):
+                                other_aegtefaelle = other.navn
 
-                                    proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
-                                    print("K Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
-                                    return proximity # Begge personer har en ægtefælle med samme navn
+                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                print("K Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
+                                return proximity # Begge personer har en ægtefælle med samme navn
 
         return 0
 
