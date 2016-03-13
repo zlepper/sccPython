@@ -1,0 +1,41 @@
+def get_ditto_fodested(people, KIPnr, Ibnr):
+    fodested = []
+
+    for person in people:
+        for person.KIPnr in person and person.ibnr in person:
+
+            if person.KIPnr == KIPnr and person.ibnr - 1 == Ibnr - 1:
+                fodested.append(person.husstands_familienr)
+                fodested.append(person.fodested)
+
+    return fodested
+
+
+def get_all_sogn(people):
+    all_sogn = []
+
+    for person in people:
+        for person.sogn in person:
+
+            if person.sogn not in all_sogn:
+                all_sogn.append(person.sogn)
+
+    return all_sogn
+
+
+def get_all_names(people):
+    all_names = []
+
+    for person in people:
+        if person.navn not in all_names:
+            all_names.append(person.navn)
+
+    return all_names
+
+
+def get_home(people, kilde, sogn, herred, amt, stednavn, husstand, ibnr):
+    home = []
+    for person in people:
+        if person.kilde == kilde and person.sogn == sogn and person.herred == herred and person.amt == amt and person.stednavn == stednavn and person.husstands_familienr == husstand:
+            home.append(person)
+    return home

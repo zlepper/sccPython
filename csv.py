@@ -56,10 +56,12 @@ def stednavn(p, value):
     p.stednavn = value
     p.valid = not not value
 
+
 def husstands_familienr(p, value):
     assert isinstance(p, Person)
     p.husstands_familienr = value
     p.valid = not not value
+
 
 def matr_nr_adresse(p, value):
     assert isinstance(p, Person)
@@ -72,10 +74,12 @@ def navn(p, value):
     p.navn = value
     p.valid = not not value
 
+
 def kon(p, value):
     assert isinstance(p, Person)
     p.kon = value == "M"
     p.valid = not not value
+
 
 def alder_tal(p, value):
     if value:
@@ -120,7 +124,6 @@ def civiltilstand(p, value):
     assert isinstance(p, Person)
     p.civilstand = civil_dic.get(value, 0)
     p.civilstand_source = value
-    print(value)
 
 
 def fodested(p, value):
@@ -157,7 +160,7 @@ switcher = {
     "lbnr": lbnr,
     "kildehenvisning": kildehenvisning,
     "stednavn": stednavn,
-    "husstands_familienr": husstands_familienr,
+    "husstnr": husstands_familienr,
     "matr_nr_adresse": matr_nr_adresse,
     "navn": navn,
     "køn": kon,

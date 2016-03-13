@@ -8,8 +8,10 @@ from output import Outputter
 from comparison import damerau_levenshtein_distance
 import collections
 import Person
+from group import create_groups
+import getData
 
-t56 = time();
+t56 = time()
 
 people = []
 jobs = []
@@ -60,7 +62,6 @@ def rebuild_matches(p):
     return p
 
 
-# TODO Modify this to point to the local files on your machine
 # Fetch the current data
 get_people_from_directory(join(".", "toy"), job_server, jobs)
 
@@ -85,6 +86,39 @@ for job in jobs:
         else:
             invalidPeople.append(person)
 
+# Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
+if invalidPeople != []:
+    for person in invalidPeople:
+        mand = []
+        kvinde = []
+
+        if person.navn != "":
+
+            for match in males:
+                proximity = damerau_levenshtein_distance(person.navn, match.navn)
+
+                if proximity < 5:
+                    if match.valid:
+                        mand.append(person)
+
+            for match in females:
+                proximity = damerau_levenshtein_distance(person.navn, match.navn)
+
+                if proximity < 5:
+                    if match.valid:
+                        kvinde.append(person)
+
+            if mand != [] or kvinde != []:
+                if len(mand) < len(kvinde):
+                    person.kon = False
+                    females.append(person)
+                    invalidPeople.remove(person)
+
+                else:
+                    person.kon = True
+                    males.append(person)
+                    invalidPeople.remove(person)
+
 # job_server.print_stats()
 
 # Tell us how many of each type of person we have
@@ -100,13 +134,11 @@ for p in people:
     p.id = id
     id += 1
 
-
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "fodestedData"))
+j = job_server.submit(PersonAnalyser.run, (males, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,),
-                      ("collections", "Person", "fodestedData"))
+j = job_server.submit(PersonAnalyser.run, (females, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 
 people = []
@@ -119,9 +151,12 @@ people = rebuild_matches(people)
 
 t2 = time()
 
+# Create groups
+people = create_groups(people)
+
 #job_server.print_stats()
 
-#print(t2 - t1)
+print(t2 - t1)
 
 t1 = time()
 Outputter.output(people, "smallscc.out.csv")
