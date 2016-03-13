@@ -143,12 +143,12 @@ class Person:
             mand = ["mand", "hosbonde", "huusbond", "huusbonde", "boelsmand", "gaardmand", "huusmand", "dagleier", "huusfader", "huusfad"]
 
             if self.kon == True and other.kon == True:
-                print("Person: TEST1")
+               # print("Person: TEST1")
                 for person in person_home:
-                        print("person: TEST2")
-                        print("")
+                    #    print("person: TEST2")
+                    #    print("")
                         if any(element in person.erhverv.lower().split() for element in kone):
-                            print("Person: TEST3")
+                     #       print("Person: TEST3")
                             person_aegtefaelle = person.navn
 
                             for other in other_home:
@@ -161,14 +161,14 @@ class Person:
                                     return proximity # Begge personer har en ægtefælle med samme navn
 
             if self.kon == False and other.kon == False:
-                print("Person: TEST1")
+              #  print("Person: TEST1")
 
                 for person in person_home:
-                    print("Person: TEST2")
+              #      print("Person: TEST2")
 
                     if any(element in person.erhverv.lower().split() for element in mand):
                         person_aegtefaelle = person.navn
-                        print("Person: TEST3")
+                #        print("Person: TEST3")
 
                         for other in other_home:
                             if any(element in person.erhverv.lower().split() for element in mand):
