@@ -13,9 +13,5 @@ class Outputter:
             for person in people:
                 assert isinstance(person, Person.Person)
                 s = person.to_csv()
-                g = person.get_closests()
-                if g is not None:
-                    for h in g[0]:
-                        s += "\t" + str(g[1]) + "\t" + h.to_csv()
                 file.write(s)
         print("Done writing")

@@ -9,6 +9,7 @@ from comparison import damerau_levenshtein_distance
 import collections
 import Person
 from group import create_groups
+import getData
 
 
 t56 = time()
@@ -104,9 +105,9 @@ for p in people:
 
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "fodestedData"))
+j = job_server.submit(PersonAnalyser.run, (males, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,),
+j = job_server.submit(PersonAnalyser.run, (females, people), (damerau_levenshtein_distance,),
                       ("collections", "Person", "fodestedData"))
 jobs.append(j)
 
@@ -115,6 +116,41 @@ people = []
 for job in jobs:
     pe = job()
     people.extend(pe)
+
+# Gør invalide personer valide - Hvis en anden person med samme navn har et køn, brug den persons køn
+if invalidPeople != []:
+    for person in invalidPeople:
+
+        if person.navn != "":
+
+            for match in people:
+
+                proximity = damerau_levenshtein_distance(person.navn, match.navn)
+
+                if proximity < 3:
+
+                    if match.valid:
+
+                        if match.kon:
+                            person.kon = "M"
+
+                            if person not in people:
+                                people.append(person)
+                                print("Navn: " + person.navn + " " + "Køn: " + person.kon)
+
+                            if invalidPeople != []:
+                                del invalidPeople[0]
+
+                        else:
+                            person.kon = "K"
+                            if person not in people:
+                                people.append(person)
+                                print("Navn: " + person.navn + " " + "Køn: " + person.kon)
+                            if invalidPeople != []:
+                                del invalidPeople[0]
+
+print("Ny invalid people count: %d" % (len(invalidPeople)))
+print(str(invalidPeople))
 
 people = rebuild_matches(people)
 

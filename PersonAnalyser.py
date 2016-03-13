@@ -1,7 +1,7 @@
 import Person
 
 
-def run(people):
+def run(people, allPeople):
     assert isinstance(people, list)
 
     # Seperate people into different years
@@ -48,7 +48,7 @@ def run(people):
 
                 for possible_match in possible_matches:
                     assert isinstance(possible_match, Person.Person)
-                    prox = person.get_proximity(possible_match, people)
+                    prox = person.get_proximity(possible_match, people, allPeople)
                     if prox < 80:
                         lis = person.matches.get(prox, [])
                         assert isinstance(lis, list)

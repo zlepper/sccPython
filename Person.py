@@ -1,5 +1,5 @@
 from comparison import damerau_levenshtein_distance
-import fodestedData
+import getData
 
 class Person:
     def __init__(self, year):
@@ -84,7 +84,7 @@ class Person:
             return None
         return closest, lowest
 
-    def get_proximity(self, other, people):
+    def get_proximity(self, other, people, allPeople):
         proximity = self.compare_name(other)
         proximity += self.compare_origin(other, people)
         proximity += self.compare_family(other, people)
@@ -94,6 +94,7 @@ class Person:
     def compare_name(self, other):
         return damerau_levenshtein_distance(self.navn, other.navn)
 
+    # Forudsætter, at navnet på personerne også er ens
     def compare_origin(self, other, people):
 
         if self.fodested != "" and other.fodested != "":
@@ -103,19 +104,19 @@ class Person:
 
             else:
                 if "her i sognet" in self.fodested.lower() and "do" in other.fodested.lower() or "ditto" in other.fodested.lower():
-                    fodested = fodestedData.get_ditto_fodested(people, other.KIPnr, other.ibnr)  # Tilføj liste af personer
+                    fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
 
                     while other.husstands_familienr is fodested[0]:
-                        fodested = fodestedData.get_ditto_fodested(people, other.KIPnr, other.ibnr - 1)  # Tilføj liste af personer
+                        fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
                         proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
 
                 if "her i sognet" in other.fodested.lower() and "do" in self.fodested.lower() or "ditto" in self.fodested.lower():
-                    fodested = fodestedData.get_ditto_fodested(people, self.KIPnr, self.ibnr)  # Tilføj liste af personer
+                    fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
 
                     while self.husstands_familienr is fodested[0]:
-                        fodested = fodestedData.get_ditto_fodested(people, self.KIPnr, self.ibnr - 1)  # Tilføj liste af personer
+                        fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
                         proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
@@ -132,34 +133,63 @@ class Person:
 
     def compare_family(self, other, people):
 
-        # Sammenlign personerne efter deres mand eller kones navn
-        if self.civilstand is 1 and other.civilstand is 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
-            person_home = fodestedData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
-            other_home = fodestedData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
+        # Sammenlign personerne efter deres mand eller kones navn  - Forudsætter, at personernes navne er ens
+        if self.civilstand >= 1 and other.civilstand >= 1: # Hvis personerne ikke er gift, så findes personens mand eller kone ikke
+            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr)  # Tilføj liste af personer
+            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr)  # Tilføj liste af personer
 
+            kone = ["kone", "madmoder", "konen", "madmoeder", "huusmoder", "hustru"]
             mand = ["mand", "hosbonde", "huusbond", "huusbonde", "boelsmand", "gaardmand", "huusmand", "dagleier", "huusfader", "huusfad"]
-            kone = ["kone", "madmoder", "konen", "madmoeder", "huusmoder"]
-            proximity = 0
-            for person in person_home:
 
-                if mand in person.erhverv.lower() or kone in person.erhverv.lower():
-                    person_aegtefaelle = person.navn
+            if self.kon is "M" and other.kon is "M":
 
-                    for other in other_home:
-                        if mand in other.erhverv.lower() or kone in other.erhverv.lower():
-                            other_aegtefaelle = other.navn
+                for person in person_home:
 
-                            proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                    if kone in person.erhverv.lower():
+                        person_aegtefaelle = person.navn
 
-            return proximity  # Begge personer har en ægtefælle med samme navn
+                        for other in other_home:
+                            if kone in other.erhverv.lower():
+                                other_aegtefaelle = other.navn
+
+                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                print("M Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
+                return proximity # Begge personer har en ægtefælle med samme navn
+
+            if self.kon is "K" and other.kon is "K":
+                if kone in self.erhverv and kone in other.erhverv:
+
+                    for person in person_home:
+
+                        if mand in person.erhverv.lower():
+                            person_aegtefaelle = person.navn
+
+                            for other in other_home:
+                                if mand in other.erhverv.lower():
+                                    other_aegtefaelle = other.navn
+
+                                    proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                    print("K Person: " + self.navn + " Ægtefælle: " + person.aegtefaelle)
+                    return proximity # Begge personer har en ægtefælle med samme navn
+
         return 0
 
     def compare_where_they_live(self, possible_match):
-        if self.amt != possible_match.amt:
-            return 3
-        if self.herred != possible_match.herred:
-            return 2
-        if self.sogn != possible_match.sogn:
-            return 1
-        return 0
+        if self.amt != "" and possible_match.amt != "":
+            proximity = damerau_levenshtein_distance(self.amt, possible_match.amt)
+            if proximity > 3:
+                return 4
+        if self.herred != "" and possible_match.herred != "":
+            proximity = damerau_levenshtein_distance(self.herred, possible_match.herred)
+            if proximity > 3:
+                return 3
+        if self.sogn != "" and possible_match.sogn != "":
+            proximity = damerau_levenshtein_distance(self.sogn, possible_match.sogn)
+            if proximity > 3:
+                return 2
+        if self.stednavn != "" and possible_match.stednavn != "":
+            proximity = damerau_levenshtein_distance(self.stednavn, possible_match.stednavn)
+            if proximity > 3:
+                return 1
+        return 0 # Begge personer bor præcis samme sted
 
