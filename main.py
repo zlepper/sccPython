@@ -8,9 +8,8 @@ from output import Outputter
 from comparison import damerau_levenshtein_distance
 import collections
 import Person
-import getData
-
 from group import create_groups
+import getData
 
 t56 = time()
 
@@ -137,10 +136,9 @@ for p in people:
 
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males,), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
+j = job_server.submit(PersonAnalyser.run, (males, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females,), (damerau_levenshtein_distance,),
-                      ("collections", "Person", "getData"))
+j = job_server.submit(PersonAnalyser.run, (females, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 
 people = []
