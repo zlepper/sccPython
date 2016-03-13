@@ -11,7 +11,6 @@ import Person
 from group import create_groups
 import getData
 
-
 t56 = time()
 
 people = []
@@ -87,6 +86,39 @@ for job in jobs:
         else:
             invalidPeople.append(person)
 
+# Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
+if invalidPeople != []:
+    for person in invalidPeople:
+        mand = []
+        kvinde = []
+
+        if person.navn != "":
+
+            for match in males:
+                proximity = damerau_levenshtein_distance(person.navn, match.navn)
+
+                if proximity < 5:
+                    if match.valid:
+                        mand.append(person)
+
+            for match in females:
+                proximity = damerau_levenshtein_distance(person.navn, match.navn)
+
+                if proximity < 5:
+                    if match.valid:
+                        kvinde.append(person)
+
+            if mand != [] or kvinde != []:
+                if len(mand) < len(kvinde):
+                    person.kon = False
+                    females.append(person)
+                    invalidPeople.remove(person)
+
+                else:
+                    person.kon = True
+                    males.append(person)
+                    invalidPeople.remove(person)
+
 # job_server.print_stats()
 
 # Tell us how many of each type of person we have
@@ -102,13 +134,11 @@ for p in people:
     p.id = id
     id += 1
 
-
 t1 = time()
 jobs = []
 j = job_server.submit(PersonAnalyser.run, (males, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females, people), (damerau_levenshtein_distance,),
-                      ("collections", "Person", "fodestedData"))
+j = job_server.submit(PersonAnalyser.run, (females, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 
 people = []
@@ -116,41 +146,6 @@ people = []
 for job in jobs:
     pe = job()
     people.extend(pe)
-
-# Gør invalide personer valide - Hvis en anden person med samme navn har et køn, brug den persons køn
-if invalidPeople != []:
-    for person in invalidPeople:
-
-        if person.navn != "":
-
-            for match in people:
-
-                proximity = damerau_levenshtein_distance(person.navn, match.navn)
-
-                if proximity < 3:
-
-                    if match.valid:
-
-                        if match.kon:
-                            person.kon = "M"
-
-                            if person not in people:
-                                people.append(person)
-                                print("Navn: " + person.navn + " " + "Køn: " + person.kon)
-
-                            if invalidPeople != []:
-                                del invalidPeople[0]
-
-                        else:
-                            person.kon = "K"
-                            if person not in people:
-                                people.append(person)
-                                print("Navn: " + person.navn + " " + "Køn: " + person.kon)
-                            if invalidPeople != []:
-                                del invalidPeople[0]
-
-print("Ny invalid people count: %d" % (len(invalidPeople)))
-print(str(invalidPeople))
 
 people = rebuild_matches(people)
 

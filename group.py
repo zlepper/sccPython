@@ -13,7 +13,6 @@ def create_groups(people):
             if proximity in person.matches:
                 matches = person.matches[proximity]
                 assert isinstance(matches, list)
-                print(str(len(person.matches)) + ": " + str(group))
                 for match in matches:
                     assert isinstance(match, Person.Person)
                     # Check if the possible match already is in a group

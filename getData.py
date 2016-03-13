@@ -4,7 +4,7 @@ def get_ditto_fodested(people, KIPnr, Ibnr):
     for person in people:
         for person.KIPnr in person and person.ibnr in person:
 
-            if person.KIPnr is KIPnr and person.ibnr - 1 is Ibnr - 1:
+            if person.KIPnr == KIPnr and person.ibnr - 1 == Ibnr - 1:
                 fodested.append(person.husstands_familienr)
                 fodested.append(person.fodested)
 
@@ -33,11 +33,9 @@ def get_all_names(people):
     return all_names
 
 
-def get_home(people, kilde, sogn, herred, amt, stednavn, husstand):
+def get_home(people, kilde, sogn, herred, amt, stednavn, husstand, ibnr):
     home = []
-
     for person in people:
-        if person.kilde is kilde and person.sogn is sogn and person.herred is herred and person.amt is amt and person.stednavn is stednavn and person.husstands_familienr is husstand:
+        if person.kilde == kilde and person.sogn == sogn and person.herred == herred and person.amt == amt and person.stednavn == stednavn and person.husstands_familienr == husstand:
             home.append(person)
-
     return home
