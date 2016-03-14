@@ -1,9 +1,10 @@
 import Person
 
 
-def run(people, allPeople):
+def run(people, allPeople, config):
     assert isinstance(people, list)
-
+    max_age_difference = config["max_age_difference"]
+    max_proximity = config["max_proximity"]
     # Seperate people into different years
     dic = dict()
     for person in people:
@@ -41,7 +42,7 @@ def run(people, allPeople):
                 # Tag kun dem hvis alder er brugbar
                 temp = []
                 for possible_match in possible_matches:
-                    if abs(person.fodeaar - possible_match.fodeaar) < 5:
+                    if abs(person.fodeaar - possible_match.fodeaar) < max_age_difference:
                         temp.append(possible_match)
 
                 possible_matches = temp
@@ -49,7 +50,7 @@ def run(people, allPeople):
                 for possible_match in possible_matches:
                     assert isinstance(possible_match, Person.Person)
                     prox = person.get_proximity(possible_match, people, allPeople)
-                    if prox < 15:
+                    if prox < max_proximity:
                         lis = person.matches.get(prox, [])
                         assert isinstance(lis, list)
                         lis.append(possible_match.id)
