@@ -37,7 +37,8 @@ def amt(p, value):
 
 def lbnr(p, value):
     assert isinstance(p, Person)
-    value = value[:value.rfind(",")]
+    if "," in value:
+        value = value[:value.rfind(",")]
     try:
         p.lbnr = int(value)
     except ValueError:
