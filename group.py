@@ -1,13 +1,13 @@
 import Person
 
 
-def create_groups(people):
+def create_groups(people, config):
     people_source = list(people)
     remove_indices = []
     group = 1
     proximity = 0
     groups = dict()
-    while len(people_source) > 0 and proximity < 15:
+    while len(people_source) > 0 and proximity < config["max_proximity"]:
         for index, person in enumerate(people_source):
             assert isinstance(person, Person.Person)
             if proximity in person.matches:

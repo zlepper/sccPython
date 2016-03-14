@@ -10,7 +10,9 @@ import collections
 import Person
 from group import create_groups
 import getData
+from config import get_config
 
+config = get_config()
 t56 = time()
 
 people = []
@@ -136,9 +138,9 @@ for p in people:
 
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
+j = job_server.submit(PersonAnalyser.run, (males, people, config), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females, people), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
+j = job_server.submit(PersonAnalyser.run, (females, people, config), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 
 people = []
@@ -152,7 +154,7 @@ people = rebuild_matches(people)
 t2 = time()
 
 # Create groups
-people = create_groups(people)
+people = create_groups(people, config)
 
 #job_server.print_stats()
 
