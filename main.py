@@ -64,6 +64,14 @@ def rebuild_matches(p):
     return p
 
 
+def get_gender(p, people):
+    if p.navn == "":
+        return None
+    for person in people:
+        if person.navn == p.navn:
+            return person.kon, p.id
+    return None
+
 # Fetch the current data
 get_people_from_directory(join(".", "toy"), job_server, jobs)
 
@@ -87,39 +95,15 @@ for job in jobs:
                 females.append(person)
         else:
             invalidPeople.append(person)
+print("Assigning ids")
+id = 1
 
-# Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
-if invalidPeople != []:
-    for person in invalidPeople:
-        mand = []
-        kvinde = []
-
-        if person.navn != "":
-
-            for match in males:
-                proximity = damerau_levenshtein_distance(person.navn, match.navn)
-
-                if proximity < 5:
-                    if match.valid:
-                        mand.append(person)
-
-            for match in females:
-                proximity = damerau_levenshtein_distance(person.navn, match.navn)
-
-                if proximity < 5:
-                    if match.valid:
-                        kvinde.append(person)
-
-            if mand != [] or kvinde != []:
-                if len(mand) < len(kvinde):
-                    person.kon = False
-                    females.append(person)
-                    invalidPeople.remove(person)
-
-                else:
-                    person.kon = True
-                    males.append(person)
-                    invalidPeople.remove(person)
+people.extend(males)
+people.extend(females)
+for p in people:
+    p.id = id
+    id += 1
+print("Done assigning ids")
 
 # job_server.print_stats()
 
@@ -128,13 +112,6 @@ print("Invalid people count: %d" % (len(invalidPeople)))
 print("Male people count: %d" % (len(males)))
 print("Female people count: %d" % (len(females)))
 
-id = 1
-
-people.extend(males)
-people.extend(females)
-for p in people:
-    p.id = id
-    id += 1
 
 t1 = time()
 jobs = []
