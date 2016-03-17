@@ -1,6 +1,7 @@
 from comparison import damerau_levenshtein_distance
 import getData
 
+
 class Person:
     def __init__(self, year):
         assert isinstance(year, int)
@@ -99,10 +100,32 @@ class Person:
 
         if self.fodested != "" and other.fodested != "":
             proximity = 0
+
             if "her i sognet" in self.fodested.lower() and "her i sognet" in other.fodested.lower():
-                proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
+
+                if self.sogn == other.sogn:
+                    proximity = 0
 
             else:
+                sogn = [" sogn", "s."]
+
+                if self.fodested.lower() != "her i sognet" and "do" and "ditto" and other.fodested.lower() != "her i sognet" and "do" and "ditto":
+                    if any(element in self.fodested.lower() for element in sogn) and any(otherelement in other.fodested.lower() for otherelement in sogn):
+                        personSogn = ""
+                        otherSogn = ""
+
+                        for term in sogn:
+                            if term in self.fodested.lower():
+                                personSogn = self.fodested.lower().split(term)
+
+                            if term in other.fodested.lower():
+                                otherSogn = other.fodested.lower().split(term)
+
+                        if personSogn and otherSogn != "":
+
+                            if personSogn[0] == otherSogn[0]:
+                                proximity = 0
+
                 if "her i sognet" in self.fodested.lower() and "do" in other.fodested.lower() or "ditto" in other.fodested.lower():
                     fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
 
@@ -110,7 +133,22 @@ class Person:
                         fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
-                        proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
+                        if self.sogn == other.sogn:
+                            proximity = 0
+
+                    else:
+
+                        if any(element in fodested[1].lower() for element in sogn):
+                            otherSogn = ""
+
+                            for term in sogn:
+                                if term in fodested[1].lower():
+                                    otherSogn = fodested[1].lower().split(term)
+
+                            if otherSogn != "":
+
+                                if self.sogn == otherSogn[0]:
+                                    proximity = 0
 
                 if "her i sognet" in other.fodested.lower() and "do" in self.fodested.lower() or "ditto" in self.fodested.lower():
                     fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
@@ -119,12 +157,108 @@ class Person:
                         fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
 
                     if "her i sognet" in fodested[1].lower():
-                        proximity = damerau_levenshtein_distance(self.sogn, other.sogn)
+                        if self.sogn == other.sogn:
+                            proximity = 0
 
-                '''
-                if "her i sognet" not in self.fodested.lower() and "her i sognet" not in other.fodested.lower():
-                    proximity = damerau_levenshtein_distance(self.fodested, other.fodested)
-                '''
+                    else:
+
+                        if any(element in fodested[1].lower() for element in sogn):
+                            personSogn = ""
+
+                            for term in sogn:
+                                if term in fodested[1].lower():
+                                    personSogn = fodested[1].lower().split(term)
+
+                            if personSogn != "":
+
+                                if other.sogn == personSogn[0]:
+                                    proximity = 0
+
+                if any(element in self.fodested.lower() for element in sogn) and "her i sognet" in other.fodested.lower():
+                    personSogn = ""
+
+                    for term in sogn:
+                        if term in self.fodested.lower():
+                            personSogn = self.fodested.lower().split(term)
+
+                    if personSogn != "":
+
+                        if personSogn[0] == other.sogn:
+                            proximity = 0
+
+                if any(element in self.fodested.lower() for element in sogn) and "do" or "ditto" in other.fodested.lower():
+                    personSogn = ""
+
+                    for term in sogn:
+                        if term in self.fodested.lower():
+                            personSogn = self.fodested.lower().split(term)
+
+                    if personSogn != "":
+                        fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
+
+                        while other.husstands_familienr == fodested[0]:
+                            fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
+
+                        if "her i sognet" in fodested[1].lower():
+                            if personSogn[0] == other.sogn:
+                                proximity = 0
+
+                        else:
+
+                            if any(element in fodested[1].lower() for element in sogn):
+                                otherSogn = ""
+
+                                for term in sogn:
+                                    if term in fodested[1].lower():
+                                        otherSogn = fodested[1].lower().split(term)
+
+                                if otherSogn != "":
+
+                                    if personSogn[0] == otherSogn[0]:
+                                        proximity = 0
+
+                if any(element in other.fodested.lower() for element in sogn) and "her i sognet" in self.fodested.lower():
+                    otherSogn = ""
+
+                    for term in sogn:
+                        if term in other.fodested.lower():
+                            otherSogn = other.fodested.lower().split(term)
+
+                    if otherSogn != "":
+
+                        if otherSogn[0] == self.sogn:
+                            proximity = 0
+
+                if any(element in other.fodested.lower() for element in sogn) and "do" or "ditto" in self.fodested.lower():
+                    otherSogn = ""
+
+                    for term in sogn:
+                        if term in other.fodested.lower():
+                            otherSogn = other.fodested.lower().split(term)
+
+                    if otherSogn != "":
+                        fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
+
+                        while self.husstands_familienr == fodested[0]:
+                            fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
+
+                        if "her i sognet" in fodested[1].lower():
+                            if otherSogn[0] == self.sogn:
+                                proximity = 0
+
+                        else:
+
+                            if any(element in fodested[1].lower() for element in sogn):
+                                personSogn = ""
+
+                                for term in sogn:
+                                    if term in fodested[1].lower():
+                                        personSogn = fodested[1].lower().split(term)
+
+                                if otherSogn != "":
+
+                                    if otherSogn[0] == personSogn[0]:
+                                        proximity = 0
 
             return proximity  # Begge personer er født i samme sogn
 
@@ -136,8 +270,10 @@ class Person:
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
         if self.civilstand == 2 and other.civilstand == 2:
 
-            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr, self.lbnr)  # Tilføj liste af personer
-            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr, other.lbnr)  # Tilføj liste af personer
+            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn,
+                                           self.husstands_familienr, self.lbnr)  # Tilføj liste af personer
+            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn,
+                                          other.husstands_familienr, other.lbnr)  # Tilføj liste af personer
 
             kone = ["kone", "konen", "hustru", "madmoder", "madmoeder", "huusmoder", "ehefrau", "frau"]
 
@@ -145,18 +281,18 @@ class Person:
 
                 for person in person_home:
 
-                        if any(element in person.erhverv.lower().split() for element in kone):
-                            person_aegtefaelle = person.navn
+                    if any(element in person.erhverv.lower().split() for element in kone):
+                        person_aegtefaelle = person.navn
 
-                            for other in other_home:
+                        for other in other_home:
 
-                                if any(element in other.erhverv.lower().split() for element in kone):
-                                    other_aegtefaelle = other.navn
+                            if any(element in other.erhverv.lower().split() for element in kone):
+                                other_aegtefaelle = other.navn
 
-                                    proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                    if proximity < 3:
-                                        return proximity # Begge personer har en ægtefælle med samme navn
+                                if proximity < 3:
+                                    return proximity  # Begge personer har en ægtefælle med samme navn
 
             if self.kon is False and other.kon is False:
 
@@ -173,22 +309,21 @@ class Person:
                                 proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
                                 if proximity < 3:
-                                    return proximity # Begge personer har en ægtefælle med samme navn
+                                    return proximity  # Begge personer har en ægtefælle med samme navn
         return 0
 
     def compare_where_they_live(self, possible_match):
         if self.amt == possible_match.amt:
-                return 4
+            return 4
 
         if self.herred == possible_match.herred:
-                return 3
+            return 3
 
         if self.sogn == possible_match.sogn:
-                return 2
+            return 2
 
         if self.stednavn != "" and possible_match.stednavn != "":
             proximity = damerau_levenshtein_distance(self.stednavn, possible_match.stednavn)
             if proximity < 3:
                 return 1
-        return 0 # Begge personer bor præcis samme sted
-
+        return 0  # Begge personer bor præcis samme sted
