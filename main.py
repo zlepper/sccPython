@@ -174,9 +174,12 @@ for p in people:
     id += 1
 
 t1 = time()
+
 jobs = []
 j = job_server.submit(PersonAnalyser.run, (males, people, config), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
+
+
 j = job_server.submit(PersonAnalyser.run, (females, people, config), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
 jobs.append(j)
 
@@ -195,7 +198,7 @@ people = create_groups(people, config)
 
 #job_server.print_stats()
 
-print(t2 - t1)
+print("Tid for kørsel i alt: " + str(t2 - t1))
 
 t1 = time()
 Outputter.output(people, "smallscc.out.csv")

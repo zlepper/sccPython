@@ -2,11 +2,9 @@ def get_ditto_fodested(people, KIPnr, Ibnr):
     fodested = []
 
     for person in people:
-        for person.KIPnr in person and person.ibnr in person:
-
-            if person.KIPnr == KIPnr and person.ibnr - 1 == Ibnr - 1:
-                fodested.append(person.husstands_familienr)
-                fodested.append(person.fodested)
+        if person.KIPnr == KIPnr and person.lbnr - 1 == Ibnr - 1:
+            fodested.append(person.husstands_familienr)
+            fodested.append(person.fodested)
 
     return fodested
 
