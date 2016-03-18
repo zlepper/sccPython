@@ -87,7 +87,7 @@ class Person:
 
     def get_proximity(self, other, people, allPeople):
         proximity = self.compare_name(other)
-        proximity += self.compare_origin(other, people)
+        proximity += self.compare_origin(other, allPeople)
         proximity += self.compare_where_they_live(other)
         proximity += self.compare_family(other, allPeople)
         return proximity
@@ -97,173 +97,189 @@ class Person:
 
     # Forudsætter, at navnet på personerne også er ens
     def compare_origin(self, other, people):
+        proximity = 10
+
+        herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
+        reference = ["do", "ditto", "dito", "dto.", "dítto", "ds.", "das", "item", "it.", "ietm", "ibidem"]
+        sogn = [" sogn", " s.", " s:", " s/", " s "]
+        amt = [" amt"]
 
         if self.fodested != "" and other.fodested != "":
-            proximity = 0
+            personfodested = ""
+            otherfodested = ""
 
-            if "her i sognet" in self.fodested.lower() and "her i sognet" in other.fodested.lower():
+            while personfodested == "":
+                # Fødested her i sognet
+                if any(element in self.fodested.lower() for element in herisognet):
+                    personfodested = self.sogn.lower()
+                    break
 
-                if self.sogn == other.sogn:
-                    proximity = 0
-
-            else:
-                sogn = [" sogn", "s."]
-
-                if self.fodested.lower() != "her i sognet" and "do" and "ditto" and other.fodested.lower() != "her i sognet" and "do" and "ditto":
-                    if any(element in self.fodested.lower() for element in sogn) and any(otherelement in other.fodested.lower() for otherelement in sogn):
-                        personSogn = ""
-                        otherSogn = ""
+                # Fødested i et andet sogn
+                elif any(element in self.fodested.lower() for element in sogn):
+                        fodested = ""
 
                         for term in sogn:
                             if term in self.fodested.lower():
-                                personSogn = self.fodested.lower().split(term)
+                                fodested = self.fodested.lower().split(term)
 
+                        if fodested != "":
+                            personfodested = fodested[0]
+                            break
+
+                # Fødested indeholder et andet sogn og amt
+                elif any(element in self.fodested.lower() for element in amt):
+
+                    if "," in self.fodested.lower():
+                        fodested = self.fodested.lower().split(",")
+
+                    elif "." in self.fodested.lower():
+                        fodested = self.fodested.lower().split(".")
+
+                    else:
+                        fodested = self.fodested.lower().split(" ")
+
+                    if fodested is not []:
+                        personfodested = fodested[0]
+                        break
+
+                # Fødested referet til forrige persons fødested i hjemmet
+                elif any(element in self.fodested.lower() for element in reference):
+                    fodested = getData.get_ditto_fodested(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr, self.lbnr)
+
+                    while any(element in fodested.lower() for element in reference):
+                        fodested = getData.get_ditto_fodested(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr, self.lbnr - 1)
+
+                    if any(element in fodested.lower() for element in herisognet):
+                        personfodested = self.sogn.lower()
+                        break
+
+                    elif any(element in fodested.lower() for element in sogn):
+                        fodestedsogn = ""
+
+                        for term in sogn:
+                            if term in fodested.lower():
+                                fodestedsogn = fodested.lower().split(term)
+
+                        if fodestedsogn != "":
+                            personfodested = fodestedsogn[0]
+                            break
+
+                    elif any(element in self.fodested.lower() for element in amt):
+
+                        if "," in self.fodested.lower():
+                            fodested = self.fodested.lower().split(",")
+
+                        elif "." in self.fodested.lower():
+                            fodested = self.fodested.lower().split(".")
+
+                        else:
+                            fodested = self.fodested.lower().split(" ")
+
+                        if fodested is not []:
+                            personfodested = fodested[0]
+                            break
+
+                    else:
+                        personfodested = self.fodested.lower()
+                        break
+
+                # Fødested er kun angivet til et navn på et sogn
+                else:
+                    personfodested = self.fodested.lower()
+                    break
+
+            while otherfodested == "":
+                # Fødested her i sognet
+                if any(element in other.fodested.lower() for element in herisognet):
+                    otherfodested = other.sogn.lower()
+                    break
+
+                # Fødested i et andet sogn
+                elif any(element in other.fodested.lower() for element in sogn):
+                        fodested = ""
+
+                        for term in sogn:
                             if term in other.fodested.lower():
-                                otherSogn = other.fodested.lower().split(term)
+                                fodested = other.fodested.lower().split(term)
 
-                        if personSogn and otherSogn != "":
+                        if fodested != "":
+                            otherfodested = fodested[0]
+                            break
 
-                            if personSogn[0] == otherSogn[0]:
-                                proximity = 0
+                # Fødested indeholder et andet sogn og amt
+                elif any(element in other.fodested.lower() for element in amt):
 
-                if "her i sognet" in self.fodested.lower() and "do" in other.fodested.lower() or "ditto" in other.fodested.lower():
-                    fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
+                    if "," in other.fodested.lower():
+                        fodested = other.fodested.lower().split(",")
 
-                    while other.husstands_familienr == fodested[0]:
-                        fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
-
-                    if "her i sognet" in fodested[1].lower():
-                        if self.sogn == other.sogn:
-                            proximity = 0
+                    elif "." in other.fodested.lower():
+                        fodested = other.fodested.lower().split(".")
 
                     else:
+                        fodested = other.fodested.lower().split(" ")
 
-                        if any(element in fodested[1].lower() for element in sogn):
-                            otherSogn = ""
+                    if fodested is not []:
+                        otherfodested = fodested[0]
+                        break
 
-                            for term in sogn:
-                                if term in fodested[1].lower():
-                                    otherSogn = fodested[1].lower().split(term)
+                # Fødested referet til forrige persons fødested i hjemmet
+                elif any(element in other.fodested.lower() for element in reference):
+                    fodested = getData.get_ditto_fodested(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr, other.lbnr)
 
-                            if otherSogn != "":
+                    while any(element in fodested.lower() for element in reference):
+                        fodested = getData.get_ditto_fodested(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr, other.lbnr - 1)
 
-                                if self.sogn == otherSogn[0]:
-                                    proximity = 0
+                    if any(element in fodested.lower() for element in herisognet):
+                        otherfodested = other.sogn.lower()
+                        break
 
-                if "her i sognet" in other.fodested.lower() and "do" in self.fodested.lower() or "ditto" in self.fodested.lower():
-                    fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
+                    elif any(element in fodested.lower() for element in sogn):
+                        fodestedsogn = ""
 
-                    while self.husstands_familienr == fodested[0]:
-                        fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
+                        for term in sogn:
+                            if term in fodested.lower():
+                                fodestedsogn = fodested.lower().split(term)
 
-                    if "her i sognet" in fodested[1].lower():
-                        if self.sogn == other.sogn:
-                            proximity = 0
+                        if fodestedsogn != "":
+                            otherfodested = fodestedsogn[0]
+                            break
+
+                    elif any(element in other.fodested.lower() for element in amt):
+
+                        if "," in other.fodested.lower():
+                            fodested = other.fodested.lower().split(",")
+
+                        elif "." in other.fodested.lower():
+                            fodested = other.fodested.lower().split(".")
+
+                        else:
+                            fodested = other.fodested.lower().split(" ")
+
+                        if fodested is not []:
+                            otherfodested = fodested[0]
+                            break
 
                     else:
+                        otherfodested = other.fodested.lower()
+                        break
 
-                        if any(element in fodested[1].lower() for element in sogn):
-                            personSogn = ""
+                # Fødested er kun angivet til et navn på et sogn
+                else:
+                    otherfodested = other.fodested.lower()
+                    break
 
-                            for term in sogn:
-                                if term in fodested[1].lower():
-                                    personSogn = fodested[1].lower().split(term)
+            if personfodested != "" and otherfodested != "":
 
-                            if personSogn != "":
+                if personfodested == otherfodested:
+                    proximity = 0
 
-                                if other.sogn == personSogn[0]:
-                                    proximity = 0
+                else:
+                    prox = damerau_levenshtein_distance(personfodested,otherfodested)
 
-                if any(element in self.fodested.lower() for element in sogn) and "her i sognet" in other.fodested.lower():
-                    personSogn = ""
+                    if prox <= 3:
+                        proximity = prox
 
-                    for term in sogn:
-                        if term in self.fodested.lower():
-                            personSogn = self.fodested.lower().split(term)
-
-                    if personSogn != "":
-
-                        if personSogn[0] == other.sogn:
-                            proximity = 0
-
-                if any(element in self.fodested.lower() for element in sogn) and "do" or "ditto" in other.fodested.lower():
-                    personSogn = ""
-
-                    for term in sogn:
-                        if term in self.fodested.lower():
-                            personSogn = self.fodested.lower().split(term)
-
-                    if personSogn != "":
-                        fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr)  # Tilføj liste af personer
-
-                        while other.husstands_familienr == fodested[0]:
-                            fodested = getData.get_ditto_fodested(people, other.KIPnr, other.lbnr - 1)  # Tilføj liste af personer
-
-                        if "her i sognet" in fodested[1].lower():
-                            if personSogn[0] == other.sogn:
-                                proximity = 0
-
-                        else:
-
-                            if any(element in fodested[1].lower() for element in sogn):
-                                otherSogn = ""
-
-                                for term in sogn:
-                                    if term in fodested[1].lower():
-                                        otherSogn = fodested[1].lower().split(term)
-
-                                if otherSogn != "":
-
-                                    if personSogn[0] == otherSogn[0]:
-                                        proximity = 0
-
-                if any(element in other.fodested.lower() for element in sogn) and "her i sognet" in self.fodested.lower():
-                    otherSogn = ""
-
-                    for term in sogn:
-                        if term in other.fodested.lower():
-                            otherSogn = other.fodested.lower().split(term)
-
-                    if otherSogn != "":
-
-                        if otherSogn[0] == self.sogn:
-                            proximity = 0
-
-                if any(element in other.fodested.lower() for element in sogn) and "do" or "ditto" in self.fodested.lower():
-                    otherSogn = ""
-
-                    for term in sogn:
-                        if term in other.fodested.lower():
-                            otherSogn = other.fodested.lower().split(term)
-
-                    if otherSogn != "":
-                        fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr)  # Tilføj liste af personer
-
-                        while self.husstands_familienr == fodested[0]:
-                            fodested = getData.get_ditto_fodested(people, self.KIPnr, self.lbnr - 1)  # Tilføj liste af personer
-
-                        if "her i sognet" in fodested[1].lower():
-                            if otherSogn[0] == self.sogn:
-                                proximity = 0
-
-                        else:
-
-                            if any(element in fodested[1].lower() for element in sogn):
-                                personSogn = ""
-
-                                for term in sogn:
-                                    if term in fodested[1].lower():
-                                        personSogn = fodested[1].lower().split(term)
-
-                                if otherSogn != "":
-
-                                    if otherSogn[0] == personSogn[0]:
-                                        proximity = 0
-
-            return proximity  # Begge personer er født i samme sogn
-
-        else:
-            return 0
+        return proximity
 
     def compare_family(self, other, people):
 
