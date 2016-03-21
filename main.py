@@ -1,18 +1,19 @@
-import main_analyser
-from csv import CsvParser
-import pp
 from os import walk
 from os.path import join
-import PersonAnalyser
 from time import time
-from output import Outputter
-from comparison import damerau_levenshtein_distance
-import collections
-import Person
-from group import create_groups
-import getData
-from config import get_config
 
+import pp
+
+import Person
+import main_analyser
+from config import get_config
+from csv import CsvParser
+from group import create_groups
+from output import Outputter
+import logging
+
+
+logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 config = get_config()
 t56 = time()
 
@@ -39,7 +40,7 @@ def get_people_from_directory(dir, job_server, jobs):
 
         for filename in filenames:
             file = join(dirpath, filename)
-            print(file)
+            logging.info(file)
             parser = CsvParser(file)
             job = job_server.submit(get_people_from_file, (parser,))
             jobs.append(job)
@@ -77,7 +78,7 @@ females = []
 x = 1
 for job in jobs:
     v = job()
-    print("Done with job " + str(x))
+    logging.info("Done with job " + str(x))
     x += 1
     assert isinstance(v, list)
     for person in v:
@@ -90,44 +91,44 @@ for job in jobs:
             invalidPeople.append(person)
 
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
-if invalidPeople != []:
-    for person in invalidPeople:
-        mand = []
-        kvinde = []
-
-        if person.navn != "":
-
-            for match in males:
-                proximity = damerau_levenshtein_distance(person.navn, match.navn)
-
-                if proximity < 5:
-                    if match.valid:
-                        mand.append(person)
-
-            for match in females:
-                proximity = damerau_levenshtein_distance(person.navn, match.navn)
-
-                if proximity < 5:
-                    if match.valid:
-                        kvinde.append(person)
-
-            if mand != [] or kvinde != []:
-                if len(mand) < len(kvinde):
-                    person.kon = False
-                    females.append(person)
-                    invalidPeople.remove(person)
-
-                else:
-                    person.kon = True
-                    males.append(person)
-                    invalidPeople.remove(person)
+# if invalidPeople != []:
+#     for person in invalidPeople:
+#         mand = []
+#         kvinde = []
+#
+#         if person.navn != "":
+#
+#             for match in males:
+#                 proximity = damerau_levenshtein_distance(person.navn, match.navn)
+#
+#                 if proximity < 5:
+#                     if match.valid:
+#                         mand.append(person)
+#
+#             for match in females:
+#                 proximity = damerau_levenshtein_distance(person.navn, match.navn)
+#
+#                 if proximity < 5:
+#                     if match.valid:
+#                         kvinde.append(person)
+#
+#             if mand != [] or kvinde != []:
+#                 if len(mand) < len(kvinde):
+#                     person.kon = False
+#                     females.append(person)
+#                     invalidPeople.remove(person)
+#
+#                 else:
+#                     person.kon = True
+#                     males.append(person)
+#                     invalidPeople.remove(person)
 
 # job_server.print_stats()
 
 # Tell us how many of each type of person we have
-print("Invalid people count: %d" % (len(invalidPeople)))
-print("Male people count: %d" % (len(males)))
-print("Female people count: %d" % (len(females)))
+logging.info("Invalid people count: %d" % (len(invalidPeople)))
+logging.info("Male people count: %d" % (len(males)))
+logging.info("Female people count: %d" % (len(females)))
 
 id = 1
 
@@ -159,10 +160,10 @@ people = create_groups(people, config)
 
 job_server.print_stats()
 
-print(t2 - t1)
+logging.info(t2 - t1)
 
 t1 = time()
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
-print(t2 - t56)
+logging.info(t2 - t56)

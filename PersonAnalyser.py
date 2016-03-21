@@ -7,6 +7,8 @@ def chunkify(lst, n):
 
 
 def run(people, all_people, config):
+    import logging
+    logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
     assert isinstance(people, list)
     max_age_difference = config["max_age_difference"]
     max_proximity = config["max_proximity"]
@@ -61,11 +63,15 @@ def run(people, all_people, config):
     #                     lis.append(possible_match.id)
     #                     person.matches[prox] = lis
     # Iterate the current chunk
+    n = 1
     for person in people:
-        assert isinstance(person, Person.Person)
+        if n % 10 == 0:
+            logging.debug("Person number " + str(n))
+        n += 1
+        # assert isinstance(person, Person.Person)
         # Compare with all other datapoints
         for possible_match in all_people:
-            assert isinstance(possible_match, Person.Person)
+            # assert isinstance(possible_match, Person.Person)
             # Make sure both data points are of the same gender
             if person.kon == possible_match.kon:
                 # Make sure the datapoints isn't from the same year
