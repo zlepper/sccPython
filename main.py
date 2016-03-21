@@ -1,3 +1,4 @@
+import main_analyser
 from csv import CsvParser
 import pp
 from os import walk
@@ -138,9 +139,9 @@ for p in people:
 
 t1 = time()
 jobs = []
-j = job_server.submit(PersonAnalyser.run, (males, people, config), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
+j = job_server.submit(main_analyser.analyse, (males, people, config))
 jobs.append(j)
-j = job_server.submit(PersonAnalyser.run, (females, people, config), (damerau_levenshtein_distance,), ("collections", "Person", "getData"))
+j = job_server.submit(main_analyser.analyse, (females, people, config))
 jobs.append(j)
 
 people = []
@@ -156,7 +157,7 @@ t2 = time()
 # Create groups
 people = create_groups(people, config)
 
-#job_server.print_stats()
+job_server.print_stats()
 
 print(t2 - t1)
 

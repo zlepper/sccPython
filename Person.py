@@ -84,11 +84,11 @@ class Person:
             return None
         return closest, lowest
 
-    def get_proximity(self, other, people, allPeople):
+    def get_proximity(self, other, people):
         proximity = self.compare_name(other)
         proximity += self.compare_origin(other, people)
         proximity += self.compare_where_they_live(other)
-        proximity += self.compare_family(other, allPeople)
+        proximity += self.compare_family(other, people)
         return proximity
 
     def compare_name(self, other):
