@@ -12,6 +12,7 @@ from group import create_groups
 from output import Outputter
 import logging
 import re
+from comparison import damerau_levenshtein_distance
 
 logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 config = get_config()
