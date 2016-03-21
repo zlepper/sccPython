@@ -74,7 +74,7 @@ class Person:
         lowest = None
         closest = None
         for key, value in self.matches.items():
-            if lowest == None:
+            if lowest is None:
                 lowest = key
                 closest = value
                 continue
@@ -100,7 +100,7 @@ class Person:
         proximity = 10
 
         herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
-        reference = ["do", "ditto", "dito", "dto.", "dítto", "ds.", "das", "item", "it.", "ietm", "ibidem"]
+        reference = ["do ", "do.", "ditto ", "dito ", "dto.", "dítto", "ds.", "das ", "item ", "it.", "ietm", "ibidem"]
         sogn = [" sogn", " s.", " s:", " s/", " s "]
         amt = [" amt"]
 
@@ -109,6 +109,9 @@ class Person:
             otherfodested = ""
 
             while personfodested == "":
+                fodested = ""
+                fodestedsogn = ""
+
                 # Fødested her i sognet
                 if any(element in self.fodested.lower() for element in herisognet):
                     personfodested = self.sogn.lower()
@@ -116,7 +119,6 @@ class Person:
 
                 # Fødested i et andet sogn
                 elif any(element in self.fodested.lower() for element in sogn):
-                        fodested = ""
 
                         for term in sogn:
                             if term in self.fodested.lower():
@@ -144,17 +146,18 @@ class Person:
 
                 # Fødested referet til forrige persons fødested i hjemmet
                 elif any(element in self.fodested.lower() for element in reference):
-                    fodested = getData.get_ditto_fodested(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr, self.lbnr)
+                    fodested = getData.get_ditto_fodested(people, self.kilde, self.sogn, self.herred, self.amt,
+                                                          self.stednavn, self.husstands_familienr, self.lbnr)
 
                     while any(element in fodested.lower() for element in reference):
-                        fodested = getData.get_ditto_fodested(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn, self.husstands_familienr, self.lbnr - 1)
+                        fodested = getData.get_ditto_fodested(people, self.kilde, self.sogn, self.herred, self.amt,
+                                                              self.stednavn, self.husstands_familienr, self.lbnr - 1)
 
                     if any(element in fodested.lower() for element in herisognet):
                         personfodested = self.sogn.lower()
                         break
 
                     elif any(element in fodested.lower() for element in sogn):
-                        fodestedsogn = ""
 
                         for term in sogn:
                             if term in fodested.lower():
@@ -189,6 +192,9 @@ class Person:
                     break
 
             while otherfodested == "":
+                fodested = ""
+                fodestedsogn = ""
+
                 # Fødested her i sognet
                 if any(element in other.fodested.lower() for element in herisognet):
                     otherfodested = other.sogn.lower()
@@ -196,7 +202,6 @@ class Person:
 
                 # Fødested i et andet sogn
                 elif any(element in other.fodested.lower() for element in sogn):
-                        fodested = ""
 
                         for term in sogn:
                             if term in other.fodested.lower():
@@ -224,17 +229,18 @@ class Person:
 
                 # Fødested referet til forrige persons fødested i hjemmet
                 elif any(element in other.fodested.lower() for element in reference):
-                    fodested = getData.get_ditto_fodested(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr, other.lbnr)
+                    fodested = getData.get_ditto_fodested(people, other.kilde, other.sogn, other.herred, other.amt,
+                                                          other.stednavn, other.husstands_familienr, other.lbnr)
 
                     while any(element in fodested.lower() for element in reference):
-                        fodested = getData.get_ditto_fodested(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn, other.husstands_familienr, other.lbnr - 1)
+                        fodested = getData.get_ditto_fodested(people, other.kilde, other.sogn, other.herred, other.amt,
+                                                              other.stednavn, other.husstands_familienr, other.lbnr - 1)
 
                     if any(element in fodested.lower() for element in herisognet):
                         otherfodested = other.sogn.lower()
                         break
 
                     elif any(element in fodested.lower() for element in sogn):
-                        fodestedsogn = ""
 
                         for term in sogn:
                             if term in fodested.lower():
@@ -274,7 +280,7 @@ class Person:
                     proximity = 0
 
                 else:
-                    prox = damerau_levenshtein_distance(personfodested,otherfodested)
+                    prox = damerau_levenshtein_distance(personfodested, otherfodested)
 
                     if prox <= 3:
                         proximity = prox
@@ -307,7 +313,7 @@ class Person:
 
                                 proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                if proximity < 3:
+                                if proximity <= 3:
                                     return proximity  # Begge personer har en ægtefælle med samme navn
 
             if self.kon is False and other.kon is False:
@@ -324,7 +330,7 @@ class Person:
 
                                 proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                if proximity < 3:
+                                if proximity <= 3:
                                     return proximity  # Begge personer har en ægtefælle med samme navn
         return 0
 
@@ -340,6 +346,6 @@ class Person:
 
         if self.stednavn != "" and possible_match.stednavn != "":
             proximity = damerau_levenshtein_distance(self.stednavn, possible_match.stednavn)
-            if proximity < 3:
+            if proximity <= 3:
                 return 1
         return 0  # Begge personer bor præcis samme sted
