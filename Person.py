@@ -90,7 +90,7 @@ class Person:
         proximity = self.compare_name(other) * config["name_importance"]
         proximity += self.compare_origin(other, people) * config["origin_importance"]
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
-        proximity += self.compare_family(other, people) * config["family_importance"]
+        proximity += self.compare_family(other) * config["family_importance"]
         return proximity
 
     def compare_name(self, other):
@@ -98,7 +98,7 @@ class Person:
 
     # Forudsætter, at navnet på personerne også er ens
     def compare_origin(self, other, people):
-        proximity = 10
+        proximity = 0
 
         herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
         reference = ["do ", "do.", "ditto ", "dito ", "dto.", "dítto", "ds.", "das ", "item ", "it.", "ietm", "ibidem"]
@@ -288,13 +288,13 @@ class Person:
 
         return proximity
 
-    def compare_family(self, other, people):
+    def compare_family(self, other):
 
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
         if self.civilstand == 2 and other.civilstand == 2:
 
-            person_home = getData.get_home(self.home_index)  # Tilføj liste af personer
-            other_home = getData.get_home(other.home_index)  # Tilføj liste af personer
+            person_home = getData.get_home(self.home_index)
+            other_home = getData.get_home(other.home_index)
 
             kone = ["kone", "konen", "hustru", "madmoder", "madmoeder", "huusmoder", "ehefrau", "frau"]
 
@@ -318,12 +318,14 @@ class Person:
             if self.kon is False and other.kon is False:
 
                 if any(element in self.erhverv.lower().split() for element in kone):
-                    person_aegtefaelle = getData.get_mand_home(person_home, self.lbnr)
+                    person_aegtefaelle = person_home[0].navn
+                    print(str(person_home))
 
                     if person_aegtefaelle is not None:
 
                         if any(element in other.erhverv.lower().split() for element in kone):
-                            other_aegtefaelle = getData.get_mand_home(other_home, other.lbnr)
+                            other_aegtefaelle = other_home[0].navn
+                            print(str(other_home))
 
                             if other_aegtefaelle is not None:
 
