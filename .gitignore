@@ -1,4 +1,5 @@
 .idea/
+/log.log
 *.pyc
 /smallscc.out.csv
 smallscc.out.csv
