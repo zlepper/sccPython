@@ -8,6 +8,7 @@ def analyse(people, all_people, config):
     import math
     job_server = pp.Server(restart=True)
     chunks = chunkify(people, math.floor(job_server.get_ncpus() / 2) - 1)
+    logging.info("Number of chunks: " + str(len(chunks)))
     jobs = []
     for chunk in chunks:
         from comparison import damerau_levenshtein_distance
