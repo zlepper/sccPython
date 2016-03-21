@@ -7,6 +7,7 @@ def get_ditto_fodested(people, KIPnr, Ibnr):
             if person.KIPnr == KIPnr and person.ibnr - 1 == Ibnr - 1:
                 fodested.append(person.husstands_familienr)
                 fodested.append(person.fodested)
+                break
 
     return fodested
 

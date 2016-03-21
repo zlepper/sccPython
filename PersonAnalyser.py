@@ -81,7 +81,7 @@ def run(people, all_people, config):
                         # Make sure civilstand is only moving on, not moving backwards
                         if (person.year > possible_match.year and person.civilstand >= possible_match.civilstand) or (
                                 person.year < possible_match.year and person.civilstand <= possible_match.civilstand):
-                            prox = person.get_proximity(possible_match, people)
+                            prox = person.get_proximity(possible_match, people, config)
                             if prox <= max_proximity:
                                 lis = person.matches.get(prox, [])
                                 lis.append(possible_match.id)
