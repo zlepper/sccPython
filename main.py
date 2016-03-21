@@ -103,11 +103,15 @@ for job in jobs:
 
                         if person.kon is True:
                             males.append(person)
-                            invalidPeople.remove(person)
+
+                            if person in invalidPeople:
+                                invalidPeople.remove(person)
 
                         else:
                             females.append(person)
-                            invalidPeople.remove(person)
+
+                            if person in invalidPeople:
+                                invalidPeople.remove(person)
 
             # Hvis personerne er invalide på grund af manglende fødeår
             if person.fodeaar is 0:
@@ -119,11 +123,15 @@ for job in jobs:
 
                         if person.kon is True:
                             males.append(person)
-                            invalidPeople.remove(person)
+
+                            if person in invalidPeople:
+                                invalidPeople.remove(person)
 
                         else:
                             females.append(person)
-                            invalidPeople.remove(person)
+
+                            if person in invalidPeople:
+                                invalidPeople.remove(person)
 
             # Hvis personerne er invalide på grund af manglende køn
             if person.kon is None:
@@ -150,12 +158,16 @@ for job in jobs:
                         if len(mand) < len(kvinde):
                             person.kon = False
                             females.append(person)
-                            invalidPeople.remove(person)
+
+                            if person in invalidPeople:
+                                invalidPeople.remove(person)
 
                         else:
                             person.kon = True
                             males.append(person)
-                            invalidPeople.remove(person)
+
+                            if person in invalidPeople:
+                                invalidPeople.remove(person)
 
 
 # job_server.print_stats()
