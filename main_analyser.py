@@ -13,7 +13,7 @@ def analyse(people, all_people, config):
     for chunk in chunks:
         from comparison import damerau_levenshtein_distance
         job = job_server.submit(run, (chunk, all_people, config), (damerau_levenshtein_distance,),
-                                ("collections", "Person", "getData"))
+                                ("collections", "Person", "getData", "globals_scc"))
         jobs.append(job)
     logging.info("Jobs started")
     results = []

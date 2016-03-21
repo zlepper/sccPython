@@ -29,6 +29,7 @@ class Person:
         self.nregteskab = int()
         self.id = -1
         self.group = -1
+        self.home_index = -1
         pass
 
     def __str__(self):
@@ -292,10 +293,8 @@ class Person:
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
         if self.civilstand == 2 and other.civilstand == 2:
 
-            person_home = getData.get_home(people, self.kilde, self.sogn, self.herred, self.amt, self.stednavn,
-                                           self.husstands_familienr, self.lbnr)  # Tilføj liste af personer
-            other_home = getData.get_home(people, other.kilde, other.sogn, other.herred, other.amt, other.stednavn,
-                                          other.husstands_familienr, other.lbnr)  # Tilføj liste af personer
+            person_home = getData.get_home(self.home_index)  # Tilføj liste af personer
+            other_home = getData.get_home(other.home_index)  # Tilføj liste af personer
 
             kone = ["kone", "konen", "hustru", "madmoder", "madmoeder", "huusmoder", "ehefrau", "frau"]
 
