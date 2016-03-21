@@ -1,10 +1,9 @@
-def get_ditto_fodested(people, KIPnr, Ibnr):
-    fodested = []
+def get_ditto_fodested(people, kilde, sogn, herred, amt, stednavn, husstandsfamilienr, lbnr):
+    fodested = ""
 
     for person in people:
-        if person.KIPnr == KIPnr and person.lbnr - 1 == Ibnr - 1:
-            fodested.append(person.husstands_familienr)
-            fodested.append(person.fodested)
+        if person.kilde == kilde and person.sogn == sogn and person.herred == herred and person.amt == amt and person.stednavn == stednavn and person.husstands_familienr == husstandsfamilienr and person.lbnr == lbnr:
+            fodested = person.fodested
 
     return fodested
 
