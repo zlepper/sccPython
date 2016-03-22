@@ -293,39 +293,38 @@ class Person:
             other_home = getData.get_home(other.home_index)
 
             kone = ["kone", "konen", "hustru", "madmoder", "madmoeder", "huusmoder", "ehefrau", "frau"]
+            if person_home is not [] and other_home is not []:
+                if self.kon is True and other.kon is True:
+                        for person in person_home:
 
-            if self.kon is True and other.kon is True:
+                            if any(element in person.erhverv.lower().split() for element in kone):
+                                person_aegtefaelle = person.navn
 
-                for person in person_home:
+                                for other in other_home:
 
-                    if any(element in person.erhverv.lower().split() for element in kone):
-                        person_aegtefaelle = person.navn
-
-                        for other in other_home:
-
-                            if any(element in other.erhverv.lower().split() for element in kone):
-                                other_aegtefaelle = other.navn
-
-                                return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
-
-            if self.kon is False and other.kon is False:
-
-                if any(element in self.erhverv.lower().split() for element in kone):
-                    if person_home[person_home.index(self) - 1].kon is True:
-                        person_aegtefaelle = person_home[person_home.index(self) - 1].navn
-
-                        if person_aegtefaelle is not None:
-
-                            if any(element in other.erhverv.lower().split() for element in kone):
-
-                                if other_home[other_home.index(other) - 1].kon is True:
-                                    other_aegtefaelle = other_home[other_home.index(other) - 1].navn
-
-                                    if other_aegtefaelle is not None:
+                                    if any(element in other.erhverv.lower().split() for element in kone):
+                                        other_aegtefaelle = other.navn
 
                                         return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-        return 0
+                if self.kon is False and other.kon is False:
+
+                    if any(element in self.erhverv.lower().split() for element in kone):
+                        if person_home[person_home.index(self) - 1].kon is True:
+                            person_aegtefaelle = person_home[person_home.index(self) - 1].navn
+
+                            if person_aegtefaelle is not None:
+
+                                if any(element in other.erhverv.lower().split() for element in kone):
+
+                                    if other_home[other_home.index(other) - 1].kon is True:
+                                        other_aegtefaelle = other_home[other_home.index(other) - 1].navn
+
+                                        if other_aegtefaelle is not None:
+
+                                            return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+            return 0
 
     def compare_where_they_live(self, possible_match):
         if self.amt != possible_match.amt:
