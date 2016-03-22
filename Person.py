@@ -103,7 +103,7 @@ class Person:
         proximity = 0
 
         herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
-        reference = ["do ", "do.", "ditto ", "dito ", "dto.", "dítto", "ds.", "das ", "item ", "it.", "ietm", "ibidem"]
+        reference = ["do ", "do.", "ditto ", "dito ", "dto.", "dítto", "ds.", "das ", "item ", "it.", "ietm ", "ibidem "]
         sogn = [" sogn", " s.", " s:", " s/", " s "]
         amt = [" amt"]
 
@@ -342,16 +342,17 @@ class Person:
         stednavn_distance = config["stednavn_distance"]
 
         if self.amt == possible_match.amt:
-            return 4
-
-        if self.herred == possible_match.herred:
             return 3
 
-        if self.sogn == possible_match.sogn:
+        if self.herred == possible_match.herred:
             return 2
+
+        if self.sogn == possible_match.sogn:
+            return 1
 
         if self.stednavn != "" and possible_match.stednavn != "":
             proximity = damerau_levenshtein_distance(self.stednavn, possible_match.stednavn)
             if proximity <= stednavn_distance:
-                return 1
+                return 0
+
         return 0  # Begge personer bor præcis samme sted
