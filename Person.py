@@ -88,16 +88,18 @@ class Person:
 
     def get_proximity(self, other, people, config):
         proximity = self.compare_name(other) * config["name_importance"]
-        proximity += self.compare_origin(other, people) * config["origin_importance"]
-        proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
-        proximity += self.compare_family(other) * config["family_importance"]
+        proximity += self.compare_origin(other, people, config) * config["origin_importance"]
+        proximity += self.compare_where_they_live(other, config) * config["where_they_live_importance"]
+        proximity += self.compare_family(other, config) * config["family_importance"]
         return proximity
 
     def compare_name(self, other):
         return damerau_levenshtein_distance(self.navn, other.navn)
 
     # Forudsætter, at navnet på personerne også er ens
-    def compare_origin(self, other, people):
+    def compare_origin(self, other, people, config):
+        navn_distance = config["navn_distance"]
+
         proximity = 0
 
         herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
@@ -281,14 +283,15 @@ class Person:
                     proximity = 0
 
                 else:
-                    prox = damerau_levenshtein_distance(personfodested, otherfodested)
+                    distance = damerau_levenshtein_distance(personfodested, otherfodested)
 
-                    if prox <= 3:
-                        proximity = prox
+                    if distance <= navn_distance:
+                        proximity = distance
 
         return proximity
 
-    def compare_family(self, other):
+    def compare_family(self, other, config):
+        navn_distance = config["navn_distance"]
 
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
         if self.civilstand == 2 and other.civilstand == 2:
@@ -312,30 +315,32 @@ class Person:
 
                                 proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                if proximity <= 3:
+                                if proximity <= navn_distance:
                                     return proximity  # Begge personer har en ægtefælle med samme navn
 
             if self.kon is False and other.kon is False:
 
                 if any(element in self.erhverv.lower().split() for element in kone):
-                    person_aegtefaelle = person_home[0].navn
-                    print(str(person_home))
+                    person_aegtefaelle = person_home[person_home.index(self) - 1].navn
+                    print("Personens mand: " + person_aegtefaelle)
 
                     if person_aegtefaelle is not None:
 
                         if any(element in other.erhverv.lower().split() for element in kone):
-                            other_aegtefaelle = other_home[0].navn
-                            print(str(other_home))
+                            other_aegtefaelle = other_home[other_home.index(other) - 1].navn
+                            print("Others mand: " + other_aegtefaelle)
 
                             if other_aegtefaelle is not None:
 
                                 proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                if proximity <= 3:
+                                if proximity <= navn_distance:
                                     return proximity  # Begge personer har en ægtefælle med samme navn
         return 0
 
-    def compare_where_they_live(self, possible_match):
+    def compare_where_they_live(self, possible_match, config):
+        stednavn_distance = config["stednavn_distance"]
+
         if self.amt == possible_match.amt:
             return 4
 
@@ -347,6 +352,6 @@ class Person:
 
         if self.stednavn != "" and possible_match.stednavn != "":
             proximity = damerau_levenshtein_distance(self.stednavn, possible_match.stednavn)
-            if proximity <= 3:
+            if proximity <= stednavn_distance:
                 return 1
         return 0  # Begge personer bor præcis samme sted
