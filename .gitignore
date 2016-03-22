@@ -2,4 +2,5 @@
 /log.log
 *.pyc
 /smallscc.out.csv
+/.~lock.smallscc.out.csv#
 smallscc.out.csv
