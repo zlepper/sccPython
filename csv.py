@@ -10,36 +10,41 @@ def kipnr(p, value):
     p.KIPnr = value
     p.valid = not not value
 
-    #if p.valid is False:
-        #print("mangler KIPnr")
+    # if p.valid is False:
+    # print("mangler KIPnr")
+
 
 def kilde(p, value):
     assert isinstance(p, Person)
     p.kilde = value
     p.valid = not not value
-   # if p.valid is False:
-      #  print("mangler kilde")
+    # if p.valid is False:
+    #  print("mangler kilde")
+
 
 def sogn(p, value):
     assert isinstance(p, Person)
     p.sogn = value
     p.valid = not not value
-   # if p.valid is False:
-        #print("mangler sogn")
+    # if p.valid is False:
+    # print("mangler sogn")
+
 
 def herred(p, value):
     assert isinstance(p, Person)
     p.herred = value
     p.valid = not not value
-   # if p.valid is False:
-        #print("mangler herred")
+    # if p.valid is False:
+    # print("mangler herred")
+
 
 def amt(p, value):
     assert isinstance(p, Person)
     p.amt = value
     p.valid = not not value
-  #  if p.valid is False:
-        #print("mangler amt")
+    #  if p.valid is False:
+    # print("mangler amt")
+
 
 def lbnr(p, value):
     assert isinstance(p, Person)
@@ -51,41 +56,47 @@ def lbnr(p, value):
         p.lbnr = 0
         p.valid = False
 
-    #if p.valid is False:
-        #print("mangler ibnr")
+        # if p.valid is False:
+        # print("mangler ibnr")
+
 
 def kildehenvisning(p, value):
     assert isinstance(p, Person)
     p.kildehenvisning = value
     p.valid = not not value
-    #if p.valid is False:
-        #print("mangler kildehenvisning")
+    # if p.valid is False:
+    # print("mangler kildehenvisning")
+
 
 def stednavn(p, value):
     assert isinstance(p, Person)
     p.stednavn = value
     p.valid = not not value
-    #if p.valid is False:
-        #print("mangler stednavn")
+    # if p.valid is False:
+    # print("mangler stednavn")
+
 
 def husstands_familienr(p, value):
     assert isinstance(p, Person)
     p.husstands_familienr = value
     p.valid = not not value
-    #if p.valid is False:
-    #print("mangler husnr")
+    # if p.valid is False:
+    # print("mangler husnr")
+
 
 def matr_nr_adresse(p, value):
     assert isinstance(p, Person)
     p.matr_nr_adresse = value
     p.valid = not not value
 
+
 def navn(p, value):
     assert isinstance(p, Person)
     p.navn = value
     p.valid = not not value
-    #if p.valid is False:
-        #print("mangler navn")
+    # if p.valid is False:
+    # print("mangler navn")
+
 
 def kon(p, value):
     assert isinstance(p, Person)
@@ -95,19 +106,28 @@ def kon(p, value):
     if p.valid is False:
         p.kon = None
 
-    #if p.valid is False:
-        #print("mangler køn")
+        # if p.valid is False:
+        # print("mangler køn")
+
 
 def alder_tal(p, value):
+    import logging
     if value:
+        before_value = value
         assert isinstance(p, Person)
         assert isinstance(value, str)
-        index = value.index(",")
-        if index > 0:
-            value = value[0:index]
-        p.alder_tal = int(value)
+        if "," in value:
+            index = value.index(",")
+            if index > 0:
+                value = value[:index]
+        try:
+            p.alder_tal = int(value)
+        except ValueError:
+            logging.error(before_value + " : " + value)
+            p.valid = False
     else:
         p.valid = False
+
 
 def fodeaar(p, value):
     value = re.search(r"[0-9]+", value, re.M | re.I)
@@ -117,10 +137,10 @@ def fodeaar(p, value):
         p.fodeaar = int(value)
     else:
         p.valid = False
-        #print("mangler alder")
+        # print("mangler alder")
 
-    #if p.valid is False:
-        #print("mangler fødeår")
+        # if p.valid is False:
+        # print("mangler fødeår")
 
 
 civil_dic = {
@@ -144,6 +164,7 @@ def civiltilstand(p, value):
     assert isinstance(p, Person)
     p.civilstand = civil_dic.get(value, 0)
     p.civilstand_source = value
+
 
 def fodested(p, value):
     assert isinstance(p, Person)
@@ -184,6 +205,7 @@ switcher = {
     "navn": navn,
     "køn": kon,
     "alder_tal": alder_tal,
+    "alder": alder_tal,
     "fødeår": fodeaar,
     "nr_ægteskab": ng_ægteskab,
     "civilstand": civiltilstand,
@@ -195,6 +217,9 @@ switcher = {
 
 
 def get_people(path):
+    import logging
+    logging.basicConfig(filename='log.log', level=logging.DEBUG,
+                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     people = []
 
     with codecs.open(path, "r", "iso-8859-1") as f:

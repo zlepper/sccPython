@@ -1,11 +1,10 @@
+import globals_scc
+
 def get_ditto_fodested(people, kilde, sogn, herred, amt, stednavn, husstandsfamilienr, lbnr):
-    fodested = ""
 
     for person in people:
         if person.kilde == kilde and person.sogn == sogn and person.herred == herred and person.amt == amt and person.stednavn == stednavn and person.husstands_familienr == husstandsfamilienr and person.lbnr == lbnr:
-            fodested = person.fodested
-
-    return fodested
+            return person.fodested
 
 
 def get_all_sogn(people):
@@ -17,32 +16,30 @@ def get_all_sogn(people):
             if person.sogn not in all_sogn:
                 all_sogn.append(person.sogn)
 
-    return all_sogn
 
-
-def get_all_names(people):
-    all_names = []
-
-    for person in people:
-        if person.navn not in all_names:
-            all_names.append(person.navn)
-
-    return all_names
-
-
-def get_home(people, kilde, sogn, herred, amt, stednavn, husstand, ibnr):
+def generate_homes(people, analysed):
     home = []
+    this_family = []
+    last_husstands_familienr = -1
     for person in people:
-        if person.kilde == kilde and person.sogn == sogn and person.herred == herred and person.amt == amt and person.stednavn == stednavn and person.husstands_familienr == husstand:
-            if person not in home:
-                home.append(person)
+        if person.husstands_familienr == last_husstands_familienr:
+            person.home_index = len(home)
+            this_family.append(person)
+        else:
+            last_husstands_familienr = person.husstands_familienr
+            home.append(this_family)
+            this_family = [person]
+            person.home_index = len(home)
 
-    return home
+    for an in analysed:
+        for person in people:
+            if an.id == person.id:
+                an.home_index = person.home_index
+                break
 
-def get_mand_home(home, ibnr):
+    globals_scc.home = home
+    print(len(home))
 
-    mand_ibnr = ibnr - 1
 
-    for person in home:
-        if person.lbnr == mand_ibnr:
-            return person.navn
+def get_home(index):
+    return globals_scc.home[index]
