@@ -173,6 +173,7 @@ for job in jobs:
 
                             if person in invalidPeople:
                                 invalidPeople.remove(person)
+
 # job_server.print_stats()
 
 # Tell us how many of each type of person we have
