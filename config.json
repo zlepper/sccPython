@@ -1,7 +1,5 @@
 {
   "max_proximity": 10,
-  "navn_distance": 3,
-  "stednavn_distance": 3,
   "max_age_difference": 5,
   "name_importance": 1,
   "origin_importance": 1,
