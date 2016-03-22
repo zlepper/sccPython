@@ -96,78 +96,9 @@ for job in jobs:
             invalidPeople.append(person)
         id += 1
 
-<<<<<<< HEAD
-# # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
-# if len(invalidPeople) > 0:
-#     for person in invalidPeople:
-#
-#         # Hvis personerne er invalide på grund af manglende alder
-#         if person.alder_tal is 0:
-#             if person.fodeaar is not 0 and person.kilde is not None:
-#
-#                 person.alder_tal = int((re.findall('\d+', person.kilde))[0]) - int(person.fodeaar)
-#
-#                 if person.alder_tal is not 0:
-#
-#                     if person.kon is True:
-#                         males.append(person)
-#                         invalidPeople.remove(person)
-#
-#                     else:
-#                         females.append(person)
-#                         invalidPeople.remove(person)
-#
-#         # Hvis personerne er invalide på grund af manglende fødeår
-#         if person.fodeaar is 0:
-#             if person.alder_tal is not 0 and person.kilde is not None:
-#
-#                 person.fodeaar = int((re.findall('\d+', person.kilde))[0]) - int(person.alder_tal)
-#
-#                 if person.fodeaar is not 0:
-#
-#                     if person.kon is True:
-#                         males.append(person)
-#                         invalidPeople.remove(person)
-#
-#                     else:
-#                         females.append(person)
-#                         invalidPeople.remove(person)
-#
-#         # Hvis personerne er invalide på grund af manglende køn
-#         if person.kon is None:
-#             mand = []
-#             kvinde = []
-#
-#             if person.navn != "":
-#
-#                 for match in males:
-#                     proximity = damerau_levenshtein_distance(person.navn, match.navn)
-#
-#                     if proximity < 5:
-#                         if match.valid:
-#                             mand.append(person)
-#
-#                 for match in females:
-#                     proximity = damerau_levenshtein_distance(person.navn, match.navn)
-#
-#                     if proximity < 5:
-#                         if match.valid:
-#                             kvinde.append(person)
-#
-#                 if mand != [] or kvinde != []:
-#                     if len(mand) < len(kvinde):
-#                         person.kon = False
-#                         females.append(person)
-#                         invalidPeople.remove(person)
-#
-#                     else:
-#                         person.kon = True
-#                         males.append(person)
-#                         invalidPeople.remove(person)
-
 
 # job_server.print_stats()
-=======
+
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
 if len(invalidPeople) > 0:
     logging.info("Trying to fix invalid people data")
@@ -184,8 +115,6 @@ if len(invalidPeople) > 0:
         females.extend(result[2])
     logging.info("Done fixing invalid people data")
     job_server.print_stats()
-
->>>>>>> refs/remotes/origin/master
 
 # Tell us how many of each type of person we have
 logging.info("Invalid people count: %d" % (len(invalidPeople)))
