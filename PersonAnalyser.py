@@ -7,7 +7,7 @@ def chunkify(lst, n):
 
 def run(people, all_people, config):
     import logging
-    logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+    logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     assert isinstance(people, list)
     max_age_difference = config["max_age_difference"]
     max_proximity = config["max_proximity"]

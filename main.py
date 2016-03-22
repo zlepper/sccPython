@@ -14,7 +14,7 @@ import logging
 import re
 from comparison import damerau_levenshtein_distance
 
-logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 config = get_config()
 t56 = time()
 
@@ -77,12 +77,14 @@ females = []
 
 # Wait for all the jobs to finish
 x = 1
+id = 0
 for job in jobs:
     v = job()
     logging.info("Done with job " + str(x))
     x += 1
     assert isinstance(v, list)
     for person in v:
+        person.id = id
         if person.valid:
             if person.kon:
                 males.append(person)
@@ -90,6 +92,7 @@ for job in jobs:
                 females.append(person)
         else:
             invalidPeople.append(person)
+        id += 1
 
 # # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
 # if len(invalidPeople) > 0:
@@ -171,9 +174,8 @@ id = 1
 
 people.extend(males)
 people.extend(females)
-for p in people:
-    p.id = id
-    id += 1
+
+people = sorted(people, key=lambda person: person.id)
 
 t1 = time()
 

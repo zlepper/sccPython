@@ -1,7 +1,7 @@
 
 def analyse(people, all_people, config):
     import logging
-    logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+    logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logging.info("Analyse started")
     from PersonAnalyser import run, chunkify
     import pp
