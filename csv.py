@@ -10,29 +10,55 @@ def kipnr(p, value):
     p.KIPnr = value
     p.valid = not not value
 
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler KIPnr")
+
+>>>>>>> refs/remotes/origin/master
 
 def kilde(p, value):
     assert isinstance(p, Person)
     p.kilde = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    #  print("mangler kilde")
+>>>>>>> refs/remotes/origin/master
 
 
 def sogn(p, value):
     assert isinstance(p, Person)
     p.sogn = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler sogn")
+>>>>>>> refs/remotes/origin/master
 
 
 def herred(p, value):
     assert isinstance(p, Person)
     p.herred = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler herred")
+>>>>>>> refs/remotes/origin/master
 
 
 def amt(p, value):
     assert isinstance(p, Person)
     p.amt = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    #  if p.valid is False:
+    # print("mangler amt")
+>>>>>>> refs/remotes/origin/master
 
 
 def lbnr(p, value):
@@ -45,24 +71,44 @@ def lbnr(p, value):
         p.lbnr = 0
         p.valid = False
 
+<<<<<<< HEAD
+=======
+        # if p.valid is False:
+        # print("mangler ibnr")
+
+>>>>>>> refs/remotes/origin/master
 
 def kildehenvisning(p, value):
     assert isinstance(p, Person)
     p.kildehenvisning = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler kildehenvisning")
+>>>>>>> refs/remotes/origin/master
 
 
 def stednavn(p, value):
     assert isinstance(p, Person)
     p.stednavn = value
     p.valid = not not value
-
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler stednavn")
+>>>>>>> refs/remotes/origin/master
 
 
 def husstands_familienr(p, value):
     assert isinstance(p, Person)
     p.husstands_familienr = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler husnr")
+>>>>>>> refs/remotes/origin/master
 
 
 def matr_nr_adresse(p, value):
@@ -75,6 +121,11 @@ def navn(p, value):
     assert isinstance(p, Person)
     p.navn = value
     p.valid = not not value
+<<<<<<< HEAD
+=======
+    # if p.valid is False:
+    # print("mangler navn")
+>>>>>>> refs/remotes/origin/master
 
 
 def kon(p, value):
@@ -85,6 +136,12 @@ def kon(p, value):
     if p.valid is False:
         p.kon = None
 
+<<<<<<< HEAD
+=======
+        # if p.valid is False:
+        # print("mangler køn")
+
+>>>>>>> refs/remotes/origin/master
 
 def alder_tal(p, value):
     import logging
@@ -113,6 +170,13 @@ def fodeaar(p, value):
         p.fodeaar = int(value)
     else:
         p.valid = False
+<<<<<<< HEAD
+=======
+        # print("mangler alder")
+
+        # if p.valid is False:
+        # print("mangler fødeår")
+>>>>>>> refs/remotes/origin/master
 
 
 civil_dic = {
