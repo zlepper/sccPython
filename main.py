@@ -23,7 +23,7 @@ t56 = time()
 people = []
 jobs = []
 job_server = pp.Server(restart=True)
-
+logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
 def get_people_from_file(parser):
     # assert isinstance(parser, CsvParser)
@@ -96,6 +96,7 @@ for job in jobs:
             invalidPeople.append(person)
         id += 1
 
+
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
 if len(invalidPeople) > 0:
     logging.info("Trying to fix invalid people data")
@@ -112,7 +113,6 @@ if len(invalidPeople) > 0:
         females.extend(result[2])
     logging.info("Done fixing invalid people data")
     job_server.print_stats()
-
 
 # Tell us how many of each type of person we have
 logging.info("Invalid people count: %d" % (len(invalidPeople)))

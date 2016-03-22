@@ -10,40 +10,28 @@ def kipnr(p, value):
     p.KIPnr = value
     p.valid = not not value
 
-    # if p.valid is False:
-    # print("mangler KIPnr")
-
 
 def kilde(p, value):
     assert isinstance(p, Person)
     p.kilde = value
     p.valid = not not value
-    # if p.valid is False:
-    #  print("mangler kilde")
 
 
 def sogn(p, value):
     assert isinstance(p, Person)
     p.sogn = value
     p.valid = not not value
-    # if p.valid is False:
-    # print("mangler sogn")
-
 
 def herred(p, value):
     assert isinstance(p, Person)
     p.herred = value
     p.valid = not not value
-    # if p.valid is False:
-    # print("mangler herred")
 
 
 def amt(p, value):
     assert isinstance(p, Person)
     p.amt = value
     p.valid = not not value
-    #  if p.valid is False:
-    # print("mangler amt")
 
 
 def lbnr(p, value):
@@ -56,32 +44,23 @@ def lbnr(p, value):
         p.lbnr = 0
         p.valid = False
 
-        # if p.valid is False:
-        # print("mangler ibnr")
-
 
 def kildehenvisning(p, value):
     assert isinstance(p, Person)
     p.kildehenvisning = value
     p.valid = not not value
-    # if p.valid is False:
-    # print("mangler kildehenvisning")
 
 
 def stednavn(p, value):
     assert isinstance(p, Person)
     p.stednavn = value
     p.valid = not not value
-    # if p.valid is False:
-    # print("mangler stednavn")
 
 
 def husstands_familienr(p, value):
     assert isinstance(p, Person)
     p.husstands_familienr = value
     p.valid = not not value
-    # if p.valid is False:
-    # print("mangler husnr")
 
 
 def matr_nr_adresse(p, value):
@@ -94,8 +73,6 @@ def navn(p, value):
     assert isinstance(p, Person)
     p.navn = value
     p.valid = not not value
-    # if p.valid is False:
-    # print("mangler navn")
 
 
 def kon(p, value):
@@ -105,9 +82,6 @@ def kon(p, value):
 
     if p.valid is False:
         p.kon = None
-
-        # if p.valid is False:
-        # print("mangler køn")
 
 
 def alder_tal(p, value):
@@ -137,10 +111,6 @@ def fodeaar(p, value):
         p.fodeaar = int(value)
     else:
         p.valid = False
-        # print("mangler alder")
-
-        # if p.valid is False:
-        # print("mangler fødeår")
 
 
 civil_dic = {
