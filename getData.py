@@ -5,6 +5,7 @@ def get_ditto_fodested(people, kilde, sogn, herred, amt, stednavn, husstandsfami
     for person in people:
         if person.kilde == kilde and person.sogn == sogn and person.herred == herred and person.amt == amt and person.stednavn == stednavn and person.husstands_familienr == husstandsfamilienr and person.lbnr == lbnr:
             return person.fodested
+
     return ""
 
 
