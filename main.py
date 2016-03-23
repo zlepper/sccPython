@@ -151,5 +151,12 @@ job_server.print_stats()
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
+number_of_not_found = 0
+for person in people:
+    assert isinstance(person, Person.Person)
+    if person.group == -1:
+        number_of_not_found += 1
+logging.info("Number of people that could not be matches: " + str(number_of_not_found))
+
 logging.info("Tid for kørsel i alt: " + str(t2 - t1))
 print("Tid for kørsel i alt: " + str(t2 - t1))
