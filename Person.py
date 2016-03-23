@@ -274,7 +274,7 @@ class Person:
                     otherfodested = other.fodested.lower()
                     break
 
-            if personfodested != "" and otherfodested != "":
+            if personfodested != "" and None and otherfodested != "" and None:
 
                 if personfodested == otherfodested:
                     return 0
@@ -308,7 +308,11 @@ class Person:
                                             other_aegtefaelle = other.navn
 
                                             if other_aegtefaelle is not None:
-                                                return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+                                                x = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+                                                if x is not None:
+                                                    return x
 
                 if self.kon is False and other.kon is False:
 
@@ -325,7 +329,10 @@ class Person:
                                         other_aegtefaelle = other_home[other_home.index(other) - 1].navn
 
                                         if other_aegtefaelle is not None:
-                                            return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                            x = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+                                            if x is not None:
+                                                return x
 
             return 0
 
