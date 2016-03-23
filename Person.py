@@ -90,7 +90,8 @@ class Person:
         proximity = self.compare_name(other) * config["name_importance"]
         proximity += self.compare_origin(other, people) * config["origin_importance"]
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
-        proximity += self.compare_family(other) * config["family_importance"]
+        proximity += self.compare_aegteskab(other) * config["family_importance"]
+        #proximity += self.compare_barn_foraeldre(other)
         return proximity
 
     def compare_name(self, other):
@@ -284,7 +285,7 @@ class Person:
 
         return 0
 
-    def compare_family(self, other):
+    def compare_aegteskab(self, other):
 
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
         if self.civilstand == 2 and other.civilstand == 2:
@@ -302,10 +303,10 @@ class Person:
 
                                 if person_aegtefaelle is not None:
 
-                                    for other in other_home:
+                                    for andenperson in other_home:
 
-                                        if any(element in other.erhverv.lower().split() for element in kone):
-                                            other_aegtefaelle = other.navn
+                                        if any(element in andenperson.erhverv.lower().split() for element in kone):
+                                            other_aegtefaelle = andenperson.navn
 
                                             if other_aegtefaelle is not None:
 
@@ -318,23 +319,57 @@ class Person:
 
                     if any(element in self.erhverv.lower().split() for element in kone):
 
-                        if person_home[person_home.index(self) - 1].kon is True:
-                            person_aegtefaelle = person_home[person_home.index(self) - 1].navn
+                            if self in person_home and person_home[person_home.index(self) - 1].kon is True:
+                                person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
-                            if person_aegtefaelle is not None:
+                                if person_aegtefaelle is not None:
 
+                                    if any(element in other.erhverv.lower().split() for element in kone):
+
+                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True:
+                                            other_aegtefaelle = other_home[other_home.index(other) - 1].navn
+
+                                            if other_aegtefaelle is not None:
+                                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+                                                if proximity is not None:
+                                                    return proximity
+        return 0
+
+    def compare_barn_foraeldre(self, other):
+        barn = ["barn", "kinder", " søn", " sohn", " datter", " tochter"]
+        kone = ["kone", "konen", "hustru", "madmoder", "madmoeder", "huusmoder", "ehefrau", "frau"]
+
+        if any(element in self.erhverv.lower().split() for element in barn) and any(element in other.erhverv.lower().split() for element in barn):
+            person_home = getData.get_home(self.home_index)
+            other_home = getData.get_home(other.home_index)
+
+            for person in person_home:
+                if any(element in person.erhverv.lower().split() for element in kone):
+                    if person.kon is False:
+                        person_moder = person.navn
+
+                        if person_home[person_home.index(person) - 1].kon is True:
+                            person_fader = person_home[person_home.index(person) - 1].navn
+
+                            for other in other_home:
                                 if any(element in other.erhverv.lower().split() for element in kone):
+                                    if other.kon is False:
+                                        other_moder = other.navn
 
-                                    if other_home[other_home.index(other) - 1].kon is True:
-                                        other_aegtefaelle = other_home[other_home.index(other) - 1].navn
+                                        if other_home[other_home.index(other) - 1].kon is True:
+                                            other_fader = other_home[other_home.index(other) - 1].navn
 
-                                        if other_aegtefaelle is not None:
-                                            proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                            if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != ""  and other_fader is not None and other_moder != "" and other_moder is not None:
 
-                                            if proximity is not None:
-                                                return proximity
+                                                proximity = damerau_levenshtein_distance(person_fader, other_fader) + damerau_levenshtein_distance(person_moder, other_moder)
+                                                print("Børn: " + str(proximity))
+
+                                                if proximity is not None:
+                                                    return proximity
 
         return 0
+
 
     def compare_where_they_live(self, possible_match):
         if self.amt != possible_match.amt:
