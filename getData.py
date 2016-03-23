@@ -10,6 +10,9 @@ def get_ditto_fodested(people, kilde, sogn, herred, amt, stednavn, husstandsfami
 
 
 def generate_homes(people, analysed):
+    import globals_scc
+    if len(globals_scc.home) > 0:
+        raise AssertionError
     home = []
     this_family = []
     last_husstands_familienr = -1
@@ -29,7 +32,6 @@ def generate_homes(people, analysed):
                 an.home_index = person.home_index
                 break
 
-    import globals_scc
     globals_scc.home = home
     print(len(home))
 
