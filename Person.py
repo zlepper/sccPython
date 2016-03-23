@@ -349,7 +349,7 @@ class Person:
                     if person.kon is False:
                         person_moder = person.navn
 
-                        if person_home[person_home.index(person) - 1].kon is True:
+                        if person in person_home and person_home[person_home.index(person) - 1].kon is True:
                             person_fader = person_home[person_home.index(person) - 1].navn
 
                             for other in other_home:
@@ -357,7 +357,7 @@ class Person:
                                     if other.kon is False:
                                         other_moder = other.navn
 
-                                        if other_home[other_home.index(other) - 1].kon is True:
+                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True:
                                             other_fader = other_home[other_home.index(other) - 1].navn
 
                                             if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != ""  and other_fader is not None and other_moder != "" and other_moder is not None:
