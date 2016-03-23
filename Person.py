@@ -90,8 +90,8 @@ class Person:
         proximity = self.compare_name(other) * config["name_importance"]
         proximity += self.compare_origin(other, people) * config["origin_importance"]
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
-        proximity += self.compare_aegteskab(other) * config["family_importance"]
-        #proximity += self.compare_barn_foraeldre(other)
+        proximity += self.compare_aegteskab(other) * config["aegteskab_importance"]
+        proximity += self.compare_barn_foraeldre(other) * config["barn_foraeldre_importance"]
         return proximity
 
     def compare_name(self, other):
