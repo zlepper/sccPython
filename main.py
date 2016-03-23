@@ -23,7 +23,7 @@ t56 = time()
 people = []
 jobs = []
 job_server = pp.Server(restart=True)
-
+logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
 def get_people_from_file(parser):
     # assert isinstance(parser, CsvParser)
@@ -142,18 +142,14 @@ for job in jobs:
 
 people = rebuild_matches(people)
 
-t2 = time()
-
 # Create groups
 people = create_groups(people, config)
 
 job_server.print_stats()
 
-logging.info(t2 - t1)
-print("Tid for kørsel i alt: " + str(t2 - t1))
 
-t1 = time()
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
-logging.info(t2 - t56)
+logging.info("Tid for kørsel i alt: " + str(t2 - t1))
+print("Tid for kørsel i alt: " + str(t2 - t1))
