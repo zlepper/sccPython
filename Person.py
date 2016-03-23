@@ -274,7 +274,7 @@ class Person:
                     otherfodested = other.fodested.lower()
                     break
 
-            if personfodested != "" and otherfodested != "":
+            if personfodested != "" and None and otherfodested != "" and None:
 
                 if personfodested == otherfodested:
                     return 0
@@ -300,16 +300,24 @@ class Person:
                             if any(element in person.erhverv.lower().split() for element in kone):
                                 person_aegtefaelle = person.navn
 
-                                for other in other_home:
+                                if person_aegtefaelle is not None:
 
-                                    if any(element in other.erhverv.lower().split() for element in kone):
-                                        other_aegtefaelle = other.navn
+                                    for other in other_home:
 
-                                        return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                        if any(element in other.erhverv.lower().split() for element in kone):
+                                            other_aegtefaelle = other.navn
+
+                                            if other_aegtefaelle is not None:
+
+                                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+                                                if proximity is not None:
+                                                    return proximity
 
                 if self.kon is False and other.kon is False:
 
                     if any(element in self.erhverv.lower().split() for element in kone):
+
                         if person_home[person_home.index(self) - 1].kon is True:
                             person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
@@ -321,10 +329,12 @@ class Person:
                                         other_aegtefaelle = other_home[other_home.index(other) - 1].navn
 
                                         if other_aegtefaelle is not None:
+                                            proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                            return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                            if proximity is not None:
+                                                return proximity
 
-            return 0
+        return 0
 
     def compare_where_they_live(self, possible_match):
         if self.amt != possible_match.amt:
