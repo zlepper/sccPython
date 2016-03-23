@@ -288,10 +288,10 @@ class Person:
     def compare_aegteskab(self, other):
 
         # Ret fejl ved indtastning - hvis de er gift, så må deres nr. ægteskab mindst være 1
-        if self.civilstand == 2 and self.nregteskab == 0:
+        if self.civilstand == 2 and self.nregteskab == 0 or self.nregteskab == "":
             self.nregteskab = 1
 
-        if other.civilstand == 2 and other.nregteskab == 0:
+        if other.civilstand == 2 and other.nregteskab == 0 or other.nregteskab == "":
             other.nregteskab = 1
 
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
