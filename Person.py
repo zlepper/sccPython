@@ -275,7 +275,7 @@ class Person:
                     otherfodested = other.fodested.lower()
                     break
 
-            if personfodested != "" and None and otherfodested != "" and None:
+            if personfodested != "" and personfodested is not None and otherfodested != "" and otherfodested is not None:
 
                 if personfodested == otherfodested:
                     return 0
