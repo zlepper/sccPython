@@ -300,16 +300,20 @@ class Person:
                             if any(element in person.erhverv.lower().split() for element in kone):
                                 person_aegtefaelle = person.navn
 
-                                for other in other_home:
+                                if person_aegtefaelle is not None:
 
-                                    if any(element in other.erhverv.lower().split() for element in kone):
-                                        other_aegtefaelle = other.navn
+                                    for other in other_home:
 
-                                        return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                        if any(element in other.erhverv.lower().split() for element in kone):
+                                            other_aegtefaelle = other.navn
+
+                                            if other_aegtefaelle is not None:
+                                                return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
                 if self.kon is False and other.kon is False:
 
                     if any(element in self.erhverv.lower().split() for element in kone):
+
                         if person_home[person_home.index(self) - 1].kon is True:
                             person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
@@ -321,7 +325,6 @@ class Person:
                                         other_aegtefaelle = other_home[other_home.index(other) - 1].navn
 
                                         if other_aegtefaelle is not None:
-
                                             return damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
             return 0
