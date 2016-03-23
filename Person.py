@@ -337,7 +337,7 @@ class Person:
         return 0
 
     def compare_barn_foraeldre(self, other):
-        barn = ["deres søn", "deres datter", "deres døttre", "deres barn", "deres børn", "deres ægte søn", "deres ægte datter", "deres fælles søn", "deres fælles datter", "deres fælles børn", "deres fælles barn", "en søn", "en datter", "ægte søn", "ægte datter", "ihre kinder", "ihre sohn", "ihre tochter", "ihr kinder", "ihr sohn", "ihr tochter"]
+        barn = ["søn", "datter", "dater", "barn", "børn", "kinder", "sohn", "tochter", "deres søn", "deres datter", "deres døttre", "deres barn", "deres børn", "deres ægte søn", "deres ægte datter", "deres fælles søn", "deres fælles datter", "deres fælles børn", "deres fælles barn", "en søn", "en datter", "ægte søn", "ægte datter", "ihre kinder", "ihre sohn", "ihre tochter", "ihr kinder", "ihr sohn", "ihr tochter"]
         kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "ehefrau", "frau"]
 
         if any(element in self.erhverv.lower() for element in barn) and any(element in other.erhverv.lower() for element in barn):
