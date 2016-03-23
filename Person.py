@@ -309,10 +309,10 @@ class Person:
 
                                             if other_aegtefaelle is not None:
 
-                                                x = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                                if x is not None:
-                                                    return x
+                                                if proximity is not None:
+                                                    return proximity
 
                 if self.kon is False and other.kon is False:
 
@@ -329,12 +329,12 @@ class Person:
                                         other_aegtefaelle = other_home[other_home.index(other) - 1].navn
 
                                         if other_aegtefaelle is not None:
-                                            x = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                            proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
 
-                                            if x is not None:
-                                                return x
+                                            if proximity is not None:
+                                                return proximity
 
-            return 0
+        return 0
 
     def compare_where_they_live(self, possible_match):
         if self.amt != possible_match.amt:
