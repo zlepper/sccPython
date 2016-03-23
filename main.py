@@ -96,7 +96,6 @@ for job in jobs:
             invalidPeople.append(person)
         id += 1
 
-
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
 if len(invalidPeople) > 0:
     logging.info("Trying to fix invalid people data")

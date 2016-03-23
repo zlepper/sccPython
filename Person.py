@@ -90,8 +90,8 @@ class Person:
         proximity = self.compare_name(other) * config["name_importance"]
         proximity += self.compare_origin(other, people) * config["origin_importance"]
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
-        proximity += self.compare_aegteskab(other) * config["family_importance"]
-        #proximity += self.compare_barn_foraeldre(other)
+        proximity += self.compare_aegteskab(other) * config["aegteskab_importance"]
+        proximity += self.compare_barn_foraeldre(other) * config["barn_foraeldre_importance"]
         return proximity
 
     def compare_name(self, other):
@@ -287,8 +287,15 @@ class Person:
 
     def compare_aegteskab(self, other):
 
+        # Ret fejl ved indtastning - hvis de er gift, så må deres nr. ægteskab mindst være 1
+        if self.civilstand == 2 and self.nregteskab == 0:
+            self.nregteskab = 1
+
+        if other.civilstand == 2 and other.nregteskab == 0:
+            other.nregteskab = 1
+
         # Sammenlign personerne efter deres mand eller kones navn - Forudsætter, at personernes navne er ens
-        if self.civilstand == 2 and other.civilstand == 2:
+        if self.civilstand == 2 and other.civilstand == 2 and self.nregteskab == other.nregteskab:
 
             person_home = getData.get_home(self.home_index)
             other_home = getData.get_home(other.home_index)
@@ -319,14 +326,14 @@ class Person:
 
                     if any(element in self.erhverv.lower().split() for element in kone):
 
-                            if self in person_home and person_home[person_home.index(self) - 1].kon is True and person_home[person_home.index(self) - 1].civilstand == 2:
+                            if self in person_home and person_home[person_home.index(self) - 1].kon is True and person_home[person_home.index(self) - 1].civilstand == 2 and person_home[person_home.index(self) - 1].nregteskab == self.nregteskab:
                                 person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
                                 if person_aegtefaelle is not None:
 
                                     if any(element in other.erhverv.lower().split() for element in kone):
 
-                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == 2:
+                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == 2 and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
                                             other_aegtefaelle = other_home[other_home.index(other) - 1].navn
 
                                             if other_aegtefaelle is not None:
@@ -349,7 +356,7 @@ class Person:
                     if person.kon is False:
                         person_moder = person.navn
 
-                        if person in person_home and person_home[person_home.index(person) - 1].kon is True and person_home[person_home.index(person) - 1].civilstand == 2:
+                        if person in person_home and person_home[person_home.index(person) - 1].kon is True and person_home[person_home.index(person) - 1].civilstand == 2 and person_home[person_home.index(person) - 1].nregteskab == person.nregteskab:
                             person_fader = person_home[person_home.index(person) - 1].navn
 
                             for other in other_home:
@@ -357,10 +364,10 @@ class Person:
                                     if other.kon is False:
                                         other_moder = other.navn
 
-                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == 2:
+                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == 2 and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
                                             other_fader = other_home[other_home.index(other) - 1].navn
 
-                                            if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != ""  and other_fader is not None and other_moder != "" and other_moder is not None:
+                                            if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != "" and other_fader is not None and other_moder != "" and other_moder is not None:
 
                                                 if person_fader == other_fader and person_moder == other_moder:
                                                     return 0

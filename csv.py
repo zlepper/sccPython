@@ -158,7 +158,12 @@ def civilstkode(p, value):
 
 def ng_ægteskab(p, value):
     assert isinstance(p, Person)
-    p.nregteskab = value
+
+    if value is "":
+        p.nregteskab = 0
+
+    else:
+        p.nregteskab = value
 
 
 switcher = {
