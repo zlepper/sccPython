@@ -16,7 +16,8 @@ import re
 from comparison import damerau_levenshtein_distance
 import fix_attempts
 
-logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='log.log', level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 config = get_config()
 t56 = time()
 
@@ -24,6 +25,7 @@ people = []
 jobs = []
 job_server = pp.Server(restart=True)
 logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
+
 
 def get_people_from_file(parser):
     # assert isinstance(parser, CsvParser)
@@ -58,13 +60,12 @@ def rebuild_matches(p):
             ml = []
             assert isinstance(m, list)
             for i in m:
-                pers = None
-                for per in p:
-                    assert isinstance(per, Person.Person)
-                    if i == per.id:
-                        pers = per
-                if pers is not None:
-                    ml.append(pers)
+                try:
+                    pers = p[i]
+                    if pers:
+                        ml.append(pers)
+                except IndexError:
+                    pass
             person.matches[k] = ml
     return p
 
@@ -118,8 +119,6 @@ logging.info("Invalid people count: %d" % (len(invalidPeople)))
 logging.info("Male people count: %d" % (len(males)))
 logging.info("Female people count: %d" % (len(females)))
 
-id = 1
-
 people.extend(males)
 people.extend(females)
 
@@ -136,19 +135,39 @@ jobs.append(j)
 people = []
 
 for job in jobs:
+    logging.info("MAIN: Waiting for jobs to execute")
     pe = job()
+    logging.info("MAIN: A job finished successfully")
     people.extend(pe)
+    logging.info("MAIN: People list was extended with information")
 
+logging.info("MAIN: Sorting people according to ID")
+people.extend(invalidPeople)
+people = sorted(people, key=lambda person: person.id)
+logging.info("MAIN: Done sorting people according to ID")
+
+logging.info("MAIN: Rebuilding matches")
 people = rebuild_matches(people)
+logging.info("MAIN: Done rebuilding matches")
 
 # Create groups
+logging.info("MAIN: Creating groups")
 people = create_groups(people, config)
+logging.info("MAIN: Done creating groups")
 
 job_server.print_stats()
 
-
+logging.info("Writing output")
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
+
+logging.info("Counnting unuseable data")
+number_of_not_found = 0
+for person in people:
+    assert isinstance(person, Person.Person)
+    if person.group == -1:
+        number_of_not_found += 1
+logging.info("Number of people that could not be matched: " + str(number_of_not_found))
 
 logging.info("Tid for kørsel i alt: " + str(t2 - t1))
 print("Tid for kørsel i alt: " + str(t2 - t1))
