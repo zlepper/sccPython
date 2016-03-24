@@ -41,5 +41,5 @@ def get_home(index):
         return globals_scc.home[index]
     except IndexError:
         import logging
-        logging.error("IndexError when trying to fetch home")
+        logging.debug("IndexError when trying to fetch home")
         return []
