@@ -1,5 +1,6 @@
 from comparison import damerau_levenshtein_distance
 import getData
+import re
 
 
 class Person:
@@ -300,40 +301,44 @@ class Person:
             person_home = getData.get_home(self.home_index)
             other_home = getData.get_home(other.home_index)
 
-            kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "ehefrau", "frau"]
+            kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
             if person_home is not [] and other_home is not []:
                 if self.kon is True and other.kon is True:
+
                         for person in person_home:
 
-                            if any(element in person.erhverv.lower().split() for element in kone):
-                                person_aegtefaelle = person.navn
+                            if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split() for element in kone):
+                                if person.civilstand == self.civilstand and person.nregteskab == self.nregteskab:
+                                    person_aegtefaelle = person.navn
 
-                                if person_aegtefaelle is not None:
+                                    if person_aegtefaelle is not None:
 
-                                    for andenperson in other_home:
+                                        for andenperson in other_home:
 
-                                        if any(element in andenperson.erhverv.lower().split() for element in kone):
-                                            other_aegtefaelle = andenperson.navn
+                                            if any(element in re.sub("[,.-]", "", andenperson.erhverv.lower()).split() for element in kone):
 
-                                            if other_aegtefaelle is not None:
+                                                if andenperson.civilstand == other.civilstand and andenperson.nregteskab == other.nregteskab:
+                                                    other_aegtefaelle = andenperson.navn
 
-                                                proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+                                                    if other_aegtefaelle is not None:
 
-                                                if proximity is not None:
-                                                    return proximity
+                                                        proximity = damerau_levenshtein_distance(person_aegtefaelle, other_aegtefaelle)
+
+                                                        if proximity is not None:
+                                                            return proximity
 
                 if self.kon is False and other.kon is False:
 
-                    if any(element in self.erhverv.lower().split() for element in kone):
+                    if any(element in re.sub("[,.-]", "", self.erhverv.lower()).split() for element in kone):
 
-                            if self in person_home and person_home[person_home.index(self) - 1].kon is True and person_home[person_home.index(self) - 1].civilstand == 2 and person_home[person_home.index(self) - 1].nregteskab == self.nregteskab:
+                            if self in person_home and person_home[person_home.index(self) - 1].kon is True and person_home[person_home.index(self) - 1].civilstand == self.civilstand and person_home[person_home.index(self) - 1].nregteskab == self.nregteskab:
                                 person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
                                 if person_aegtefaelle is not None:
 
-                                    if any(element in other.erhverv.lower().split() for element in kone):
+                                    if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split() for element in kone):
 
-                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == 2 and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
+                                        if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == other.civilstand and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
                                             other_aegtefaelle = other_home[other_home.index(other) - 1].navn
 
                                             if other_aegtefaelle is not None:
@@ -344,24 +349,28 @@ class Person:
         return 0
 
     def compare_barn_foraeldre(self, other):
-        barn = ["søn", "datter", "dater", "barn", "børn", "kinder", "sohn", "tochter", "deres søn", "deres datter", "deres døttre", "deres barn", "deres børn", "deres ægte søn", "deres ægte datter", "deres fælles søn", "deres fælles datter", "deres fælles børn", "deres fælles barn", "en søn", "en datter", "ægte søn", "ægte datter", "ihre kinder", "ihre sohn", "ihre tochter", "ihr kinder", "ihr sohn", "ihr tochter"]
-        kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "ehefrau", "frau"]
+        barn = ["søn", "datter", "dater", "barn", "barn.", "børn", "kinder", "sohn", "tochter", "deres søn", "deres datter", "deres døttre", "deres barn", "deres børn", "deres ægte søn", "deres ægte datter", "deres fælles søn", "deres fælles datter", "deres fælles børn", "deres fælles barn", "en søn", "en datter", "ægte søn", "ægte datter", "ihre kinder", "ihre sohn", "ihre tochter", "ihr kinder", "ihr sohn", "ihr tochter"]
+        kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
 
-        if any(element in self.erhverv.lower() for element in barn) and any(element in other.erhverv.lower() for element in barn):
+        if any(element in re.sub("[,.-]", "", self.erhverv.lower()) for element in barn) and any(element in re.sub("[,.-]", "", other.erhverv.lower()) for element in barn):
             person_home = getData.get_home(self.home_index)
             other_home = getData.get_home(other.home_index)
 
             for person in person_home:
-                if any(element in person.erhverv.lower().split() for element in kone):
-                    if person.kon is False:
+
+                if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split() for element in kone):
+
+                    if person.kon is False and person.civilstand == 2:
                         person_moder = person.navn
 
                         if person in person_home and person_home[person_home.index(person) - 1].kon is True and person_home[person_home.index(person) - 1].civilstand == 2 and person_home[person_home.index(person) - 1].nregteskab == person.nregteskab:
                             person_fader = person_home[person_home.index(person) - 1].navn
 
                             for other in other_home:
-                                if any(element in other.erhverv.lower().split() for element in kone):
-                                    if other.kon is False:
+
+                                if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split() for element in kone):
+
+                                    if other.kon is False and other.civilstand == 2:
                                         other_moder = other.navn
 
                                         if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == 2 and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
@@ -379,7 +388,6 @@ class Person:
                                                         return proximity
 
         return 0
-
 
     def compare_where_they_live(self, possible_match):
         if self.amt != possible_match.amt:
