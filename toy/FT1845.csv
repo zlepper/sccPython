@@ -1,0 +1,50 @@
+kipnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstnr|matr_nr_adresse|antal familier/hus|navn|køn|alder|civilstkode|fødested|erhverv|kommentarer|fødeår
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|1,00000|430|Beuskowskow|470008|Instengebäude|1|Sören Iwersen  Lorenzen|M|46,000|2|Jeising A. Tondern|Instenbesitzer und Holzschuhmacher||1799
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|2,00000|430|Beuskowskow|470008|Instengebäude|1|Gunder Maria Iwersen|K|46,000|2|Feldstedt|seine Ehefrau||1799
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|3,00000|430|Beuskowskow|470008|Instengebäude|1|Jens Iwersen|M|23,000|1|Feldstedt|Ihr Sohn||1822
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|4,00000|430|Beuskowskow|470008|Instengebäude|1|Anna Kirstina Hansen|K|22,000||Traasbüll|zu Miethe ernährt sich durch Spinnen|beschwangert|1823
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|5,00000|430|Beuskowskow|470008|Instengebäude|1|Philip Jacobsen|M|39,000|2|Düppel|Mielthsmann und Taglöhner||1806
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|6,00000|430|Beuskowskow|470008|Instengebäude|1|Cath. M. Jacobsen|K|26,000|2|Düppel|seine Ehefrau||1819
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|7,00000|430|Beuskowskow|470008|Instengebäude|1|Philip Jacobsen|M|2,000|1|Atzbüll|Ihre Sohn||1843
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|8,00000|430|Beuskowskow|470008|Instengebäude|1|Jens Iwersen|M|27,000|2|Traasbüll|Mielthsmann und Tagelöhner||1818
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|9,00000|430|Beuskowskow|470008|Instengebäude|1|Anna Bot: Iwersen|K|26,000|2|Traasbüll|seine Ehefrau||1819
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|10,00000|430|Beuskowskow|470008|Instengebäude|1|Jörgen Iwersen|M|1,000|1|Atzbüll|Ihr Sohn||1844
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|11,00000|430|Beuskowskow|470008|Instengebäude|1|Lorenz Chr. Davidsen|M|25,000|1|Atzbüll|Mielthsmann und Tagelöhner||1820
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|12,00000|430|Beuskowskow|470008|Instengebäude|1|Gunder Mar: Jessen|K|28,000|2|Atzbüll|seine Ehefrau||1817
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|13,00000|430|Beuskowskow|470008|Instengebäude|1|Peter Davidsen|M|3,000|1|Atzbüll|Ihr Sohn||1842
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|14,00000|430|Beuskowskow|470010|Käthnergebaüde|1|Christian Andresen|M|56,000|2|Atzbüll|Kathenbesitzer und Schmidt||1789
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|15,00000|430|Beuskowskow|470010|Käthnergebaüde|1|Maria Andresen|K|51,000|2|Atzbüll|seine Ehefrau||1794
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|16,00000|430|Beuskowskow|470010|Käthnergebaüde|1|Ingeborg M. Andresen|K|24,000|1|Atzbüll|Ihre Tochter||1821
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|17,00000|430|Beuskowskow|470010|Käthnergebaüde|1|Christ. Christiansen|M|21,000|1|Traasbüll|Schmiedegehülfe||1824
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|18,00000|430|Beuskowskow|470012|Käthnergebaüde|1|Jörgen J. Clausen|M|54,000|2|Atzbüll|Kathenbesitzer und Tagelöhner||1791
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|19,00000|430|Beuskowskow|470012|Käthnergebaüde|1|Anna Elenore Jensen|K|32,000|2|Atzbüll|seine Ehefrau||1813
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|20,00000|430|Beuskowskow|470012|Käthnergebaüde|1|Jens Jensen|M|21,000|1|Atzbüll|Ihre Kinder||1824
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|21,00000|430|Beuskowskow|470012|Käthnergebaüde|1|Catharina Jensen|K|18,000|1|Atzbüll|Ihre Kinder||1827
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|22,00000|430|Beuskowskow|470012|Käthnergebaüde|1|Dorothea Jensen|K|6,000|1|Atzbüll|Ihre Kinder||1839
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|23,00000|431|Beuskowskow|470014|Käthnergebaüde|1|Sophia Fr. Clausen|K|53,000|3|Beuskowskow|Kathenbesitzerin||1792
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|24,00000|431|Beuskowskow|470014|Käthnergebaüde|1|Richel Clausen|M|29,000|1|Beuskowskow|Ihr Sohn||1816
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|25,00000|431|Beuskowskow|470014|Käthnergebaüde|1|Metta M. Andresen|K|19,000|1|Beuskowskow|Ihr Dienstmädchen||1826
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|26,00000|431|Beuskowskow|470014|Käthnergebaüde|1|Johan Clausen|M|30,000|2|Ulderup|Tagelöhner und Miethsmann||1815
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|27,00000|431|Beuskowskow|470014|Käthnergebaüde|1|Dorothea Olesen|K|25,000|2|Ulderup|seine Ehefrau||1820
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|28,00000|431|Beuskowskow|470014|Käthnergebaüde|1|Hans Clausen|M|3,000|1|Ulderup|Ihr Sohn||1842
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|29,00000|431|Beuskowskow|470016|Instengebäude|1|Nicolai Petersen|M|56,000|2|Atzbüll|Inste und Schuster||1789
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|30,00000|431|Beuskowskow|470016|Instengebäude|1|Sünnet Jensen Brandt|K|55,000|2|Atzbüll|seine Ehefrau||1790
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|31,00000|431|Beuskowskow|470016|Instengebäude|1|Grethe Maria Petersen|K|11,000|1|Atzbüll|Ihre Tochter||1834
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|32,00000|431|Beuskowskow|470016|Instengebäude|1|Gretha M. Iwersen|K|40,000|3|Atzbüll|Miethsfrau, ernährt sich durch Spinnen||1805
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|33,00000|431|Beuskowskow|470018|Instengebäude|1|Christian Lausen|M|37,000|2|Beuskow Holz|Inste und Tagelöhner||1808
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|34,00000|431|Beuskowskow|470018|Instengebäude|1|Margar: Petersen|K|32,000|2|Beuskow Holz|seine Ehefrau||1813
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|35,00000|431|Beuskowskow|470018|Instengebäude|1|Mette Margr: Hansen|K|70,000|3|Feldsted|Abschiedsfrau, wird von dem Inste auch unterhalten||1775
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|36,00000|431|Beuskowskow|470018|Instengebäude|1|Hans P. Lausen|M|32,000|2|Atzbüll|Mielthsmann und Tagelöhner||1813
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|37,00000|431|Beuskowskow|470020|Kathenbesitzer|1|Hans Chr. Thaysen|M|38,000|2|Beuskowholz|Kathenbesitzer||1807
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|38,00000|431|Beuskowskow|470020|Kathenbesitzer|1|Magdalena Thaysen|K|37,000|2|Beuskowholz|seine Ehefrau||1808
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|39,00000|431|Beuskowskow|470020|Kathenbesitzer|1|Anna M. Hans: Thaysen|K|6,000|1|Beuskowholz|Ihre Kinder||1839
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|40,00000|431|Beuskowskow|470020|Kathenbesitzer|1|Hans Peter Chr. Thaysen|M|3,000|1|Beuskowholz|Ihre Kinder||1842
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|41,00000|431|Beuskowskow|470022|Kathengebäude|1|Paul Hansen|M|49,000|2|Schnabeck|Kathenbesitzer||1796
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|42,00000|431|Beuskowskow|470022|Kathengebäude|1|Christina Hansen|K|46,000|2|Blans|seine Ehefrau||1799
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|43,00000|431|Beuskowskow|470022|Kathengebäude|1|Paul Paulsen|M|13,000|1|Beuskowholz|Ihre Kinder||1832
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|44,00000|431|Beuskowskow|470022|Kathengebäude|1|Anna Christina Paulsen|K|11,000|1|Beuskowholz|Ihre Kinder||1834
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|45,00000|431|Beuskowskow|470022|Kathengebäude|1|Ingeborg Paulsen|K|5,000|1|Beuskowholz|Ihre Kinder||1840
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|46,00000|431|Beuskowskow|470022|Kathengebäude|1|Dorothea Paulsen|K|3,000|1|Beuskowholz|Ihre Kinder||1842
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|47,00000|431|Beuskowskow|470022|Kathengebäude|1|Christian Petersen|M|64,000|2|Beuskowholz|Abnahmemann wird von den Kathenbesitzer unterhalten||1781
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|48,00000|431|Beuskowskow|470022|Kathengebäude|1|Ingeborg Hansen|K|57,000|2|Beuskowholz|seine Ehefrau||1788
+C4725|FT-1845|Adsbøl|Lundtoft|Aabenraa|49,00000|431|Beuskowskow|470022|Kathengebäude|1|Andreas Knudsen|M|24,000|1|Beuskowholz|Mielthsmann der Abschiedsleute und ernährt sich als Tagelöhner||1821
