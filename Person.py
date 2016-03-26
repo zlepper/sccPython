@@ -88,17 +88,50 @@ class Person:
         return closest, lowest
 
     def get_proximity(self, other, people, config):
-        proximity = self.compare_name(other) * config["name_importance"]
+        proximity = self.compare_name_fornavn(other) * config["name_fornavn_importance"]
+        proximity += self.compare_name_efternavn(other) * config["name_efternavn_importance"]
         proximity += self.compare_origin(other, people) * config["origin_importance"]
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
         proximity += self.compare_aegteskab(other) * config["aegteskab_importance"]
         proximity += self.compare_barn_foraeldre(other) * config["barn_foraeldre_importance"]
         return proximity
 
-    def compare_name(self, other):
-        return damerau_levenshtein_distance(self.navn, other.navn)
+    def compare_name_fornavn(self, other):
 
-    # Forudsætter, at navnet på personerne også er ens
+        if re.sub("[,.:]", "", self.navn.lower()).split(" ")[0] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[0]:
+            return 0
+
+        else:
+            return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[0], re.sub("[,.:]", "", other.navn.lower()).split(" ")[0])
+
+    def compare_name_efternavn(self, other):
+
+        if self.kon is True:
+            if re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1]:
+                return 0
+
+            else:
+                return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+
+        else:
+            if self.civilstand == 2 and other.civilstand == 2:
+                if re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1]:
+                    return 0
+
+                else:
+                    return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+
+            elif self.civilstand >= 2 or other.civilstand >= 2:
+                return 0
+
+            elif self.civilstand <= 1 and other.civilstand <= 1:
+                if re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1]:
+                    return 0
+
+                else:
+                    return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+
+
     def compare_origin(self, other, people):
 
         herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
@@ -307,7 +340,7 @@ class Person:
 
                         for person in person_home:
 
-                            if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split() for element in kone):
+                            if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split(" ") for element in kone):
                                 if person.civilstand == self.civilstand and person.nregteskab == self.nregteskab:
                                     person_aegtefaelle = person.navn
 
@@ -315,7 +348,7 @@ class Person:
 
                                         for andenperson in other_home:
 
-                                            if any(element in re.sub("[,.-]", "", andenperson.erhverv.lower()).split() for element in kone):
+                                            if any(element in re.sub("[,.-]", "", andenperson.erhverv.lower()).split(" ") for element in kone):
 
                                                 if andenperson.civilstand == other.civilstand and andenperson.nregteskab == other.nregteskab:
                                                     other_aegtefaelle = andenperson.navn
@@ -329,14 +362,14 @@ class Person:
 
                 if self.kon is False and other.kon is False:
 
-                    if any(element in re.sub("[,.-]", "", self.erhverv.lower()).split() for element in kone):
+                    if any(element in re.sub("[,.-]", "", self.erhverv.lower()).split(" ") for element in kone):
 
                             if self in person_home and person_home[person_home.index(self) - 1].kon is True and person_home[person_home.index(self) - 1].civilstand == self.civilstand and person_home[person_home.index(self) - 1].nregteskab == self.nregteskab:
                                 person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
                                 if person_aegtefaelle is not None:
 
-                                    if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split() for element in kone):
+                                    if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split(" ") for element in kone):
 
                                         if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == other.civilstand and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
                                             other_aegtefaelle = other_home[other_home.index(other) - 1].navn
@@ -358,7 +391,7 @@ class Person:
 
             for person in person_home:
 
-                if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split() for element in kone):
+                if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split(" ") for element in kone):
 
                     if person.kon is False and person.civilstand == 2:
                         person_moder = person.navn
@@ -368,7 +401,7 @@ class Person:
 
                             for other in other_home:
 
-                                if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split() for element in kone):
+                                if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split(" ") for element in kone):
 
                                     if other.kon is False and other.civilstand == 2:
                                         other_moder = other.navn
