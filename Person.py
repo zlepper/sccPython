@@ -40,36 +40,18 @@ class Person:
 
     def to_csv(self):
         s = ""
-        s += str(self.id) + "|"
         s += str(self.group) + "|"
         s += str(self.year) + "|"
         s += str(self.KIPnr) + "|"
-        s += str(self.kilde) + "|"
-        s += str(self.sogn) + "|"
-        s += str(self.herred) + "|"
-        s += str(self.amt) + "|"
         s += str(self.lbnr) + "|"
-        s += str(self.kildehenvisning) + "|"
-        s += str(self.stednavn) + "|"
-        s += str(self.husstands_familienr) + "|"
-        s += str(self.matr_nr_adresse) + "|"
+        s += str(self.amt) + "|"
         s += str(self.navn) + "|"
-        if self.kon:
-            s += "M"
-        else:
-            s += "K"
-        s += "|"
-        s += str(self.alder_tal) + "|"
         s += str(self.fodeaar) + "|"
-        s += str(self.fodested) + "|"
-        s += str(self.civilstand_source) + "|"
-        s += str(self.valid) + "\n"
         return s
 
     @staticmethod
     def topline():
-        return "id|group|year|KIPnr|kilde|sogn|herred|amt|lbnr|kildehenvisning|stednavn|husstands_familienr|" \
-               "matr_nr_adresse|navn|køn|alder_tal|fodeaar|fødested|civilstand|erhverv|valid\n"
+        return "group|kilde|KIPnr|lbnr|amt|navn|fodeaar\n"
 
     def get_closests(self):
         lowest = None
