@@ -163,6 +163,7 @@ def ng_ægteskab(p, value):
 
 switcher = {
     "KIPnr": kipnr,
+    "kipnr": kipnr,
     "kilde": kilde,
     "sogn": sogn,
     "herred": herred,
