@@ -1,7 +1,8 @@
 {
   "max_proximity": 15,
   "max_age_difference": 5,
-  "name_importance": 1,
+  "name_fornavn_importance": 1,
+  "name_efternavn_importance": 2,
   "origin_importance": 2,
   "where_they_live_importance": 1,
   "aegteskab_importance": 1,
