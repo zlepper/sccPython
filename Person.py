@@ -72,7 +72,7 @@ class Person:
     def get_proximity(self, other, people, config):
         proximity = self.compare_name_fornavn(other) * config["name_fornavn_importance"]
         proximity += self.compare_name_efternavn(other) * config["name_efternavn_importance"]
-        proximity += self.compare_origin(other, people) * config["origin_importance"]
+        proximity += self.compare_origin(other) * config["origin_importance"]
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
         proximity += self.compare_aegteskab(other) * config["aegteskab_importance"]
         proximity += self.compare_barn_foraeldre(other) * config["barn_foraeldre_importance"]

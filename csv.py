@@ -155,7 +155,7 @@ def fodested(p, value):
 
             # Fødested her i sognet
             if any(element in value.lower() for element in herisognet):
-                p.fodested = value.lower()
+                p.fodested = p.sogn.lower()
                 break
 
             # Fødested i et andet sogn
