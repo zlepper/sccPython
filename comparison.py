@@ -7,6 +7,9 @@ def damerau_levenshtein_distance(s1, s2):
     if isinstance(s1, bytes) or isinstance(s2, bytes):
         raise TypeError(_no_bytes_err)
 
+    if s1 == s2:
+        return 0
+
     len1 = len(s1)
     len2 = len(s2)
     infinite = len1 + len2
