@@ -14,6 +14,7 @@ import logging
 import PersonAnalyser
 import fix_attempts
 from collections import defaultdict
+import getData
 
 logging.basicConfig(filename='log.log', level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -22,7 +23,6 @@ t56 = time()
 
 people = []
 jobs = []
-homes = []
 job_server = pp.Server(restart=True)
 logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
@@ -97,10 +97,10 @@ for job in jobs:
             invalidPeople.append(person)
         id += 1
 
+logging.info("Invalid fix start")
 female_names = defaultdict(int)
 for name in [person.navn.split()[0] for person in females]:
     female_names[name] += 1
-
 
 male_names = defaultdict(int)
 for name in [person.navn.split()[0] for person in males]:
@@ -138,20 +138,14 @@ people = sorted(people, key=lambda person: person.id)
 
 t1 = time()
 
-jobs = []
-j = job_server.submit(main_analyser.analyse, (males, people, config))
-jobs.append(j)
-j = job_server.submit(main_analyser.analyse, (females, people, config))
-jobs.append(j)
 
-people = []
+homes = getData.generate_homes(people)
 
-for job in jobs:
-    logging.info("MAIN: Waiting for jobs to execute")
-    pe = job()
-    logging.info("MAIN: A job finished successfully")
-    people.extend(pe)
-    logging.info("MAIN: People list was extended with information")
+logging.info("MAIN: Waiting for jobs to execute")
+j = job_server.submit(main_analyser.analyse, (males, homes, config))
+people = j()
+logging.info("MAIN: People list was extended with information")
+
 
 logging.info("MAIN: Sorting people according to ID")
 people.extend(invalidPeople)

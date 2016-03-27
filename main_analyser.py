@@ -1,5 +1,5 @@
 
-def analyse(people, all_people, config):
+def analyse(people, homes, config):
     import logging
     logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logging.info("Analyse started")
@@ -7,18 +7,24 @@ def analyse(people, all_people, config):
     import pp
     import math
     job_server = pp.Server(restart=True)
-    chunks = chunkify(people, math.floor(job_server.get_ncpus() / 2) - 1)
+    max_job_count = job_server.get_ncpus() - 1
+    chunks = chunkify(people, max_job_count)
     logging.info("Number of chunks: " + str(len(chunks)))
     jobs = []
-    for chunk in chunks:
-        from comparison import damerau_levenshtein_distance
-        job = job_server.submit(run, (chunk, all_people, config), (damerau_levenshtein_distance,),
-                                ("collections", "Person", "getData", "globals_scc"))
-        jobs.append(job)
-    logging.info("Jobs started")
     results = []
-    people = None
-    all_people = None
+    from comparison import damerau_levenshtein_distance
+    for chunk in chunks:
+        for chunk2 in chunks:
+            job = job_server.submit(run, (chunk, chunk2, homes, config), (damerau_levenshtein_distance,),
+                                    ("collections", "Person", "getData", "globals_scc"))
+            jobs.append(job)
+            if len(jobs) >= max_job_count:
+                job = jobs.pop(0)
+                re = job()
+                results.extend(re)
+
+    logging.info("Jobs started")
+    # Handle the rest of the jobs
     for job in jobs:
         re = job()
         results.extend(re)
