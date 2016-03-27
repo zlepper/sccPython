@@ -146,7 +146,6 @@ class Person:
                 if self.kon is True and other.kon is True:
 
                         for person in person_home:
-
                             if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split(" ") for element in kone):
                                 if person.civilstand == self.civilstand and person.nregteskab == self.nregteskab:
                                     person_aegtefaelle = person.navn

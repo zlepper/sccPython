@@ -18,7 +18,10 @@ def person_from_small_copy(person):
     p = Person.Person(0)
     p.kon = ast.literal_eval(groups[0])
     p.civilstand = int(groups[1])
-    p.nregteskab = int(groups[2])
+    if groups[2]:
+        p.nregteskab = int(groups[2])
+    else:
+        p.nregteskab = 0
     p.erhverv = groups[3]
     return p
 
@@ -41,7 +44,7 @@ def generate_homes(people):
 
 def get_home(index):
     try:
-        return globals_scc.home[index]
+        return [person_from_small_copy(p) for p in globals_scc.home[index]]
     except IndexError:
         import logging
         logging.debug("IndexError when trying to fetch home")

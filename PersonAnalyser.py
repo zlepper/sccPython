@@ -5,14 +5,15 @@ def chunkify(lst, n):
     return [lst[i::n] for i in range(n)]
 
 
-def run(people, all_people, config):
+def run(people, to_compare_against, home, config):
+    import globals_scc
+    globals_scc.home = home
     import logging
     logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     assert isinstance(people, list)
     max_age_difference = config["max_age_difference"]
     max_proximity = config["max_proximity"]
     # Iterate the current chunk
-    getData.generate_homes(all_people, people)
     n = 1
     for person in people:
         if n % 10 == 0:
@@ -20,7 +21,7 @@ def run(people, all_people, config):
         n += 1
         # assert isinstance(person, Person.Person)
         # Compare with all other datapoints
-        for possible_match in all_people:
+        for possible_match in to_compare_against:
             # assert isinstance(possible_match, Person.Person)
             # Make sure both data points are of the same gender
             if person.kon == possible_match.kon:
