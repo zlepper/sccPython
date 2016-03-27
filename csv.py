@@ -138,8 +138,57 @@ def civiltilstand(p, value):
 
 def fodested(p, value):
     assert isinstance(p, Person)
-    p.fodested = value
 
+    herisognet = ["her i sognet", "heri sognet", "i sognet", "her sognet", "heri s", "her i s", "h. i sognet"]
+    reference = ["do ", "do.", "ditto ", "dito ", "dto.", "dítto", "ds.", "das ", "item ", "it.", "ietm ", "ibidem "]
+    sogn = [" sogn", " s.", " s:", " s/", " s "]
+    amt = [" amt"]
+
+    if value != "":
+        p.fodested = ""
+
+        while p.fodested == "":
+
+            # Fødested referet til forrige persons fødested i hjemmet
+            if any(element in value.lower() for element in reference):
+                value = get_previous(1)
+
+            # Fødested her i sognet
+            if any(element in value.lower() for element in herisognet):
+                p.fodested = value.lower()
+                break
+
+            # Fødested i et andet sogn
+            elif any(element in value.lower() for element in sogn):
+
+                for term in sogn:
+                    if term in value.lower():
+                        personfodested = value.lower().split(term)
+
+                        if fodested != "":
+                            p.fodested = personfodested[0]
+                            break
+
+            # Fødested indeholder et andet sogn og amt
+            elif any(element in value.lower() for element in amt):
+
+                if "," in value.lower():
+                    personfodested = value.lower().split(",")
+
+                elif "." in value.lower():
+                    personfodested = value.lower().split(".")
+
+                else:
+                    personfodested = value.lower().split(" ")
+
+                if personfodested is not []:
+                    p.fodested = personfodested[0]
+                    break
+
+            # Fødested er kun angivet til et navn på et sogn
+            else:
+                p.fodested = value.lower()
+                break
 
 def erhverv(p, value):
     if p.erhverv:
@@ -191,7 +240,7 @@ def get_previous(n):
     import globals_scc
     # Make n a negative number, so we go back in the list
     n *= -1
-    return globals_scc.people[n]
+    return globals_scc.people[n].fodested
 
 
 def get_people(path):
