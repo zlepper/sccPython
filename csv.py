@@ -7,27 +7,27 @@ from time import time
 
 def kipnr(p, value):
     p.KIPnr = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def kilde(p, value):
     p.kilde = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def sogn(p, value):
-    p.sogn = value
-    p.valid = not not value
+    p.sogn = p.valid and value
+    p.valid = p.valid and not not value
 
 
 def herred(p, value):
     p.herred = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def amt(p, value):
     p.amt = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def lbnr(p, value):
@@ -42,32 +42,32 @@ def lbnr(p, value):
 
 def kildehenvisning(p, value):
     p.kildehenvisning = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def stednavn(p, value):
     p.stednavn = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def husstands_familienr(p, value):
     p.husstands_familienr = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def matr_nr_adresse(p, value):
     p.matr_nr_adresse = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def navn(p, value):
     p.navn = value
-    p.valid = not not value
+    p.valid = p.valid and not not value
 
 
 def kon(p, value):
     p.kon = value == "M"
-    p.valid = not not value
+    p.valid = p.valid and not value.isspace()
 
     if p.valid is False:
         p.kon = None
@@ -92,7 +92,7 @@ def alder_tal(p, value):
 
 def fodeaar(p, value):
     value = re.search(r"[0-9]+", value, re.M | re.I)
-    if (value):
+    if value:
         value = value.group()
         p.fodeaar = int(value)
     else:
