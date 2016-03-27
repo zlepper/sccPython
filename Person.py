@@ -78,50 +78,28 @@ class Person:
         return proximity
 
     def compare_name_fornavn(self, other):
-
-        if re.sub("[,.:]", "", self.navn.lower()).split(" ")[0] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[0]:
-            return 0
-
-        else:
-            return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[0], re.sub("[,.:]", "", other.navn.lower()).split(" ")[0])
+        return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[0], re.sub("[,.:]", "", other.navn.lower()).split(" ")[0])
 
     def compare_name_efternavn(self, other):
 
         if self.kon is True:
-            if re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1]:
-                return 0
-
-            else:
-                return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+            return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
 
         else:
             if self.civilstand == 2 and other.civilstand == 2:
-                if re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1]:
-                    return 0
-
-                else:
-                    return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+                return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
 
             elif self.civilstand >= 2 or other.civilstand >= 2:
                 return 0
 
             elif self.civilstand <= 1 and other.civilstand <= 1:
-                if re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1] == re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1]:
-                    return 0
-
-                else:
-                    return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+                return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
 
 
     def compare_origin(self, other):
 
         if self.fodested != "" and self.fodested is not None and other.fodested != "" and other.fodested is not None:
-
-            if self.fodested == other.fodested:
-                return 0
-
-            else:
-                return damerau_levenshtein_distance(self.fodested, other.fodested)
+            return damerau_levenshtein_distance(self.fodested, other.fodested)
 
         return 0
 
@@ -215,15 +193,10 @@ class Person:
                                             other_fader = other_home[other_home.index(other) - 1].navn
 
                                             if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != "" and other_fader is not None and other_moder != "" and other_moder is not None:
+                                                proximity = damerau_levenshtein_distance(person_fader, other_fader) + damerau_levenshtein_distance(person_moder, other_moder)
 
-                                                if person_fader == other_fader and person_moder == other_moder:
-                                                    return 0
-
-                                                else:
-                                                    proximity = damerau_levenshtein_distance(person_fader, other_fader) + damerau_levenshtein_distance(person_moder, other_moder)
-
-                                                    if proximity is not None:
-                                                        return proximity
+                                                if proximity is not None:
+                                                    return proximity
 
         return 0
 
