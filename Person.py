@@ -43,12 +43,12 @@ class Person:
         s += str(self.lbnr) + "|"
         s += str(self.amt) + "|"
         s += str(self.navn) + "|"
-        s += str(self.fodeaar)
+        s += str(self.fodeaar) + "\n"
         return s
 
     @staticmethod
     def topline():
-        return "group|kilde|KIPnr|lbnr|amt|navn|fodeaar\n"
+        return "linkID|kilde|KIPnr|lbnr|amt|navn|fodeaar\n"
 
     def get_closests(self):
         lowest = None

@@ -133,8 +133,7 @@ t1 = time()
 homes = getData.generate_homes(people)
 
 logging.info("MAIN: Waiting for jobs to execute")
-j = job_server.submit(main_analyser.analyse, (males, homes, config))
-people = j()
+people = main_analyser.analyse(people, homes, config)
 logging.info("MAIN: People list was extended with information")
 
 
@@ -158,7 +157,7 @@ logging.info("Writing output")
 Outputter.output(people, "smallscc.out.csv")
 t2 = time()
 
-logging.info("Counnting unuseable data")
+logging.info("Counting unuseable data")
 number_of_not_found = 0
 for person in people:
     if person.group == -1:

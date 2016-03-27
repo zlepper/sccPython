@@ -15,7 +15,8 @@ def run(people, to_compare_against, home, config):
     # Iterate the current chunk
     n = 1
     for person in people:
-        if n % 10 == 0:
+        # Only write debug if we have over 100 done since last time
+        if n % 100 == 0:
             logging.debug("Person number " + str(n))
         n += 1
         # assert isinstance(person, Person.Person)
