@@ -12,9 +12,8 @@ from group import create_groups
 from output import Outputter
 import logging
 import PersonAnalyser
-import re
-from comparison import damerau_levenshtein_distance
 import fix_attempts
+from collections import defaultdict
 
 logging.basicConfig(filename='log.log', level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -23,6 +22,7 @@ t56 = time()
 
 people = []
 jobs = []
+homes = []
 job_server = pp.Server(restart=True)
 logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
@@ -97,13 +97,22 @@ for job in jobs:
             invalidPeople.append(person)
         id += 1
 
+female_names = defaultdict(int)
+for name in [person.navn.split()[0] for person in females]:
+    female_names[name] += 1
+
+
+male_names = defaultdict(int)
+for name in [person.navn.split()[0] for person in males]:
+    male_names[name] += 1
+
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
 if len(invalidPeople) > 0:
     logging.info("Trying to fix invalid people data")
     chunks = PersonAnalyser.chunkify(invalidPeople, job_server.get_ncpus())
     jobs = []
     for chunk in chunks:
-        job = job_server.submit(fix_attempts.try_to_fix, (chunk, males, females))
+        job = job_server.submit(fix_attempts.try_to_fix, (chunk, male_names, female_names))
         jobs.append(job)
     invalidPeople = []
     for job in jobs:
@@ -113,6 +122,9 @@ if len(invalidPeople) > 0:
         females.extend(result[2])
     logging.info("Done fixing invalid people data")
     job_server.print_stats()
+
+male_names = []
+female_names = []
 
 # Tell us how many of each type of person we have
 logging.info("Invalid people count: %d" % (len(invalidPeople)))

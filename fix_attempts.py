@@ -1,4 +1,5 @@
 def try_to_fix(invalid_chunk, males, females):
+    # TODO males and females are now a histogram of names, not a person object
     from comparison import damerau_levenshtein_distance
     import re
     k = []
