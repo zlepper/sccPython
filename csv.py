@@ -22,6 +22,7 @@ def sogn(p, value):
     p.sogn = value
     p.valid = not not value
 
+
 def herred(p, value):
     assert isinstance(p, Person)
     p.herred = value
@@ -133,7 +134,6 @@ civil_dic = {
 def civiltilstand(p, value):
     assert isinstance(p, Person)
     p.civilstand = civil_dic.get(value, 0)
-    p.civilstand_source = value
 
 
 def fodested(p, value):
@@ -169,10 +169,8 @@ switcher = {
     "herred": herred,
     "amt": amt,
     "lbnr": lbnr,
-    "kildehenvisning": kildehenvisning,
     "stednavn": stednavn,
     "husstnr": husstands_familienr,
-    "matr_nr_adresse": matr_nr_adresse,
     "navn": navn,
     "køn": kon,
     "alder_tal": alder_tal,
@@ -187,11 +185,21 @@ switcher = {
 }
 
 
+def get_previous(n):
+    assert isinstance(n, int)
+    assert n > 0
+    import globals_scc
+    # Make n a negative number, so we go back in the list
+    n *= -1
+    return globals_scc.people[n]
+
+
 def get_people(path):
     import logging
+    import globals_scc
     logging.basicConfig(filename='log.log', level=logging.DEBUG,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    people = []
+    people = globals_scc.people
 
     with codecs.open(path, "r", "iso-8859-1") as f:
         assert isinstance(path, str)

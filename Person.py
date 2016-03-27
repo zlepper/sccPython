@@ -13,16 +13,13 @@ class Person:
         self.herred = str()
         self.amt = str()
         self.lbnr = int()
-        self.kildehenvisning = str()
         self.stednavn = str()
         self.husstands_familienr = int()
-        self.matr_nr_adresse = None
         self.navn = str()
         self.kon = bool()
         self.alder_tal = int()
         self.fodeaar = int()
         self.civilstand = int()
-        self.civilstand_source = str()
         self.fodested = str()
         self.valid = True
         self.matches = dict()
@@ -68,6 +65,9 @@ class Person:
         if lowest is None:
             return None
         return closest, lowest
+
+    def to_small_copy(self):
+        return str(self.kon) + "|" + str(self.civilstand) + "|" + str(self.nregteskab) + "|" + self.erhverv
 
     def get_proximity(self, other, people, config):
         proximity = self.compare_name_fornavn(other) * config["name_fornavn_importance"]

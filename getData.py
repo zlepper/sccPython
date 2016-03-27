@@ -1,3 +1,4 @@
+import Person
 import globals_scc
 
 
@@ -9,31 +10,33 @@ def get_ditto_fodested(people, kilde, sogn, herred, amt, stednavn, husstandsfami
     return ""
 
 
-def generate_homes(people, analysed):
-    import globals_scc
-    if len(globals_scc.home) > 0:
-        raise AssertionError
+def person_from_small_copy(person):
+    import re
+    import ast
+    match = re.match("(.*?)\\|(.*?)\\|(.*?)\\|(.*)", person)
+    groups = match.groups()
+    p = Person.Person(0)
+    p.kon = ast.literal_eval(groups[0])
+    p.civilstand = int(groups[1])
+    p.nregteskab = int(groups[2])
+    p.erhverv = groups[3]
+    return p
+
+
+def generate_homes(people):
     home = []
     this_family = []
     last_husstands_familienr = -1
     for person in people:
         if person.husstands_familienr == last_husstands_familienr:
             person.home_index = len(home)
-            this_family.append(person)
+            this_family.append(person.to_small_copy())
         else:
             last_husstands_familienr = person.husstands_familienr
             home.append(this_family)
-            this_family = [person]
+            this_family = [person.to_small_copy()]
             person.home_index = len(home)
-
-    for an in analysed:
-        for person in people:
-            if an.id == person.id:
-                an.home_index = person.home_index
-                break
-
-    globals_scc.home = home
-    print(len(home))
+    return home
 
 
 def get_home(index):
