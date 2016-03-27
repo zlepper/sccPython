@@ -10,7 +10,6 @@ def run(people, to_compare_against, home, config):
     globals_scc.home = home
     import logging
     logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    assert isinstance(people, list)
     max_age_difference = config["max_age_difference"]
     max_proximity = config["max_proximity"]
     # Iterate the current chunk
@@ -32,7 +31,7 @@ def run(people, to_compare_against, home, config):
                         # Make sure civilstand is only moving on, not moving backwards
                         if (person.year > possible_match.year and person.civilstand >= possible_match.civilstand) or (
                                 person.year < possible_match.year and person.civilstand <= possible_match.civilstand):
-                            prox = person.get_proximity(possible_match, people, config)
+                            prox = person.get_proximity(possible_match, config)
                             if prox <= max_proximity:
                                 lis = person.matches.get(prox, [])
                                 lis.append(possible_match.id)

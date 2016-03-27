@@ -5,7 +5,6 @@ import re
 
 class Person:
     def __init__(self, year):
-        assert isinstance(year, int)
         self.year = year
         self.KIPnr = str()
         self.kilde = str()
@@ -44,7 +43,7 @@ class Person:
         s += str(self.lbnr) + "|"
         s += str(self.amt) + "|"
         s += str(self.navn) + "|"
-        s += str(self.fodeaar) + "|"
+        s += str(self.fodeaar)
         return s
 
     @staticmethod
@@ -69,7 +68,7 @@ class Person:
     def to_small_copy(self):
         return str(self.kon) + "|" + str(self.civilstand) + "|" + str(self.nregteskab) + "|" + self.erhverv
 
-    def get_proximity(self, other, people, config):
+    def get_proximity(self, other, config):
         proximity = self.compare_name_fornavn(other) * config["name_fornavn_importance"]
         proximity += self.compare_name_efternavn(other) * config["name_efternavn_importance"]
         proximity += self.compare_origin(other) * config["origin_importance"]

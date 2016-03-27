@@ -28,17 +28,12 @@ logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
 
 def get_people_from_file(parser):
-    # assert isinstance(parser, CsvParser)
     return parser.get_people()
 
 
 def get_people_from_directory(dir, job_server, jobs):
     for (dirpath, dirnames, filenames) in walk(dir):
-        # assert isinstance(dirnames, list)
-        # assert isinstance(filenames, list)
-        # assert isinstance(dirpath, str)
         for dirname in dirnames:
-            # assert isinstance(dirname, str)
             d = join(dirpath, dirname)
             job = job_server.submit(get_people_from_directory, (d, job_server, jobs))
             jobs.append(job)
@@ -52,13 +47,10 @@ def get_people_from_directory(dir, job_server, jobs):
 
 
 def rebuild_matches(p):
-    assert isinstance(p, list)
     for person in p:
-        assert isinstance(person, Person.Person)
         for k in person.matches:
             m = person.matches[k]
             ml = []
-            assert isinstance(m, list)
             for i in m:
                 try:
                     pers = p[i]
@@ -85,7 +77,6 @@ for job in jobs:
     v = job()
     logging.info("Done with job " + str(x))
     x += 1
-    assert isinstance(v, list)
     for person in v:
         person.id = id
         if person.valid:
@@ -170,7 +161,6 @@ t2 = time()
 logging.info("Counnting unuseable data")
 number_of_not_found = 0
 for person in people:
-    assert isinstance(person, Person.Person)
     if person.group == -1:
         number_of_not_found += 1
 logging.info("Number of people that could not be matched: " + str(number_of_not_found))
