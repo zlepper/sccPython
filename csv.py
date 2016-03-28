@@ -74,7 +74,6 @@ def kon(p, value):
 
 
 def alder_tal(p, value):
-    import logging
     if value:
         before_value = value
         if "," in value:
@@ -84,7 +83,6 @@ def alder_tal(p, value):
         try:
             p.alder_tal = int(value)
         except ValueError:
-            logging.error(before_value + " : " + value)
             p.valid = False
     else:
         p.valid = False
@@ -222,10 +220,10 @@ def get_previous(n):
 
 
 def get_people(path):
-    import logging
+    # import logging
     import globals_scc
-    logging.basicConfig(filename='log.log', level=logging.DEBUG,
-                        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    # logging.basicConfig(filename='log.log', level=logging.DEBUG,
+    #                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     people = globals_scc.people
 
     with codecs.open(path, "r", "iso-8859-1") as f:
