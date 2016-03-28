@@ -23,7 +23,7 @@ t56 = time()
 
 people = []
 jobs = []
-job_server = pp.Server(restart=True)
+job_server = pp.Server(restart=True, ppservers=("*",))
 logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
 

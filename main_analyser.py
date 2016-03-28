@@ -21,7 +21,7 @@ def analyse(people, homes, config):
     logging.basicConfig(filename='log.log', level=logging.DEBUG,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logging.info("Analyse started")
-    job_server = pp.Server(restart=True)
+    job_server = pp.Server(restart=True, ppservers=("*",))
     max_job_count = job_server.get_ncpus() - 1
     chunks = chunkify(people, max_job_count)
     logging.info("Number of chunks: " + str(len(chunks)))
