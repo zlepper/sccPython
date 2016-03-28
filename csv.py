@@ -240,7 +240,7 @@ def get_people(path):
             if first:
                 for i in range(len(fields)):
                     field = fields[i]
-                    d[i] = field.replace("\r\n", "")
+                    d[i] = field.rstrip()
                 first = False
             else:
                 p = Person(year)
