@@ -28,6 +28,7 @@ def analyse(people, homes, config, job_server):
     from comparison import damerau_levenshtein_distance
     n = 1
     for i in range(len(chunks)):
+        logging.info("Done with chunk number " + str(i + 1))
         chunk = chunks[i]
         for j in range(i, len(chunks), 1):
             chunk2 = chunks[j]
