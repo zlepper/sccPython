@@ -22,7 +22,7 @@ def analyse(people, homes, config, job_server):
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logging.info("Analyse started")
     max_job_count = job_server.get_ncpus() - 1
-    chunks = chunkify(people, math.ceil(len(people) / 500))
+    chunks = chunkify(people, max_job_count)
     logging.info("Number of chunks: " + str(len(chunks)))
     jobs = []
     from comparison import damerau_levenshtein_distance
@@ -43,8 +43,8 @@ def analyse(people, homes, config, job_server):
                     print("Done jobs: " + str(len(done_jobs)))
                 for job in done_jobs:
                     rewire(job())
-                    # else:
-                    #     time.sleep(1)
+                else:
+                    time.sleep(1)
 
     logging.info("Jobs started")
     # Handle the rest of the jobs
