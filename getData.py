@@ -11,6 +11,8 @@ def get_ditto_fodested(people, kilde, sogn, herred, amt, stednavn, husstandsfami
 
 
 def person_from_small_copy(person):
+    if person in globals_scc.people_as_dict:
+        return globals_scc.people_as_dict[person]
     import re
     import ast
     match = re.match("(.*?)\\|(.*?)\\|(.*?)\\|(.*)", person)
@@ -23,6 +25,7 @@ def person_from_small_copy(person):
     else:
         p.nregteskab = 0
     p.erhverv = groups[3]
+    globals_scc.people_as_dict[person] = p
     return p
 
 

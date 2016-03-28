@@ -19,15 +19,15 @@ import sys
 import _io
 
 args = []
-stdin = sys.stdin
-assert isinstance(stdin, _io.TextIOWrapper)
-for line in stdin:
-    line = line.rstrip()
-    print(line)
-    if line != "\n":
-        args.append(line)
-print("Args are: ")
-print(args)
+# stdin = sys.stdin
+# assert isinstance(stdin, _io.TextIOWrapper)
+# for line in stdin:
+#     line = line.rstrip()
+#     print(line)
+#     if line != "\n":
+#         args.append(line)
+# print("Args are: ")
+# print(args)
 
 if len(args) == 0:
     args.append("*")
