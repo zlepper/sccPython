@@ -170,6 +170,7 @@ def fodested(p, value):
                 p.fodested = value.lower()
                 break
 
+
 def erhverv(p, value):
     if p.erhverv:
         p.erhverv += " "
@@ -216,7 +217,12 @@ def get_previous(n):
     import globals_scc
     # Make n a negative number, so we go back in the list
     n *= -1
-    return globals_scc.people[n].fodested
+    try:
+        return globals_scc.people[n].fodested
+    except IndexError:
+        return ""
+    except TypeError:
+        return ""
 
 
 def get_people(path):
@@ -225,6 +231,8 @@ def get_people(path):
     # logging.basicConfig(filename='log.log', level=logging.DEBUG,
     #                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     people = globals_scc.people
+    if people is not None:
+        globals_scc.people = people
 
     with codecs.open(path, "r", "iso-8859-1") as f:
         ind = path.rindex(sep)
