@@ -16,12 +16,11 @@ def rewire(updated):
             original_person.matches[proximity] = list(set(original_matches))
 
 
-def analyse(people, homes, config):
+def analyse(people, homes, config, job_server):
     globals_scc.people_as_dict = {person.id: person for person in people}
     logging.basicConfig(filename='log.log', level=logging.DEBUG,
                         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logging.info("Analyse started")
-    job_server = pp.Server(restart=True, ppservers=("*",))
     max_job_count = job_server.get_ncpus() - 1
     chunks = chunkify(people, max_job_count)
     logging.info("Number of chunks: " + str(len(chunks)))

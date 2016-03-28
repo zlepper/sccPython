@@ -15,7 +15,24 @@ import PersonAnalyser
 import fix_attempts
 from collections import defaultdict
 import getData
+import sys
+import _io
 
+args = []
+stdin = sys.stdin
+assert isinstance(stdin, _io.TextIOWrapper)
+for line in stdin:
+    line = line.rstrip()
+    print(line)
+    if line != "\n":
+        args.append(line)
+print("Args are: ")
+print(args)
+
+if len(args) == 0:
+    args.append("*")
+print("AFter")
+assert isinstance(args, list)
 logging.basicConfig(filename='log.log', level=logging.DEBUG,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 config = get_config()
@@ -23,7 +40,8 @@ t56 = time()
 
 people = []
 jobs = []
-job_server = pp.Server(restart=True, ppservers=("*",))
+ppservers = tuple(args)
+job_server = pp.Server(restart=True, ppservers=ppservers)
 logging.info("Number of pp processes created: " + str(job_server.get_ncpus()))
 
 
@@ -133,7 +151,7 @@ t1 = time()
 homes = getData.generate_homes(people)
 
 logging.info("MAIN: Waiting for jobs to execute")
-people = main_analyser.analyse(people, homes, config)
+people = main_analyser.analyse(people, homes, config, job_server)
 logging.info("MAIN: People list was extended with information")
 
 
