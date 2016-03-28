@@ -69,12 +69,21 @@ class Person:
         return str(self.kon) + "|" + str(self.civilstand) + "|" + str(self.nregteskab) + "|" + self.erhverv
 
     def get_proximity(self, other, config):
+        max_prox = config["max_proximity"]
         proximity = self.compare_name_fornavn(other) * config["name_fornavn_importance"]
+        if proximity > max_prox:
+            return proximity
         proximity += self.compare_name_efternavn(other) * config["name_efternavn_importance"]
+        if proximity > max_prox:
+            return proximity
         proximity += self.compare_origin(other) * config["origin_importance"]
+        if proximity > max_prox:
+            return proximity
         proximity += self.compare_where_they_live(other) * config["where_they_live_importance"]
+        if proximity > max_prox:
+            return proximity
         proximity += self.compare_aegteskab(other) * config["aegteskab_importance"]
-        if config["compare_barn_foraeldre"]:
+        if proximity > max_prox and config["compare_barn_foraeldre"]:
             proximity += self.compare_barn_foraeldre(other) * config["barn_foraeldre_importance"]
         return proximity
 
