@@ -4,7 +4,7 @@ import logging
 import Person
 import globals_scc
 import math
-
+import time
 
 def rewire(updated):
     for person in updated:
@@ -43,6 +43,8 @@ def analyse(people, homes, config, job_server):
                     print("Done jobs: " + str(len(done_jobs)))
                 for job in done_jobs:
                     rewire(job())
+                else:
+                    time.sleep(1)
 
     logging.info("Jobs started")
     # Handle the rest of the jobs

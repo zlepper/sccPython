@@ -23,6 +23,7 @@ def run(people, to_compare_against, home, config, job_number):
         # assert isinstance(person, Person.Person)
         # Compare with all other datapoints
         for possible_match in to_compare_against:
+
             # assert isinstance(possible_match, Person.Person)
             # Make sure both data points are of the same gender
             if person.kon == possible_match.kon:
