@@ -47,5 +47,5 @@ def get_home(index):
         return [person_from_small_copy(p) for p in globals_scc.home[index]]
     except IndexError:
         import logging
-        logging.debug("IndexError when trying to fetch home")
+        # logging.debug("IndexError when trying to fetch home")
         return []

@@ -23,20 +23,20 @@ def analyse(people, homes, config):
     logging.info("Analyse started")
     job_server = pp.Server(restart=True)
     max_job_count = job_server.get_ncpus() - 1
-    multiplier = math.ceil(len(people) / 1000)
-    print("Job multiplier is " + str(multiplier))
-    chunks = chunkify(people, max_job_count * multiplier)
+    chunks = chunkify(people, max_job_count)
     logging.info("Number of chunks: " + str(len(chunks)))
     jobs = []
     from comparison import damerau_levenshtein_distance
+    n = 1
     for i in range(len(chunks)):
         chunk = chunks[i]
         for j in range(i, len(chunks), 1):
             chunk2 = chunks[j]
-            job = job_server.submit(run, (chunk, chunk2, homes, config), (damerau_levenshtein_distance,),
+            job = job_server.submit(run, (chunk, chunk2, homes, config, n), (damerau_levenshtein_distance,),
                                     ("collections", "Person", "getData", "globals_scc"))
             assert isinstance(job, pp._Task)
             jobs.append(job)
+            n += 1
             while len(jobs) >= max_job_count:
                 done_jobs = [job for job in jobs if job.finished]
                 jobs = [job for job in jobs if not job.finished]
@@ -51,5 +51,6 @@ def analyse(people, homes, config):
         re = job()
         rewire(re)
     logging.info("Jobs done")
+
     job_server.print_stats()
     return people
