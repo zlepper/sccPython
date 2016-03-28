@@ -117,7 +117,7 @@ class Person:
             person_home = getData.get_home(self.home_index)
             other_home = getData.get_home(other.home_index)
 
-            kone = ["kone", "konen", "koun", "koune", "koene", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
+            kone = ["kone", "konen", "koun", "koune", "koene", "hustru", "hustrue", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
             if person_home is not [] and other_home is not []:
                 if self.kon is True and other.kon is True:
 
