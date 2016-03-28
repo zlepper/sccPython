@@ -193,7 +193,7 @@ class Person:
                                             other_fader = other_home[other_home.index(other) - 1].navn
 
                                             if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != "" and other_fader is not None and other_moder != "" and other_moder is not None:
-                                                proximity = int(damerau_levenshtein_distance(person_fader, other_fader)) + int(damerau_levenshtein_distance(person_moder, other_moder))
+                                                proximity = damerau_levenshtein_distance(person_fader, other_fader) + damerau_levenshtein_distance(person_moder, other_moder)
 
                                                 if proximity is not None:
                                                     return proximity
