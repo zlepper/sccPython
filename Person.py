@@ -78,22 +78,21 @@ class Person:
         return proximity
 
     def compare_name_fornavn(self, other):
-        return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[0], re.sub("[,.:]", "", other.navn.lower()).split(" ")[0])
+        return damerau_levenshtein_distance(re.sub("[,.:?\[\]\(\)\{\}]", "", self.navn.lower()).split(" ")[0], re.sub("[,.:?\[\]\(\)\{\}]", "", other.navn.lower()).split(" ")[0])
 
     def compare_name_efternavn(self, other):
-
         if self.kon is True:
-            return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+            return damerau_levenshtein_distance(re.sub("[,.:?\[\]\(\)\{\}]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:?\[\]\(\)\{\}]", "", other.navn.lower()).split(" ")[-1])
 
         else:
             if self.civilstand == 2 and other.civilstand == 2:
-                return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+                return damerau_levenshtein_distance(re.sub("[,.:?\[\]\(\)\{\}]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:?\[\]\(\)\{\}]", "", other.navn.lower()).split(" ")[-1])
 
             elif self.civilstand >= 2 or other.civilstand >= 2:
                 return 0
 
             elif self.civilstand <= 1 and other.civilstand <= 1:
-                return damerau_levenshtein_distance(re.sub("[,.:]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:]", "", other.navn.lower()).split(" ")[-1])
+                return damerau_levenshtein_distance(re.sub("[,.:?\[\]\(\)\{\}]", "", self.navn.lower()).split(" ")[-1], re.sub("[,.:?\[\]\(\)\{\}]", "", other.navn.lower()).split(" ")[-1])
 
 
     def compare_origin(self, other):
@@ -118,12 +117,12 @@ class Person:
             person_home = getData.get_home(self.home_index)
             other_home = getData.get_home(other.home_index)
 
-            kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
+            kone = ["kone", "konen", "koun", "koune", "koene", "hustru", "hustrue", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
             if person_home is not [] and other_home is not []:
                 if self.kon is True and other.kon is True:
 
                         for person in person_home:
-                            if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split(" ") for element in kone):
+                            if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", person.erhverv.lower()).split(" ") for element in kone):
                                 if person.civilstand == self.civilstand and person.nregteskab == self.nregteskab:
                                     person_aegtefaelle = person.navn
 
@@ -131,7 +130,7 @@ class Person:
 
                                         for andenperson in other_home:
 
-                                            if any(element in re.sub("[,.-]", "", andenperson.erhverv.lower()).split(" ") for element in kone):
+                                            if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", andenperson.erhverv.lower()).split(" ") for element in kone):
 
                                                 if andenperson.civilstand == other.civilstand and andenperson.nregteskab == other.nregteskab:
                                                     other_aegtefaelle = andenperson.navn
@@ -145,14 +144,14 @@ class Person:
 
                 if self.kon is False and other.kon is False:
 
-                    if any(element in re.sub("[,.-]", "", self.erhverv.lower()).split(" ") for element in kone):
+                    if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", self.erhverv.lower()).split(" ") for element in kone):
 
                             if self in person_home and person_home[person_home.index(self) - 1].kon is True and person_home[person_home.index(self) - 1].civilstand == self.civilstand and person_home[person_home.index(self) - 1].nregteskab == self.nregteskab:
                                 person_aegtefaelle = person_home[person_home.index(self) - 1].navn
 
                                 if person_aegtefaelle is not None:
 
-                                    if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split(" ") for element in kone):
+                                    if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", other.erhverv.lower()).split(" ") for element in kone):
 
                                         if other in other_home and other_home[other_home.index(other) - 1].kon is True and other_home[other_home.index(other) - 1].civilstand == other.civilstand and other_home[other_home.index(other) - 1].nregteskab == other.nregteskab:
                                             other_aegtefaelle = other_home[other_home.index(other) - 1].navn
@@ -162,19 +161,20 @@ class Person:
 
                                                 if proximity is not None:
                                                     return proximity
+
         return 0
 
     def compare_barn_foraeldre(self, other):
         barn = ["søn", "datter", "dater", "barn", "barn.", "børn", "kinder", "sohn", "tochter", "deres søn", "deres datter", "deres døttre", "deres barn", "deres børn", "deres ægte søn", "deres ægte datter", "deres fælles søn", "deres fælles datter", "deres fælles børn", "deres fælles barn", "en søn", "en datter", "ægte søn", "ægte datter", "ihre kinder", "ihre sohn", "ihre tochter", "ihr kinder", "ihr sohn", "ihr tochter"]
-        kone = ["kone", "konen", "koun", "koune", "hustru", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
+        kone = ["kone", "konen", "koun", "koune", "koene", "hustru", "hustrue", "madmoder", "madmoeder", "huusmoder", "husmoder", "moder", "ehefrau", "frau"]
 
-        if any(element in re.sub("[,.-]", "", self.erhverv.lower()) for element in barn) and any(element in re.sub("[,.-]", "", other.erhverv.lower()) for element in barn):
+        if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", self.erhverv.lower()) for element in barn) and any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", other.erhverv.lower()) for element in barn):
             person_home = getData.get_home(self.home_index)
             other_home = getData.get_home(other.home_index)
 
             for person in person_home:
 
-                if any(element in re.sub("[,.-]", "", person.erhverv.lower()).split(" ") for element in kone):
+                if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", person.erhverv.lower()).split(" ") for element in kone):
 
                     if person.kon is False and person.civilstand == 2:
                         person_moder = person.navn
@@ -184,7 +184,7 @@ class Person:
 
                             for other in other_home:
 
-                                if any(element in re.sub("[,.-]", "", other.erhverv.lower()).split(" ") for element in kone):
+                                if any(element in re.sub("[,.\-?:\[\]\(\)\{\}]", "", other.erhverv.lower()).split(" ") for element in kone):
 
                                     if other.kon is False and other.civilstand == 2:
                                         other_moder = other.navn
@@ -193,7 +193,7 @@ class Person:
                                             other_fader = other_home[other_home.index(other) - 1].navn
 
                                             if person_fader != "" and person_fader is not None and person_moder != "" and person_moder is not None and other_fader != "" and other_fader is not None and other_moder != "" and other_moder is not None:
-                                                proximity = damerau_levenshtein_distance(person_fader, other_fader) + damerau_levenshtein_distance(person_moder, other_moder)
+                                                proximity = int(damerau_levenshtein_distance(person_fader, other_fader)) + int(damerau_levenshtein_distance(person_moder, other_moder))
 
                                                 if proximity is not None:
                                                     return proximity
