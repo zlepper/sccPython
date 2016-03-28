@@ -7,5 +7,6 @@
   "where_they_live_importance": 1,
   "aegteskab_importance": 1,
   "barn_foraeldre_importance": 1,
-  "compare_barn_foraeldre": true
+  "compare_barn_foraeldre": true,
+  "chunk_size": 1000
 }
