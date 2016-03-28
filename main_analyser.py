@@ -29,8 +29,10 @@ def analyse(people, homes, config):
     logging.info("Number of chunks: " + str(len(chunks)))
     jobs = []
     from comparison import damerau_levenshtein_distance
-    for chunk in chunks:
-        for chunk2 in chunks:
+    for i in range(len(chunks)):
+        chunk = chunks[i]
+        for j in range(i, len(chunks), 1):
+            chunk2 = chunks[j]
             job = job_server.submit(run, (chunk, chunk2, homes, config), (damerau_levenshtein_distance,),
                                     ("collections", "Person", "getData", "globals_scc"))
             assert isinstance(job, pp._Task)
@@ -42,7 +44,6 @@ def analyse(people, homes, config):
                     print("Done jobs: " + str(len(done_jobs)))
                 for job in done_jobs:
                     rewire(job())
-
 
     logging.info("Jobs started")
     # Handle the rest of the jobs
