@@ -118,11 +118,11 @@ while len(jobs) > 0:
 
 logging.info("Invalid fix start")
 female_names = defaultdict(int)
-for name in [person.navn.split()[0] for person in females if not person.navn.isspace]:
+for name in [person.navn.split()[0] for person in females if not person.navn.isspace and person.navn]:
     female_names[name] += 1
 
 male_names = defaultdict(int)
-for name in [person.navn.split()[0] for person in males if not person.navn.isspace]:
+for name in [person.navn.split()[0] for person in males if not person.navn.isspace and person.navn]:
     male_names[name] += 1
 
 # Gør invalide personer valide - Hvis en anden person med samme navn har et køn, så brug den persons køn
