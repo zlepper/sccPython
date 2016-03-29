@@ -33,7 +33,7 @@ if len(args) == 0:
     args.append("*")
 print("AFter")
 assert isinstance(args, list)
-logging.basicConfig(filename='log.log', level=logging.DEBUG,
+logging.basicConfig(filename='log.log', level=logging.INFO,
                     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 config = get_config()
 t56 = time()
@@ -103,17 +103,17 @@ while len(jobs) > 0:
             person.id = id
             if person.valid:
                 if person.kon:
-                    logging.debug("Appending to males")
+                    # logging.debug("Appending to males")
                     males.append(person)
-                    logging.debug("Appended to males")
+                    # logging.debug("Appended to males")
                 else:
-                    logging.debug("Appending to females")
+                    # logging.debug("Appending to females")
                     females.append(person)
-                    logging.debug("Appended to females")
+                    # logging.debug("Appended to females")
             else:
-                logging.debug("Appending to invalidpeople")
+                # logging.debug("Appending to invalidpeople")
                 invalidPeople.append(person)
-                logging.debug("Appended to invalid people")
+                # logging.debug("Appended to invalid people")
             id += 1
 
 logging.info("Invalid fix start")

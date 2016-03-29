@@ -9,7 +9,7 @@ def run(people, to_compare_against, home, config, job_number):
     import globals_scc
     globals_scc.home = home
     import logging
-    logging.basicConfig(filename='log.log', level=logging.DEBUG,
+    logging.basicConfig(filename='log.log', level=logging.INFO,
                         format='%(asctime)s - %(name)s - %(levelname)s job ' + str(job_number) + ' - %(message)s')
     max_age_difference = config["max_age_difference"]
     max_proximity = config["max_proximity"]
