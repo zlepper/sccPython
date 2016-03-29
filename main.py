@@ -92,6 +92,7 @@ females = []
 x = 1
 id = 0
 for job in jobs:
+    logging.info("Waiting for next job to finish")
     v = job()
     logging.info("Done with job " + str(x))
     x += 1
@@ -99,11 +100,17 @@ for job in jobs:
         person.id = id
         if person.valid:
             if person.kon:
+                logging.debug("Appending to males")
                 males.append(person)
+                logging.debug("Appended to males")
             else:
+                logging.debug("Appending to females")
                 females.append(person)
+                logging.debug("Appended to females")
         else:
+            logging.debug("Appending to invalidpeople")
             invalidPeople.append(person)
+            logging.debug("Appended to invalid people")
         id += 1
 
 logging.info("Invalid fix start")
