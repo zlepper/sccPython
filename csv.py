@@ -62,7 +62,10 @@ def matr_nr_adresse(p, value):
 
 def navn(p, value):
     p.navn = value
-    p.valid = p.valid and not not value
+    assert isinstance(value, str)
+    p.valid = p.valid and not value.isspace()
+    if p.navn == "":
+        p.navn = "  "
 
 
 def kon(p, value):
