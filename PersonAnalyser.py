@@ -30,7 +30,7 @@ def run(people, to_compare_against, home, config, job_number):
                 # Make sure the datapoints isn't from the same year
                 if person.year != possible_match.year:
                     # Make sure the data points are within the max age difference of each other
-                    if abs(person.alder_tal - possible_match.alder_tal) < max_age_difference:
+                    if abs(person.fodeaar - possible_match.fodeaar) < max_age_difference:
                         # Make sure civilstand is only moving on, not moving backwards
                         if (person.year > possible_match.year and person.civilstand >= possible_match.civilstand) or (
                                         person.year < possible_match.year and person.civilstand <= possible_match.civilstand):
